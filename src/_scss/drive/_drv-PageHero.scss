@@ -1,0 +1,30 @@
+$bg-pageHero: #FCFBF9;
+$color-pageHero-title: #666;
+$color-pageHero-text: #202020;
+
+// BUTTONS
+// ----------------------------------------------------------------------------
+
+.drv-PageHero {
+  background-color: $bg-pageHero;
+  box-shadow: inset 0 0 3px rgba(0,0,0,.25);
+  margin-bottom: 0 0 2.5rem;
+  padding: 3rem;
+
+  &-title {
+    color: $color-pageHero-title;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 4rem;
+    margin-bottom:  1.25rem;
+  }
+  &-text {
+    color: $color-pageHero-text;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

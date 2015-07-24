@@ -3,8 +3,18 @@
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "beepbeep": "^1.2.0",
+    "browser-sync": "^2.8.0",
+    "colors": "^1.1.2",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.4",
+    "run-sequence": "^1.1.2"
+  }
 }
