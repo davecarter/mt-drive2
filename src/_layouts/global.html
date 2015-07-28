@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic' rel='stylesheet' type='text/css'>
-</head>
+
+{% include head.html %}
+
 <body>
+
+  {% include ldrv-Topbar/ldrv-Topbar.html %}
 
   {% include drv-PageHero/drv-PageHero.html %}
 
@@ -15,7 +14,13 @@
     {{ content }}
   </div>
 
+  {% include ldrv-Sidebar/ldrv-Sidebar.html %}
+
+  {% include ldrv-Footer/ldrv-Footer.html %}
+
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+
+  <script src="js/drive.min.js"></script>
 </body>
 </html>

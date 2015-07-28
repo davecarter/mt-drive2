@@ -1,0 +1,45 @@
+﻿.alert {
+    font-family:coches, Arial, Verdana;
+    padding:10px 10px 10px 45px;  
+    background: #fff;
+    color: #555459;
+    border-left-width: 5px;
+    margin: 0 auto 1rem;
+    border-radius: .25rem;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+    position:relative; 
+
+    [class^="icon-"]{
+        font-size: 22px;
+        vertical-align: middle;
+        margin-right: 10px;
+        position: absolute;
+        left: 10px;
+        top: 7px;
+    }
+}
+.alert-ok {
+    border-left:5px solid #27ae60;
+    [class^="icon-"]{
+        color:#27ae60;
+    }
+}
+.alert-info {
+    border-left:5px solid #3498db;
+    [class^="icon-"]{
+        color:#3498db;
+    }
+}
+.alert-warning {
+    border-left:5px solid #F39C12;
+    [class^="icon-"]{
+        color:#F39C12;
+    }
+}
+.alert-error {
+    border-left:5px solid #e74c3c;
+    background-color:#FAF0F0;
+    [class^="icon-"]{
+        color:#e74c3c;
+    }
+}

@@ -1,0 +1,154 @@
+---
+
+layout: global
+title: 'Grid | Drive: Framework SCM Motor'
+pageHeroTitle: 'Grid'
+pageHeroText: |
+  <p>Responsive grid system and mobile first.</p>
+  <p>Adaptable and modular.</p>
+
+---
+
+<div id="grid" class="section">
+    <h2 class="line-m"><span>Sistema de grid</span></h2>
+    <p>Included a <i>responsive</i> system based on <i>mobile first</i> that incrementally adjusts up to <b>12 columns</b> depending on the size of the device or window. Includes predefined classes to create columns.</p>
+    <ul class="list list-rb pd10 mgbot20">
+        <li>First create the container columns with class <span class="class">.row</span>.</li>
+        <li>Then declare the container of each column with the class <span class="class">.grid-</span> concatenated with the number of columns you want.</li>
+        <li>The divs with class <span class="class">.grid-</span> for the same <span class="class">.row</span> must amount to 12 columns.</li>
+    </ul>
+    <p>Types of classes for columns:</p>
+    <div id="sample-columns" class="row">
+        <div class="grid-12"><p>grid-12</p></div>
+        <div class="clear">&nbsp;</div>
+        <div class="grid-1">
+            <p>grid-1</p>
+        </div><div class="grid-11">
+            <p>grid-11</p>
+        </div><div class="clear">&nbsp;</div>
+        <div class="grid-2">
+            <p>grid-2</p>
+        </div><div class="grid-10">
+            <p>grid-10</p>
+        </div><div class="clear">&nbsp;</div>
+        <div class="grid-3">
+            <p>grid-3</p>
+        </div><div class="grid-9">
+            <p>grid-9</p>
+        </div><div class="clear">&nbsp;</div>
+        <div class="grid-4">
+            <p>grid-4</p>
+        </div><div class="grid-8">
+            <p>grid-8</p>
+        </div><div class="clear">&nbsp;</div>
+        <div class="grid-5">
+            <p>grid-5</p>
+        </div><div class="grid-7">
+            <p>grid-7</p>
+        </div><div class="clear">&nbsp;</div>
+        <div class="grid-6">
+            <p>grid-6</p>
+        </div><div class="grid-6">
+            <p>grid-6</p>
+        </div>
+
+        <div class="clear">&nbsp;</div>
+
+    </div>
+</div>
+
+<div id="columnes-50" class="box-header section">
+    <h3>Exemple de dues columnes</h3>
+    <div class="row">
+        <div class="grid-6">
+            <h2 class="line-b">Columna 50%</h2>
+            <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis nulla vitae fringilla pharetra. Suspendisse tristique risus ut turpis varius auctor.</i></p>
+            <p><i>Etiam mattis nulla vitae fringilla pharetra. Suspendisse tristique risus ut turpis varius auctor. Cras auctor elit ut turpis mattis, in gravida nisl convallis.</i></p>
+        </div>
+
+        <div class="grid-6">
+            <h2 class="line-b">Columna 50%</h2>
+            <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis nulla vitae fringilla pharetra. Suspendisse tristique risus ut turpis varius auctor.</i></p>
+        </div>
+    </div>
+
+    <pre>
+    <code class="html">
+&lt;!-- Exemple de dues columnes del 50% --&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;grid-6&quot;&gt;
+        (...)
+    &lt;/div&gt;
+    &lt;div class=&quot;grid-6&quot;&gt;
+        (...)
+    &lt;/div&gt;
+&lt;/div&gt;
+                </code>
+            </pre>
+</div>
+
+<div id="columnes-33" class="section box-header">
+    <h3>Exemple de tres columnes</h3>
+    <div class="row">
+        <div class="grid-4">
+            <h2 class="line-b">Columna 33%</h2>
+            <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis nulla vitae fringilla pharetra. Suspendisse tristique risus ut turpis varius auctor.</i></p>
+        </div>
+
+        <div class="grid-4">
+            <h2 class="line-b">Columna 33%</h2>
+            <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis nulla vitae fringilla pharetra. Suspendisse tristique risus ut turpis varius auctor.</i></p>
+        </div>
+
+        <div class="grid-4">
+            <h2 class="line-b">Columna 33%</h2>
+            <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis nulla vitae fringilla pharetra. Suspendisse tristique risus ut turpis varius auctor.</i></p>
+        </div>
+    </div>
+    <pre>
+    <code class="html">
+&lt;!-- Exemple de tres columnes del 33.33% --&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;grid-4&quot;&gt;
+        (...)
+    &lt;/div&gt;
+    &lt;div class=&quot;grid-4&quot;&gt;
+        (...)
+    &lt;/div&gt;
+    &lt;div class=&quot;grid-4&quot;&gt;
+        (...)
+    &lt;/div&gt;
+&lt;/div&gt;
+                </code>
+            </pre>
+</div>
+
+<div id="columnes-75" class="section box-header">
+    <h3>Exemple de columna del 75% i una del 25%</h3>
+    <div class="row">
+        <div class="grid-9">
+            <h2 class="line-b">Columna 75%</h2>
+            <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis nulla vitae fringilla pharetra. Suspendisse tristique risus ut turpis varius auctor.</i></p>
+            <p><i>Etiam mattis nulla vitae fringilla pharetra. Suspendisse tristique risus ut turpis varius auctor. Cras auctor elit ut turpis mattis, in gravida nisl convallis.</i></p>
+        </div>
+
+        <div class="grid-3">
+            <h2 class="line-b">Columna 25%</h2>
+            <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis nulla vitae fringilla pharetra. Suspendisse tristique risus ut turpis varius auctor.</i></p>
+        </div>
+    </div>
+
+    <pre>
+    <code class="html">
+&lt;!-- Exemple de columna del 75% i una del 25% --&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;grid-9&quot;&gt;
+        (...)
+    &lt;/div&gt;
+    &lt;div class=&quot;grid-3&quot;&gt;
+        (...)
+    &lt;/div&gt;
+&lt;/div&gt;
+            </code>
+        </pre>
+</div>

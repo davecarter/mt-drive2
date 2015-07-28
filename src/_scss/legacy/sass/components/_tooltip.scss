@@ -1,0 +1,14 @@
+.mt-tooltip {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3),
+              0 0 0 2px #FFF inset;
+  position: absolute;
+    top: 100%;
+    left: 50%;
+  transform: translateX(-50%);
+  min-width: 230px;
+  z-index: 110;
+
+  &:before {
+      @include css-arrow;
+  }
+}

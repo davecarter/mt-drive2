@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic' rel='stylesheet' type='text/css'>
+</head>
+
+
+<body>
+
+  <div class="topbar nav-slide clearfix">
+  <div class="content">
+    <div class="topbar_logo-wrap">
+      <a href="#"
+         class="nav-slide_open-btn hide--in-desktop"
+         data-navslide="open">
+        <span class="icon-menu"></span>
+      </a>
+      <a class="topbar_logo logo" href="index.html"><b>Drive</b></a>
+    </div>
+
+    <div class="nav-slide_mask" data-navslide="close"></div>
+
+    <header class="nav-slide_content">
+      <nav class="topbar_main-nav">
+        <ul class="nav clearfix">
+          <li>
+          <a class="nav_btn" href="legacy-start.html">Legacy Start</a>
+          </li>
+          <li>
+          <a class="nav_btn" href="legacy-grid.html">Legacy Grid</a>
+          </li>
+          <li>
+          <a class="nav_btn" href="legacy-CSS.html">Legacy CSS</a>
+          </li>
+          <li>
+          <a class="nav_btn" href="legacy-components.html">Legacy Components</a>
+          </li>
+          <li>
+            <a class="nav_btn" href="docs/motor-brand-manual.pdf" id="pdf-icon" target="_blank">Brand Manual</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+</div>
+
+
+  <div class="drv-PageHero">
+  <div class="drv-Wrapper">
+    <h1 class="drv-PageHero-title">Components</h1>
+    <div class="drv-PageHero-text">
+      <p>Reusable modules to provide modal dialog, iconography alerts.</p>
+<p>Extensible objects.</p>
+
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="drv-Wrapper">
+    <section id="cards" class="section">
+    <h2 class="line-m"><span>Cards</span></h2>
+
+    <div class="row">
+        <div class="grid-4">
+            <div class="card">
+                <img src="img/noImage.jpg" alt="" />
+                <div class="content-card">
+                    <span class="label-news fleft">label</span>
+                    <span class="icon-comentaris fright">23</span>
+                    <span class="icon-visites fright mgright20">215</span>
+                    <div class="clear"></div>
+                    <h3>Lorem ipsum dolor sit</h3>
+                </div>
+            </div>
+        </div>
+        <div class="grid-4">
+            <div class="card">
+                <img src="img/noImage.jpg" alt="" />
+                <div class="content-card">
+                    <span class="label-news fleft">label</span>
+                    <span class="icon-comentaris fright">23</span>
+                    <span class="icon-visites fright mgright20">215</span>
+                    <div class="clear"></div>
+                    <h3>Lorem ipsum dolor sit</h3>
+                </div>
+            </div>
+        </div>
+        <div class="grid-4">
+            <div class="card">
+                <img src="img/noImage.jpg" alt="" />
+                <div class="content-card">
+                    <span class="label-news fleft">label</span>
+                    <span class="icon-comentaris fright">23</span>
+                    <span class="icon-visites fright mgright20">215</span>
+                    <div class="clear"></div>
+                    <h3>Lorem ipsum dolor sit</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <pre>
+        <code class="html">
+&lt;!-- Card --&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;img src=&quot;&quot; alt=&quot;&quot; /&gt;
+    &lt;div class=&quot;content-card&quot;&gt;
+        &lt;span class=&quot;label-news fleft&quot;&gt;label&lt;/span&gt;
+        &lt;span class=&quot;icon-comentaris fright&quot;&gt;23&lt;/span&gt;
+        &lt;span class=&quot;icon-visites fright mgright20&quot;&gt;215&lt;/span&gt;
+        &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+        &lt;h3&gt;Lorem ipsum dolor sit&lt;/h3&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </code>
+    </pre>
+</section>
+<!-- CARDS End -->
+
+
+<!-- TOAST Start -->
+<section class="section">
+    <h2 class="line-m"><span>Toast</span></h2>
+    <p class="mgbot20">JS needed: <span class="class">drive.min.js</span></p>
+    <p></p>
+
+    <div style="margin:40px 0 20px">
+        <div class="row form">
+            <div class="grid-4">
+                <select id="toast-select" style="margin-bottom: 0;">
+                    <option disabled selected="selected">Select Toast Style</option>
+                    <option value="ok">Toast confirmación</option>
+                    <option value="info">Toast información</option>
+                    <option value="warning">Toast warning</option>
+                    <option value="error">Toast error </option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-toast mt-toast--info" style="display: none;">
+          <span class="icon-bell"></span>
+          <p class="mt-toast__text">Guardando</p>
+    </div>
+    <pre>
+        <code class="html">
+Settings
+showToast({
+    style : 'ok',             // Border and icon value. Possible values: ok | info | warning | error
+    icon : 'icon-ok',         // Toast icon. <a href="#icons">Icon list</a>
+    paragraph : 'Guardando',  // Text.
+    delay_time : 1500         // Time in screen,
+}]
+        </code>
+    </pre>
+</section>
+<!-- TOAST Start -->
+
+
+<!-- MODAL DIALOG Start -->
+<section class="section">
+    <h2 class="line-m"><span>Modal dialog</span></h2>
+    <p class="mgbot20">Perfect for contextual message to show only that functionality to the users in a given time.</p>
+    <p class="mgbot20">JS needed: <span class="class">drive.min.js</span></p>
+
+    <div id="dialog" class="box-header section">
+        <h3 class="title-box">Simple dialog</h3>
+        <div style="margin:40px 0 20px">
+            <a href="#exemple-dialeg"
+               class="btn btn-secondary btn-m"
+               data-modal="open">
+                <span class="icon-visites"></span>Show dialog
+            </a>
+        </div>
+
+        <div id="exemple-dialeg" class="mt-modal" data-modal="modal">
+            <div class="mt-modal__header">
+                <h3 class="mt-modal__title">Exemple de diàleg modal</h3>
+                <div class="mt-modal__close-btn modal-close" data-modal="close">
+                    <span class="icon-tancar2"></span>
+                </div>
+            </div>
+
+            <div class="mt-modal__body">
+                <div class="mt-modal__body-section">
+                    <h2>Lorem ipsum dolor sit amet!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis nulla vitae fringilla pharetra. Suspendisse tristique risus ut turpis varius auctor.</p>
+                </div>
+                <div class="mt-modal__body-section">
+                    <h3>¿Con qué periodicidad quieres recibir tu alerta?</h3>
+                </div>
+                <div class="mt-modal__body-section mt-radio">
+                    <label class="mt-radio__label"><input type="radio" name="radios" id="radio1" data-days="1" />Periodicidad cada día</label>
+                </div>
+            </div>
+
+            <div class="mt-modal__footer right">
+                <input type="button" class="btn btn-s mgright10" value="Acció secundaria" />
+                <input type="button" class="btn btn-s btn-border-dark" value="Acció alternativa" />
+            </div>
+        </div>
+
+        <pre>
+            <code class="html">
+&lt;!-- Basic dialog --&gt;
+&lt;!-- Launch dialog --&gt;
+&lt;a href=&quot;#exemple-dialeg&quot; data-modal=&quot;open&quot;&gt;Mostrar di&#224;leg&lt;/a&gt;
+&lt;!-- Content dialog --&gt;
+&lt;div id=&quot;exemple-dialeg&quot; class=&quot;mt-modal&quot; data-modal=&quot;modal&quot;&gt;
+    &lt;div class=&quot;mt-modal__header&quot;&gt;
+        &lt;h3 class=&quot;mt-modal__title&quot;&gt;Exemple de di&#224;leg modal&lt;/h3&gt;
+        &lt;div class=&quot;mt-modal__close-btn modal-close&quot; data-modal=&quot;close&quot;&gt;
+            &lt;span class=&quot;icon-tancar2&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mt-modal__body&quot;&gt;
+        &lt;div class=&quot;mt-modal__body-section&quot;&gt;
+            &lt;h2&gt;Lorem ipsum dolor sit amet!&lt;/h2&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis nulla vitae fringilla pharetra. Suspendisse tristique risus ut turpis varius auctor.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;mt-modal__body-section&quot;&gt;
+            &lt;h3&gt;¿Con qué periodicidad quieres recibir tu alerta?&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;mt-modal__body-section mt-radio&quot;&gt;
+            &lt;label class=&quot;mt-radio__label&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;radios&quot; id=&quot;radio1&quot; data-days=&quot;1&quot; /&gt;Periodicidad cada día&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mt-modal__footer right&quot;&gt;
+        &lt;input type=&quot;button&quot; class=&quot;btn btn-s&quot; value=&quot;Acci&#243; secundaria&quot; /&gt;
+        &lt;input type=&quot;button&quot; class=&quot;btn btn-s btn-border-dark&quot; value=&quot;Acci&#243; alternativa&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </code>
+    </pre>
+
+
+    <hr style="margin-top: 40px;">
+
+    <h4 style="margin-top: 20px;">Legacy markup</h4>
+    <div style="margin:40px 0 20px">
+        <a href="#exemple-dialeg-legacy"
+           class="btn btn-secondary btn-m"
+           rel="modal-dialog">
+            <span class="icon-visites"></span>Show dialog legacy
+        </a>
+    </div>
+
+    <div id="exemple-dialeg-legacy" class="modal-dialog" style="display: none;">
+        <h3 class="title-dialog">Exemple de diàleg modal<span class="modal-close icon-tancar2"></span></h3>
+        <div class="content-dialog">
+            <h2>Lorem ipsum dolor sit amet!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis nulla vitae fringilla pharetra. Suspendisse tristique risus ut turpis varius auctor.</p>
+        </div>
+
+        <div class="actions-dialog clearfix right">
+            <input type="button" class="btn btn-s mgright10" value="Acció secundaria" />
+            <input type="button" class="btn btn-s btn-border-dark" value="Acció alternativa" />
+        </div>
+    </div>
+</div>
+
+<div id="pic-dialog" class="box-header section">
+    <h3 class="title-box">Picture dialog</h3>
+    <div style="margin:40px 0 20px">
+        <a href="#exemple-img-dialeg"
+           class="btn btn-secondary btn-m"
+           data-modal="open"><span class="icon-visites"></span>Show picture dialog</a>
+    </div>
+
+
+    <div id="exemple-img-dialeg" class="mt-modal" data-modal="modal">
+        <div class="mt-modal__header">
+            <h3 class="mt-modal__title">Exemple de diàleg modal</h3>
+            <div class="mt-modal__close-btn modal-close" data-modal="close">
+                <span class="icon-tancar2"></span>
+            </div>
+        </div>
+
+        <div class="mt-modal__body mt-media clearfix">
+            <div class="mt-media__media">
+                <span class="icon-registre mt-media__media-bg-icon"></span>
+            </div>
+
+            <div class="mt-media__content mt-modal__body-section">
+                <h2>Lorem ipsum dolor sit amet!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis nulla vitae fringilla pharetra. Suspendisse tristique risus ut turpis varius auctor.</p>
+            </div>
+        </div>
+
+        <div class="mt-modal__footer right">
+            <input type="button" class="btn btn-s mgright10" value="Acció secundaria" />
+            <input type="button" class="btn btn-s btn-border-dark" value="Acció alternativa" />
+        </div>
+    </div>
+
+    <pre>
+        <code class="html">
+&lt;!-- Picture dialog --&gt;
+&lt;!-- Launch dialog --&gt;
+&lt;a href=&quot;#exemple-dialeg&quot; rel=&quot;modal-dialog&quot;&gt;Mostrar di&#224;leg&lt;/a&gt;
+&lt;!-- Content dialog --&gt;
+
+
+&lt;div id=&quot;exemple-img-dialeg&quot; class=&quot;mt-modal&quot; data-modal=&quot;modal&quot;&gt;
+    &lt;div class=&quot;mt-modal__header&quot;&gt;
+        &lt;h3 class=&quot;mt-modal__title&quot;&gt;Exemple de di&#224;leg modal&lt;/h3&gt;
+        &lt;div class=&quot;mt-modal__close-btn modal-close&quot; data-modal=&quot;close&quot;&gt;
+            &lt;span class=&quot;modal-close icon-tancar2&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mt-modal__body&quot;
+
+    &lt;div class=&quot;mt-modal__body mt-media clearfix&quot;&gt;
+        &lt;div class=&quot;mt-media__media&quot;&gt;
+            &lt;span class=&quot;icon-registre mt-media__media-bg-icon&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;mt-media__content mt-modal__body-section&quot;&gt;
+            &lt;h2&gt;Lorem ipsum dolor sit amet!&lt;/h2&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis nulla vitae fringilla pharetra. Suspendisse tristique risus ut turpis varius auctor.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div>
+
+    &lt;div class=&quot;mt-modal__footer right&quot;&gt;
+        &lt;input type=&quot;button&quot; class=&quot;btn btn-s&quot; value=&quot;Acci&#243; secundaria&quot; /&gt;
+        &lt;input type=&quot;button&quot; class=&quot;btn btn-s btn-border-dark&quot; value=&quot;Acci&#243; alternativa&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </code>
+        </pre>
+
+        <hr style="margin-top: 40px;">
+
+        <h4 style="margin-top: 20px;">Legacy markup</h4>
+        <div style="margin:40px 0 20px">
+            <a href="#exemple-img-dialeg-legacy"
+               class="btn btn-secondary btn-m"
+               rel="modal-dialog">
+                <span class="icon-visites"></span>Show picture dialog legacy
+            </a>
+        </div>
+
+        <div id="exemple-img-dialeg-legacy" class="modal-dialog row" style="display: none;">
+            <h3 class="title-dialog">Exemple de diàleg modal<span class="modal-close icon-tancar2"></span></h3>
+            <span class="icon-registre pic-dialog grid-4"></span>
+            <div class="content-dialog grid-8">
+                <h2>Lorem ipsum dolor sit amet!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis nulla vitae fringilla pharetra. Suspendisse tristique risus ut turpis varius auctor.</p>
+            </div>
+            <div class="clear"></div>
+
+            <div class="actions-dialog right">
+                <input type="button" class="btn btn-s mgright10" value="Acció secundaria" />
+                <input type="button" class="btn btn-s btn-border-dark" value="Acció alternativa" />
+            </div>
+        </div>
+    </div>
+</section>
+<!-- MODAL DIALOG End -->
+
+
+<!-- PAGINATION Start -->
+<section id="paginacio-basic" class="section">
+    <h2 class="line-m"><span>Pagination</span></h2>
+
+    <div class="box-header">
+        <ul class="pagination">
+            <li><a class="pprev" href="#">&laquo; Anterior</a></li>
+            <li><a href="#">1</a></li>
+            <li class="selected">2</li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a class="pnext" href="#">Siguiente &raquo;</a></li>
+        </ul>
+        <div class="clear"></div>
+        <pre>
+            <code class="html">
+&lt;!-- Paginació --&gt;
+&lt;ul class="pagination"&gt;
+    &lt;li&gt;&lt;a class="pprev" href="#"&gt;&laquo; Anterior&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="selected"&gt;2&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;6&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;7&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;8&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;9&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;10&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="pnext" href="#"&gt;Siguiente &raquo;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+            </code>
+        </pre>
+    </div>
+</section>
+<!-- PAGINATION End -->
+
+
+<!-- ALERTS Start -->
+<section id="alerts" class="section">
+    <h2 class="line-m"><span>Alerts</span></h2>
+
+    <div class="box-header">
+        <div class="alert alert-ok">
+            <span class="icon-ok"></span><strong>¡Mensaje enviado!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+        <div class="alert alert-info">
+            <span class="icon-visites"></span><strong>Información:</strong> Lorem ipsum dolor sit amet, consectetur elit.
+        </div>
+        <div class="alert alert-warning">
+            <span class="icon-bell"></span><strong>Cuidao!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+        <div class="alert alert-error">
+            <span class="icon-alerta"></span><strong>Ooops!</strong> Lorem ipsum dolor sit amet.
+        </div>
+        <div class="clear"></div>
+        <pre>
+            <code class="html">
+&lt;!-- Missatge confirmació --&gt;
+&lt;div class=&quot;alert alert-ok&quot;&gt;
+    &lt;strong&gt;&#161;Mensaje enviado!&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/div&gt;
+
+&lt;!-- Missatge informació --&gt;
+&lt;div class=&quot;alert alert-info&quot;&gt;
+    &lt;strong&gt;Informaci&#243;n:&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetur elit.
+&lt;/div&gt;
+&lt;!-- Missatge warning --&gt;
+&lt;div class=&quot;alert alert-warning&quot;&gt;
+    &lt;strong&gt;Cuidao!&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/div&gt;
+&lt;!-- Missatge error --&gt;
+&lt;div class=&quot;alert alert-error&quot;&gt;
+    &lt;strong&gt;Ooops!&lt;/strong&gt; Lorem ipsum dolor sit amet.
+&lt;/div&gt;
+            </code>
+        </pre>
+    </div>
+</section>
+<!-- ALERTS End -->
+
+
+<!-- ICONS Start -->
+<section id="icons" class="section">
+    <h2 class="line-m"><span>Icons</span></h2>
+    <p>
+        Iconografia carregada amb <i>webfont</i>.<br />
+        Per afegir la icona <span class="icon-likeblack"></span>, simplement haurem d'afegir un element <span class="class">span class="icon-likeblack"</span>.<br />
+        Després podrem definir el tamany amb la propietat <span class="class">font-size</span> i el color amb <span class="class">color</span>.
+    </p>
+
+    <div class="box-header pd0">
+        <ul id="list-icons">
+            <li><span class="icon-alerta"></span>icon-alerta</li>
+            <li><span class="icon-android"></span>icon-android</li>
+            <li><span class="icon-anunci"></span>icon-anunci</li>
+            <li><span class="icon-apple"></span>icon-apple</li>
+            <li><span class="icon-bell"></span>icon-bell</li>
+            <li><span class="icon-borrar"></span>icon-borrar</li>
+            <li><span class="icon-calendari"></span>icon-calendari</li>
+            <li><span class="icon-candau-obert"></span>icon-candau-obert</li>
+            <li><span class="icon-candau"></span>icon-candau</li>
+            <li><span class="icon-check"></span>icon-check</li>
+            <li><span class="icon-coche"></span>icon-coche</li>
+            <li><span class="icon-comentaris"></span>icon-comentaris</li>
+            <li><span class="icon-contactar"></span>icon-contactar</li>
+            <li><span class="icon-down"></span>icon-down</li>
+            <li><span class="icon-dreta"></span>icon-dreta</li>
+            <li><span class="icon-editar-perfil"></span>icon-editar-perfil</li>
+            <li><span class="icon-editar"></span>icon-editar</li>
+            <li><span class="icon-esquerra"></span>icon-esquerra</li>
+            <li><span class="icon-estadistiques"></span>icon-estadistiques</li>
+            <li><span class="icon-estadistiques2"></span>icon-estadistiques2</li>
+            <li><span class="icon-estrella2"></span>icon-estrella2</li>
+            <li><span class="icon-facebook"></span>icon-facebook</li>
+            <li><span class="icon-fichas-tecnicas"></span>icon-fichas-tecnicas</li>
+            <li><span class="icon-filtros"></span>icon-filtros</li>
+            <li><span class="icon-fotos"></span>icon-fotos</li>
+            <li><span class="icon-fotos2"></span>icon-fotos2</li>
+            <li><span class="icon-fullscreen"></span>icon-fullscreen</li>
+            <li><span class="icon-ghost"></span>icon-ghost</li>
+            <li><span class="icon-google"></span>icon-google</li>
+            <li><span class="icon-graella"></span>icon-graella</li>
+            <li><span class="icon-imprimir"></span>icon-imprimir</li>
+            <li><span class="icon-info"></span>icon-info</li>
+            <li><span class="icon-like"></span>icon-like</li>
+            <li><span class="icon-likeblack"></span>icon-likeblack</li>
+            <li><span class="icon-link"></span>icon-link</li>
+            <li><span class="icon-location"></span>icon-location</li>
+            <li><span class="icon-loop"></span>icon-loop</li>
+            <li><span class="icon-lupa"></span>icon-lupa</li>
+            <li><span class="icon-mail"></span>icon-mail</li>
+            <li><span class="icon-mailetter"></span>icon-mailetter</li>
+            <li><span class="icon-mailopen"></span>icon-mailopen</li>
+            <li><span class="icon-menu"></span>icon-menu</li>
+            <li><span class="icon-nolike"></span>icon-nolike</li>
+            <li><span class="icon-noticies"></span>icon-noticies</li>
+            <li><span class="icon-ok"></span>icon-ok</li>
+            <li><span class="icon-ordenar"></span>icon-ordenar</li>
+            <li><span class="icon-play"></span>icon-play</li>
+            <li><span class="icon-portatil"></span>icon-portatil</li>
+            <li><span class="icon-pregunta"></span>icon-pregunta</li>
+            <li><span class="icon-premi"></span>icon-premi</li>
+            <li><span class="icon-refresh"></span>icon-refresh</li>
+            <li><span class="icon-registre"></span>icon-registre</li>
+            <li><span class="icon-reload"></span>icon-reload</li>
+            <li><span class="icon-servicios"></span>icon-servicios</li>
+            <li><span class="icon-share"></span>icon-share</li>
+            <li><span class="icon-smartphone"></span>icon-smartphone</li>
+            <li><span class="icon-suggest"></span>icon-suggest</li>
+            <li><span class="icon-suma"></span>icon-suma</li>
+            <li><span class="icon-tablet"></span>icon-tablet</li>
+            <li><span class="icon-talk"></span>icon-talk</li>
+            <li><span class="icon-tancar"></span>icon-tancar</li>
+            <li><span class="icon-tancar2"></span>icon-tancar2</li>
+            <li><span class="icon-telefon"></span>icon-telefon</li>
+            <li><span class="icon-telefon2"></span>icon-telefon2</li>
+            <li><span class="icon-time"></span>icon-time</li>
+            <li><span class="icon-tornar"></span>icon-tornar</li>
+            <li><span class="icon-twitter"></span>icon-twitter</li>
+            <li><span class="icon-up"></span>icon-up</li>
+            <li><span class="icon-user-following"></span>icon-user-following</li>
+            <li><span class="icon-user-unfollow"></span>icon-user-unfollow</li>
+            <li><span class="icon-user"></span>icon-user</li>
+            <li><span class="icon-users"></span>icon-users</li>
+            <li><span class="icon-video"></span>icon-video</li>
+            <li><span class="icon-visites"></span>icon-visites</li>
+            <li><span class="icon-xarxes"></span>icon-xarxes</li>
+            <li><span class="icon-youtube"></span>icon-youtube</li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</section>
+<!-- ICONS End -->
+
+
+  </div>
+
+  <div id="right-nav" class="side">
+    <ul class="side-nav list">
+        <li>
+            <span>Drive CDN</span>
+            <ul>
+                <li><a class="go" href="#install-drive">Links</a></li>
+            </ul>
+        </li>
+        <li>
+            <span>Drive</span>
+            <ul>
+                <li><a class="go" href="#estructura-drive">Structure</a></li>
+            </ul>
+        </li>
+        <li>
+            <span>SASS</span>
+            <ul>
+                <li><a class="go" href="#arquitectura-sass">Architecture</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+  <footer>
+    <div class="content">
+        <div class="fleft">
+            <nav>
+                <ul class="nav">
+                    <li><a class="logo" href="index.html"><b>Drive</b></a></li>
+                    <li><a href="start.html">Start</a></li>
+                    <li><a href="grid.html">Grid</a></li>
+                    <li><a href="CSS.html">CSS</a></li>
+                    <li><a href="components.html">Components</a></li>
+                    <li><a href="docs/cochesGuideLines.pdf" id="pdf-icon" target="_blank">Brand Manual</a></li>
+                </ul>
+            </nav>
+            <p class="mgtop20">© 2014 All Rights Reserved Motor UX ;)</p>
+        </div>
+        <div class="fright mgtop10"><img src="img/logo-footer.png" /></div>
+        <div class="clear"></div>
+    </div>
+</footer>
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script src="js/drive.min.js"></script>
+</body>
+</html>

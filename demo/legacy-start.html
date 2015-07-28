@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic' rel='stylesheet' type='text/css'>
+</head>
+
+
+<body>
+
+  <div class="topbar nav-slide clearfix">
+  <div class="content">
+    <div class="topbar_logo-wrap">
+      <a href="#"
+         class="nav-slide_open-btn hide--in-desktop"
+         data-navslide="open">
+        <span class="icon-menu"></span>
+      </a>
+      <a class="topbar_logo logo" href="index.html"><b>Drive</b></a>
+    </div>
+
+    <div class="nav-slide_mask" data-navslide="close"></div>
+
+    <header class="nav-slide_content">
+      <nav class="topbar_main-nav">
+        <ul class="nav clearfix">
+          <li>
+          <a class="nav_btn" href="legacy-start.html">Legacy Start</a>
+          </li>
+          <li>
+          <a class="nav_btn" href="legacy-grid.html">Legacy Grid</a>
+          </li>
+          <li>
+          <a class="nav_btn" href="legacy-CSS.html">Legacy CSS</a>
+          </li>
+          <li>
+          <a class="nav_btn" href="legacy-components.html">Legacy Components</a>
+          </li>
+          <li>
+            <a class="nav_btn" href="docs/motor-brand-manual.pdf" id="pdf-icon" target="_blank">Brand Manual</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+</div>
+
+
+  <div class="drv-PageHero">
+  <div class="drv-Wrapper">
+    <h1 class="drv-PageHero-title">How does it work?</h1>
+    <div class="drv-PageHero-text">
+      <p>Drive is a CSS framework served from a CDN hosted on AWS.</p>
+<p>Framework allows the use of any project and makes easy maintenance.</p>
+
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="drv-Wrapper">
+    <div id="install-drive" class="section">
+    <h2 class="line-m"><span>Drive CDN</span></h2>
+    <div class="">
+        <p>Drive uses Amazon CloudFront. A web service for content delivery. An easy way to distribute content to end users with low latency and high data transfer speeds.</p>
+        <p>To use framework insert:</p>
+        <pre>
+            <code class="html">
+&lt;!-- Últim compilat i minificat --&gt;
+&lt;link href="http://drive.coches.net/css/drive.min.css" rel="stylesheet"&gt;
+
+&lt;!-- JS necessari si volem utilitzar certs components --&gt;
+&lt;script src="http://drive.coches.net/js/drive.min.js"&gt;&lt;/script&gt;
+            </code>
+        </pre>
+    </div>
+</div>
+
+
+
+<div id="estructura-drive" class="section">
+  <h2 class="line-m"><span>Drive structure</span></h2>
+  <div class="box-header">
+      <p class="mgbot20">Drive has the structure of a microsite. We found the following structure, where in the folder <span class="class">css/</span> locate the file compiled and minimized <span class="class">drive.min.css</span>. This is the only css file to load for projects that want to use with Drive. In order to be able to use components like <i>dropdown list</i>, the <i>responsive navbar</i> or <i>modal dialog</i> should load the file <span class="class">js/drive.min.js</span> (3kb).</p>
+          <pre><code class="html">
+Drive/
+  ├── index.html
+  │
+  ├── css/
+  │     ├── guide/
+  │     ├── sass/
+  │     ├── drive.css
+  │     └── drive.min.css
+  │
+  ├── docs/
+  │
+  ├── fonts/
+  │
+  │── img/
+  │     └── sprite-drive.png
+  │
+  └── js/
+        └── drive.js
+
+        </code></pre>
+    </div>
+</div>
+
+
+<div id="arquitectura-sass" class="section">
+    <h2 class="line-m"><span>SASS architecture</span></h2>
+    <div class="box-header">
+        <p><a href="http://sass-lang.com/guide">SASS</a> allows us to use features that do not exist in CSS as variables, nesting, mixins and functions. CSS files end up being very large and complex to maintain, which helps us a CSS preprocessor. Among the main advantages of the power structure <a href="http://sass-lang.com/guide">SASS</a> find our styles in separate files.</p>
+        <p>We structured files SASS three file types: basic, partial and components.</p>
+        <ul class="list list-rb mgtop20 mgbot20">
+            <li>El directori <span class="class">base/</span> esta reservat per el codi SASS que inicialitza i reseteja els elements HTML (<span class="class">_init.scss</span>). També allotja les classes genèriques que s'utilitzaran a qualsevol pàgina així com mixins i funcions (<span class="class">_utils.scss</span>). I finalment la declaració de variables globals (<span class="class">_variables.scss</span>).</li>
+            <li>El directori <span class="class">partials/</span> es on bàsicament es genera el nostre CSS. Separem el codi en petites categories com ara tipografies, buttons, forms.</li>
+            <li>Seguint els principis <a href="http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/">Object Oriented CSS (OOCSS)</a> com a metodologia per crear codi reusable, escalable i fàcil de mantenir, hem creat una serie de components.</li>
+            <li>En <span class="class">layout<span> encontraremos aquellas secciones de la web que se repiten en todas las páginas y están formadas por varios componentes.</li>
+        </ul>
+        <pre><code class="html">
+sass/
+  ├── drive.scss
+  │
+  ├── base/
+  │     ├── _init.css
+  │     ├── _utils.css
+  │     └── _variables.css
+  │
+  ├── partials/
+  │     ├── _buttons.scss
+  │     ├── _fonts.scss
+  │     ├── _forms.scss
+  │     ├── _grid.scss
+  │     └── _tables.scss
+  │
+  ├── components/
+  │     ├── _alerts.scss
+  │     ├── _boxes.scss
+  │     ├── _cards.scss
+  │     ├── _dropdown.scss
+  │     ├── _icons.scss
+  │     ├── _modal.scss
+  │     ├── _navs.scss
+  │     ├── _pagination.scss
+  │     └── _user-thumb.scss
+  │
+  └── layout/
+        ├── _footer.scss
+        └── _topbar.scss
+        </code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <div id="right-nav" class="side">
+    <ul class="side-nav list">
+        <li>
+            <span>Drive CDN</span>
+            <ul>
+                <li><a class="go" href="#install-drive">Links</a></li>
+            </ul>
+        </li>
+        <li>
+            <span>Drive</span>
+            <ul>
+                <li><a class="go" href="#estructura-drive">Structure</a></li>
+            </ul>
+        </li>
+        <li>
+            <span>SASS</span>
+            <ul>
+                <li><a class="go" href="#arquitectura-sass">Architecture</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+  <footer>
+    <div class="content">
+        <div class="fleft">
+            <nav>
+                <ul class="nav">
+                    <li><a class="logo" href="index.html"><b>Drive</b></a></li>
+                    <li><a href="start.html">Start</a></li>
+                    <li><a href="grid.html">Grid</a></li>
+                    <li><a href="CSS.html">CSS</a></li>
+                    <li><a href="components.html">Components</a></li>
+                    <li><a href="docs/cochesGuideLines.pdf" id="pdf-icon" target="_blank">Brand Manual</a></li>
+                </ul>
+            </nav>
+            <p class="mgtop20">© 2014 All Rights Reserved Motor UX ;)</p>
+        </div>
+        <div class="fright mgtop10"><img src="img/logo-footer.png" /></div>
+        <div class="clear"></div>
+    </div>
+</footer>
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script src="js/drive.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+﻿// CAIXES
+.boxed{
+    padding:20px;
+    background-color:#fff;
+    box-shadow:0 1px 4px rgba(0,0,0,.15); 
+}
+.box-header{
+    border:1px solid #dedede; 
+    padding:15px 20px 20px 20px;  
+    margin-bottom:20px;
+}
+.box-header .title-box {
+	color:#333; 
+    background-color:#eee; 
+    margin:-15px -20px 15px; 
+    padding:10px 20px;
+}
