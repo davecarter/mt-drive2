@@ -2,7 +2,8 @@ var path = {
     src: 'src',
     dist: 'demo',
     tmp: '.tmp',
-    stylesSrc: 'src/_scss'
+    stylesSrc: 'src/_scss',
+    zeus: 'zeus'
 }
 
 var gulp = require('gulp'),
@@ -17,7 +18,8 @@ var gulp = require('gulp'),
     del = require('del'),
     //changed     = require('gulp-changed'),
     cp = require('child_process'),
-    runSequence = require('run-sequence');
+    runSequence = require('run-sequence'),
+    yaml = require('gulp-yaml');
 
 
 // ERROR HANDLER ========================================
@@ -85,6 +87,41 @@ gulp.task('browsersync', function() {
         port: 8000,
         files: [  path.dist + '/css/*.css']
     })
+});
+
+
+// ZEUS  ================================================
+gulp.task('zeus-clean', function() {
+    del(path.zeus);
+});
+gulp.task('zeus-html', function() {
+    return gulp.src([
+        path.src + '/_includes/**/*.html',
+        '!' + path.src + '/_includes/**/drv-Card.html'
+
+    ])
+        .pipe(gulp.dest( path.zeus ))
+});
+gulp.task('zeus-scss', function() {
+    return gulp.src(path.src + '/_includes/**/*.scss')
+        .pipe(gulp.dest( path.zeus ))
+});
+gulp.task('zeus-json', function() {
+    gulp.src(path.src + '/_includes/**/*.yml')
+        .pipe(yaml({
+            pretty: true
+        }))
+        .pipe(gulp.dest( path.zeus ))
+});
+gulp.task('zeus', function(callback) {
+    runSequence(
+        'zeus-clean',
+        [
+            'zeus-html',
+            'zeus-scss',
+            'zeus-json'
+        ],
+    callback);
 });
 
 

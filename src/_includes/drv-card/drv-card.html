@@ -1,4 +1,21 @@
-<span data-zeus="version">{{ site.data[component][component].version }}</span>
-<h1 data-zeus="title">{{ site.data[component][component].title }}</h1>
-<p data-zeus="description">{{ site.data[component][component].description }}</p>
+{% capture component_url %}{{component}}/{{component}}.html{% endcapture %}
+
+<section class="drv-Card">
+  <div class="drv-Card-section">
+    <h2 class="drv-Card-title"><span>{{ site.data.[component].[component].title }}</span></h2>
+    {% if site.data.[component].[component].description %}
+      <p>{{ site.data.[component].[component].description }}</p>
+    {% endif %}
+    {% include {{ component_url }} %}
+  </div>
+
+  {% if site.data.[component].[component].Code %}
+  <div class="drv-Card-code">
+    <pre><code class="html">
+{{ site.data.[component].[component].Code }}
+    </code></pre>
+
+  </div>
+    {% endif %}
+</section>
 

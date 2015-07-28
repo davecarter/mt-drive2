@@ -1,0 +1,9 @@
+title: 'Colors'
+
+colorList:
+  - name: 'Red'
+    code: '#e74c3d'
+  - name: 'Blue'
+    code: '#4585f2'
+  - name: 'Turquoise'
+    code: '#007a87'
