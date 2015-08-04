@@ -5,8 +5,10 @@
 
 <body>
 
+  {% assign component = 'ldrv-Topbar' %}
   {% include ldrv-Topbar/ldrv-Topbar.html %}
 
+  {% assign component = 'drv-PageHero' %}
   {% include drv-PageHero/drv-PageHero.html %}
 
 
@@ -14,13 +16,16 @@
     {{ content }}
   </div>
 
+  {% assign component = 'ldrv-Sidebar' %}
   {% include ldrv-Sidebar/ldrv-Sidebar.html %}
 
+  {% assign component = 'ldrv-Footer' %}
   {% include ldrv-Footer/ldrv-Footer.html %}
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="js/drive.min.js"></script>
 </body>
 </html>

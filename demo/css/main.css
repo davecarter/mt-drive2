@@ -2802,6 +2802,109 @@ header .content {
 .drv-ColorSample-code {
   font-weight: 600; }
 
+.mt-Modal {
+  background-color: #f5f0ec;
+  display: none;
+  margin: 0 auto;
+  opacity: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 600px;
+  z-index: -1;
+  -webkit-animation: moveUpFadeIn 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15);
+  animation: moveUpFadeIn 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15); }
+  @media only screen and (min-width: 480px) {
+    .mt-Modal {
+      top: 50%;
+      bottom: auto;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 80%;
+      max-height: 90%; } }
+  .mt-Modal-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5rem;
+    z-index: 100; }
+    @media only screen and (min-width: 480px) {
+      .mt-Modal-header {
+        position: relative;
+        height: auto; } }
+  .mt-Modal-title {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+    @media only screen and (min-width: 480px) {
+      .mt-Modal-title {
+        white-space: normal; } }
+  .mt-Modal-closeBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0; }
+  .mt-Modal-body {
+    overflow: auto;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%; }
+    @media only screen and (min-width: 480px) {
+      .mt-Modal-body {
+        position: static;
+        padding: 0; } }
+
+.mt-Modal {
+  outline: 1px solid lime;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2); }
+  .mt-Modal-header {
+    background-color: #4585f2;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 3.65rem; }
+  .mt-Modal-title {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5rem; }
+  .mt-Modal-closeBtn {
+    color: #FFF;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem; }
+  .mt-Modal-bodySection {
+    background-color: #f5f0ec;
+    border-bottom: 1px solid #c7c3c0;
+    padding: 1.25rem; }
+    .mt-Modal-bodySection:last-child {
+      border-bottom: 0; }
+    .mt-Modal-bodySection > :last-child {
+      margin-bottom: 0; }
+  .mt-Modal-footer {
+    background-color: #f5f0ec;
+    border-top: 1px solid #c7c3c0;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    text-align: right; }
+
 .btn {
   background-color: #e74c3d;
   border: 1px solid transparent;

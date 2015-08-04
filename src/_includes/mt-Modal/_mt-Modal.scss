@@ -1,0 +1,292 @@
+$bg-Modal: $lighter-grey-color;
+$bg-Modal-header: $blue-color;
+$color-Modal-header: #FFF;
+
+$z-Modal-header: 100;
+
+// MODAL SUI
+// ----------------------------------------------------------------------------
+.mt-Modal {
+  background-color: $bg-Modal;
+  display: none;
+  margin: 0 auto;
+  opacity: 0;
+  overflow: auto;
+  position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  width: 100%;
+  max-width: 600px;
+  z-index: -1;
+
+  -webkit-animation: moveUpFadeIn .3s cubic-bezier(0.51,.92,.24,1.15);
+          animation: moveUpFadeIn .3s cubic-bezier(0.51,.92,.24,1.15);
+
+  @media only screen and (min-width: $mq-mobile-landscape) {
+      top: 50%;
+      bottom: auto;
+    transform: translateY(-50%);
+    width: 80%;
+    max-height: 90%;
+  }
+
+  // MODAL HEADER
+  // --------------------------------------------------------
+  &-header {
+    position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+    width: 100%;
+    height: 3.5rem;
+    z-index: $z-Modal-header;
+
+    @media only screen and (min-width: $mq-mobile-landscape) {
+      position: relative;
+      height: auto;
+    }
+  }
+  &-title {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    @media only screen and (min-width: $mq-mobile-landscape) {
+      white-space: normal;
+    }
+  }
+  &-closeBtn {
+    cursor: pointer;
+    position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+//         transition: all 0.2s ease-out;
+
+//         &:hover {
+//             background: rgba(255,255,255,.2);
+//         }
+  }
+
+
+  // MODAL BODY
+  // --------------------------------------------------------
+  &-body {
+      overflow: auto;
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+      position: absolute;
+        top: 0;
+        bottom: 0;
+      width: 100%;
+
+      @media only screen and (min-width: $mq-mobile-landscape) {
+        position: static;
+        padding: 0;
+      }
+    }
+
+
+}
+
+// MODAL MOTOR
+// ----------------------------------------------------------------------------
+// .is--modal-open {
+//     @media only screen and (max-width: $mq-mobile-landscape) {
+//         overflow: hidden;
+//         // position: fixed;
+//             // top: 0;
+//             // bottom: 0;
+//         width: 100%;
+//     }
+// }
+
+
+.mt-Modal {
+  outline: 1px solid lime;
+  box-shadow: 0 6px 6px rgba(0,0,0,.2);
+
+//     .is--modal-open & {
+//         opacity: 1;
+//         z-index: 100010;
+//     }
+
+
+  // MODAL HEADER
+  // --------------------------------------------------------
+  &-header {
+    background-color: $bg-Modal-header;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 3.65rem;
+  }
+  &-title {
+      color: $color-Modal-header;
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 1.5rem;
+  }
+  &-closeBtn {
+    color: $color-Modal-header;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
+
+  // MODAL BODY
+  // --------------------------------------------------------
+  &-body {
+  }
+  &-bodySection {
+    background-color: $lighter-grey-color;
+    border-bottom: 1px solid $grey-color;
+    padding: 1.25rem;
+
+    &:last-child  { border-bottom: 0; }
+    > :last-child { margin-bottom: 0; }
+
+//         &.mt-radio {
+//             padding: 0;
+//         }
+  }
+
+
+
+  // MODAL FOOTER
+  // --------------------------------------------------------
+  &-footer {
+    background-color: $lighter-grey-color;
+    border-top: 1px solid $grey-color;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    text-align: right;
+
+//         @media only screen and (max-width: $mq-mobile-landscape) {
+//             padding: 12px;
+//             position: fixed;
+//                 bottom: 0;
+//             text-align: center;
+//             width: 100%;
+//         }
+  }
+}
+
+
+
+
+
+// // MEDIA OBJECT
+// // ----------------------------------------------------------------------------
+// .mt-media {
+//     display: flex;
+//     align-items: stretch;
+
+//     @media only screen and (max-width: $mq-mobile-landscape) {
+//         display: block;
+//     }
+
+//     &__media {
+//         display: flex;
+//         align-items: center;
+//         background-color: white;
+//         float: left;
+//         width: 33.333%;
+
+//         @media only screen and (max-width: $mq-mobile-landscape) {
+//             float: none;
+//             width: 100%;
+//         }
+//     }
+//     &__media-bg-icon {
+//         color: #666;
+//         display: block;
+//         font-size: 100px;
+//         margin: 0 auto;
+//         text-align: center;
+//     }
+//     &__content {
+//         float: right;
+//         width: 66.666%;
+
+//         @media only screen and (max-width: $mq-mobile-landscape) {
+//             float: none;
+//             width: 100%;
+//         }
+//     }
+
+// }
+
+
+
+// // OLD CLASSES MAPPING
+// // ----------------------------------------------------------------------------
+// .modal-dialog {
+//     @extend .mt-modal;
+//     background-color: white;
+//     display: block;
+//     margin: 0;
+//     opacity: 1;
+//     position: static;
+//         top: 0;
+//     transform: translateY(0);
+//     -webkit-animation: moveUpFadeInLegacy .3s cubic-bezier(0.51,.92,.24,1.15);
+//             animation: moveUpFadeInLegacy .3s cubic-bezier(0.51,.92,.24,1.15);
+
+//     &.row {
+//         margin: 0;
+//     }
+
+//     @media only screen and (max-width: $mq-mobile-landscape) {
+//         margin-top: 0 !important;
+//             top: 0 !important;
+//     }
+// }
+// .title-dialog {
+//     @extend .mt-modal__header;
+//     @extend .mt-modal__title;
+// }
+// .modal-close {
+//     @extend .mt-modal__close-btn;
+// }
+// .content-dialog {
+//     @extend .mt-modal__body;
+//     @extend .mt-modal__body-section;
+//     display: block;
+//     margin: 0;
+//     border-bottom: 0;
+
+//     @media only screen and (max-width: $mq-mobile-landscape) {
+//         &.grid-8 {
+//             position: static;
+//         }
+//     }
+// }
+// .actions-dialog {
+//     @extend .mt-modal__footer;
+// }
+// .pic-dialog {
+//     @extend .mt-media__media;
+//     width: 33.333%;
+
+//     @media only screen and (max-width: $mq-mobile-landscape) {
+//         position: static;
+//         margin-top: 56px;
+//     }
+
+//     &::before {
+//         @extend .mt-media__media-bg-icon;
+//     }
+// }
+// #overlay {
+//     @extend .mt-overlay;
+//     display: none;
+// }

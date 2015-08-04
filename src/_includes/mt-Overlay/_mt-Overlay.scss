@@ -1,0 +1,34 @@
+$bg-Overlay: #000;
+$max-opacity-Overlay: 0.7;
+
+$z-Overlay: 100;
+
+
+// OVERLAY SUI
+// ----------------------------------------------------------------------------
+.mt-Overlay {
+  cursor: pointer;
+  opacity: 0;
+  position: fixed;
+    top: 0;
+    left: 0;
+//     transition: z-index 0.1s 0.2s,
+//                 opacity 0.2s ease-out;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  .is--modal-open & {
+    opacity: $max-opacity-Overlay;
+//         transition: z-index 0.1s,
+//                     opacity 0.2s 0.1s ease-out;
+    z-index: $z-Overlay;
+  }
+}
+
+
+// OVERLAY MOTOR
+// ----------------------------------------------------------------------------
+.mt-Overlay {
+  background-color: $bg-Overlay;
+}

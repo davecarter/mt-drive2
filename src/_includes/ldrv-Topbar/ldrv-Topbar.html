@@ -14,21 +14,13 @@
     <header class="nav-slide_content">
       <nav class="topbar_main-nav">
         <ul class="nav clearfix">
-          <li>
-          <a class="nav_btn" href="legacy-start.html">Legacy Start</a>
-          </li>
-          <li>
-          <a class="nav_btn" href="legacy-grid.html">Legacy Grid</a>
-          </li>
-          <li>
-          <a class="nav_btn" href="legacy-CSS.html">Legacy CSS</a>
-          </li>
-          <li>
-          <a class="nav_btn" href="legacy-components.html">Legacy Components</a>
-          </li>
-          <li>
-            <a class="nav_btn" href="docs/motor-brand-manual.pdf" id="pdf-icon" target="_blank">Brand Manual</a>
-          </li>
+
+          {% for item in site.data.[component].data.menu.[page.version] %}
+            <li>
+              <a href="{{ item.href }}" class="nav_btn">{{ item.text }}</a>
+            </li>
+          {% endfor %}
+
         </ul>
       </nav>
     </header>
