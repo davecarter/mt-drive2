@@ -4,7 +4,7 @@ class JQueryBusEvents extends BusEvents{
     this.$ = $;
   }
   on(event, fn) {
-    this.$(document).on(event, fn)
+    this.$(document).on(event, fn);
   }
 
   emit(event, ...data){

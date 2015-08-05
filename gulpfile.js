@@ -87,6 +87,7 @@ var gulp = require('gulp'),
         return gulp.src([
                 path.src + '/_js/BusEvents.js',
                 path.src + '/_js/JQueryBusEvents.js',
+                path.src + '/_js/mediator.js',
                 path.src + '/_includes/**/*.js'
             ])
             .pipe(concat('drive.min.js'))

@@ -1,7 +1,7 @@
-<div id="exemple-dialeg"
+<div id="example-modal"
      class="mt-Modal"
      data-modal="modal"
-     style="display: block; opacity: 1; position: static; transform: none; z-index: 1;">
+     style="">
 
     <div class="mt-Modal-header">
         <h3 class="mt-Modal-title">{{ site.data.[component].data.modal_title }}</h3>
@@ -16,6 +16,6 @@
 
     <div class="mt-Modal-footer">
         <input type="button" class="btn btn-s mgright10" value="Acció secundaria">
-        <input type="button" class="btn btn-s btn-border-dark" value="Acció alternativa">
+        <button class="btn btn-s btn-border-dark" data-modal="close">Acció alternativa</button>
     </div>
 </div>

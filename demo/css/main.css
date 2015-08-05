@@ -2869,6 +2869,9 @@ header .content {
 .mt-Modal {
   outline: 1px solid lime;
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2); }
+  .is--modal-open .mt-Modal {
+    opacity: 1;
+    z-index: 100010; }
   .mt-Modal-header {
     background-color: #4585f2;
     padding-top: 1rem;

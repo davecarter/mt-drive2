@@ -76,6 +76,8 @@
     
 
 
+
+
 <section class="drv-Card">
   <div class="drv-Card-section">
     <h2 class="drv-Card-title"><span>Modal dialog</span></h2>
@@ -84,10 +86,21 @@
 <p>JS needed: <code>drive.min.js</code></p>
 </p>
     
-    <div id="exemple-dialeg"
+
+    
+      <div class="drv-Card-section drv-Card-controls">
+        <button
+  class="btn"
+  data-modal="open"
+  data-modal-id="example-modal">exemple-modal</button>
+
+      </div>
+    
+
+    <div id="example-modal"
      class="mt-Modal"
      data-modal="modal"
-     style="display: block; opacity: 1; position: static; transform: none; z-index: 1;">
+     style="">
 
     <div class="mt-Modal-header">
         <h3 class="mt-Modal-title">Ejemplo de Modal</h3>
@@ -116,14 +129,16 @@
 
     <div class="mt-Modal-footer">
         <input type="button" class="btn btn-s mgright10" value="Acció secundaria">
-        <input type="button" class="btn btn-s btn-border-dark" value="Acció alternativa">
+        <button class="btn btn-s btn-border-dark" data-modal="close">Acció alternativa</button>
     </div>
 </div>
+
 
   </div>
 
   
 </section>
+
 
 
 

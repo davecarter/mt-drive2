@@ -109,10 +109,10 @@ $z-Modal-header: 100;
   outline: 1px solid lime;
   box-shadow: 0 6px 6px rgba(0,0,0,.2);
 
-//     .is--modal-open & {
-//         opacity: 1;
-//         z-index: 100010;
-//     }
+    .is--modal-open & {
+        opacity: 1;
+        z-index: 100010;
+    }
 
 
   // MODAL HEADER

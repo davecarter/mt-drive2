@@ -1,4 +1,5 @@
-{% capture component_url %}{{component}}/{{component}}.html{% endcapture %}
+{% capture componentUrl %}{{component}}/{{component}}.html{% endcapture %}
+{% capture componentControlsUrl %}{{component}}/{{component}}-controls.html{% endcapture %}
 
 <section class="drv-Card">
   <div class="drv-Card-section">
@@ -6,7 +7,15 @@
     {% if site.data.[component].[component].Description %}
       <p>{{ site.data.[component].[component].Description }}</p>
     {% endif %}
-    {% include {{ component_url }} %}
+
+    {% if hasControls == true %}
+      <div class="drv-Card-section drv-Card-controls">
+        {% include {{ componentControlsUrl }} %}
+      </div>
+    {% endif %}
+
+    {% include {{ componentUrl }} %}
+
   </div>
 
   {% if site.data.[component].[component].Code %}
