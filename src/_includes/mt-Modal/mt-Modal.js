@@ -20,8 +20,8 @@
       }
 
       var bindEvents = function() {
-        window.bus.on('modal-show', showModal);
-        window.bus.on('modal-close', closeModal);
+        window.bus.on('mt-Modal-show', showModal);
+        window.bus.on('mt-Modal-close', closeModal);
       }
 
       var init = function() {
@@ -35,12 +35,12 @@
   $('[data-modal="modal"]').Modal();
 
   $('[data-modal="open"]').on('click', function(e) {
-    window.bus.emit('modal-on', [this]);
+    window.bus.emit('say-modal-on', [this]);
     e.preventDefault();
   });
 
   $('[data-modal="close"]').on('click', function(e) {
-    window.bus.emit('modal-off', [this]);
+    window.bus.emit('say-modal-off', [this]);
     e.preventDefault();
   });
 }( jQuery ));

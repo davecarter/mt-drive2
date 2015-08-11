@@ -5,7 +5,7 @@
     var $overlay = $('<div>', {
       class: 'mt-overlay',
       click: function() {
-        window.bus.emit('overlay-off');
+        window.bus.emit('say-overlay-off');
       }
     });
     $overlay.appendTo($body);
@@ -17,8 +17,8 @@
   }
 
   var bindEvents = function() {
-    window.bus.on('overlay-create', createOverlay);
-    window.bus.on('overlay-close', closeOverlay);
+    window.bus.on('mt-Overlay-create', createOverlay);
+    window.bus.on('mt-Overlay-close', closeOverlay);
   }
 
   var init = function() {

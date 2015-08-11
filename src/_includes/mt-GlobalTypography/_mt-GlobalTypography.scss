@@ -1,0 +1,89 @@
+$body-code: #000;
+$hedings-code: #202020;
+$bg-code: #EEF6F9;
+$bg-code: #EEF6F9;
+$color-code: #E84C3D;
+
+
+// BASE TYPOGRAPHY
+// ----------------------------------------------------------------------------
+html {
+  font-size: 100%;
+}
+body {
+  color: $body-code;
+  font-family: $font-stackText;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+
+  // BLOCK ELEMENTS
+  // --------------------------------------------------------
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6,
+  p,
+  ul,
+  ol,
+  dl {
+    margin-top: 0;
+  }
+
+    // HEADINGS
+    // ------------------------------------
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $hedings-code;
+      font-family: $font-stackTitle;
+      font-weight: 300;
+    }
+
+    h1,
+    .h1 {
+      font-size: rem(30px);
+      line-height: 2rem;
+    }
+    h2,
+    .h2 {
+      font-size: rem(26px);
+      line-height: 1.75rem;
+    }
+    h3,
+    .h3 {
+      font-size: rem(22px);
+      line-height: 1.5rem;
+    }
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6 {
+      font-size: rem(18px);
+      line-height: 1.25rem;
+    }
+
+
+    // PARAGRPAHS
+    // ------------------------------------
+
+    code {
+      background: $bg-code;
+      color: $color-code;
+      font-weight: 600;
+    }

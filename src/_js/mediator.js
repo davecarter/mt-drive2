@@ -1,21 +1,21 @@
 (function() {
 
   // OPEN MODAL
-  window.bus.on('modal-on', function(e, trigger) {
-    window.bus.emit('modal-show', [trigger]);
-    window.bus.emit('overlay-create', [trigger]);
+  window.bus.on('say-modal-on', function(e, trigger) {
+    window.bus.emit('mt-Modal-show', [trigger]);
+    window.bus.emit('mt-Overlay-create', [trigger]);
   });
 
   // CLOSE MODAL
-  window.bus.on('modal-off', function(e, trigger) {
-    window.bus.emit('modal-close', [trigger]);
-    window.bus.emit('overlay-close');
+  window.bus.on('say-modal-off', function(e, trigger) {
+    window.bus.emit('mt-Modal-close', [trigger]);
+    window.bus.emit('mt-Overlay-close');
   });
 
   // CLOSE OVERLAY
-  window.bus.on('overlay-off', function() {
-    window.bus.emit('modal-close');
-    window.bus.emit('overlay-close');
+  window.bus.on('say-overlay-off', function() {
+    window.bus.emit('mt-Overlay-close');
+    window.bus.emit('mt-Modal-close');
   });
 
 })();

@@ -16,11 +16,7 @@ menu:
   new:
     - text: 'Start'
       href: 'start.html'
-    - text: 'Grid'
-      href: 'grid.html'
-    - text: 'CSS'
-      href: 'CSS.html'
+    - text: 'Base Styles'
+      href: 'base.html'
     - text: 'Components'
       href: 'components.html'
-    - text: 'Brand Manual'
-      href: 'docs/motor-brand-manual.pdf'

@@ -12,6 +12,7 @@ var gulp = require('gulp'),
     colors = require('colors'),
     plumber = require('gulp-plumber'),
     sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps'),
     autoprefixer = require('gulp-autoprefixer'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
@@ -76,8 +77,10 @@ var gulp = require('gulp'),
             .pipe(plumber({
                 errorHandler: onError
             }))
-            .pipe(sass())
-            .pipe(autoprefixer())
+            .pipe(sourcemaps.init())
+                .pipe(sass())
+                .pipe(autoprefixer())
+            .pipe(sourcemaps.write('./'))
             .pipe(gulp.dest( path.dist + '/css' ))
     });
 
