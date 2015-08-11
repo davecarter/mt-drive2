@@ -38,16 +38,19 @@
 
 // DRIVE 2.0
 // ----------------------------------------------------------------------------
+@import './utils/mt-variables';
+
+@import './utils/functions';
 @import './drive/utils/drv-variables';
 
 @import './drive/base/drv-GlobalLayout';
+@import '../_includes/mt-GlobalTypography/mt-GlobalTypography';
 // @import './drive/layout/drv-grid';
 
 @import '../_includes/drv-PageHero/drv-PageHero';
 @import '../_includes/drv-Card/drv-Card';
 // @import '../_includes/drv-ColorList/drv-ColorList';
 
-@import '../_includes/mt-GlobalTypography/mt-GlobalTypography';
 
 // @import '../_includes/mt-Modal/mt-Modal';
 // @import '../_includes/mt-Button/mt-Button';

@@ -1,5 +1,7 @@
-$body-code: #000;
-$hedings-code: #202020;
+$root-text-size: 100% !default;
+
+$color-body: #000;
+$color-hedings: #202020;
 $bg-code: #EEF6F9;
 $bg-code: #EEF6F9;
 $color-code: #E84C3D;
@@ -9,9 +11,10 @@ $color-code: #E84C3D;
 // ----------------------------------------------------------------------------
 html {
   font-size: 100%;
+  font-size: $root-text-size;
 }
 body {
-  color: $body-code;
+  color: $color-body;
   font-family: $font-stackText;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -48,7 +51,7 @@ body {
     h4,
     h5,
     h6 {
-      color: $hedings-code;
+      color: $color-hedings;
       font-family: $font-stackTitle;
       font-weight: 300;
     }
@@ -57,16 +60,19 @@ body {
     .h1 {
       font-size: rem(30px);
       line-height: 2rem;
+      margin-bottom: 1.5rem;
     }
     h2,
     .h2 {
       font-size: rem(26px);
       line-height: 1.75rem;
+      margin-bottom: 1.25rem;
     }
     h3,
     .h3 {
       font-size: rem(22px);
       line-height: 1.5rem;
+      margin-bottom: 1rem;
     }
     h4,
     .h4,
@@ -76,6 +82,7 @@ body {
     .h6 {
       font-size: rem(18px);
       line-height: 1.25rem;
+      margin-bottom: 1rem;
     }
 
 
