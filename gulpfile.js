@@ -11,7 +11,9 @@ var gulp = require('gulp'),
     beep = require('beepbeep'),
     colors = require('colors'),
     plumber = require('gulp-plumber'),
+    cache = require('gulp-cached'),
     sass = require('gulp-sass'),
+    scsslint = require('gulp-scss-lint'),
     sourcemaps = require('gulp-sourcemaps'),
     autoprefixer = require('gulp-autoprefixer'),
     concat = require('gulp-concat'),
@@ -58,7 +60,7 @@ var gulp = require('gulp'),
                 '-q',
                 '--source=' + path.src,
                 '--destination=' + path.tmp + '/jekyll',
-                '--config=_config.yml'
+                '--config=config.yml'
             ], { stdio: 'inherit' })
       .on('close', done);
     });
@@ -74,6 +76,7 @@ var gulp = require('gulp'),
 // STYLES =====================================================================
     gulp.task('css', function() {
         return gulp.src( path.src + '/_scss/*.scss' )
+
             .pipe(plumber({
                 errorHandler: onError
             }))
@@ -82,6 +85,19 @@ var gulp = require('gulp'),
                 .pipe(autoprefixer())
             .pipe(sourcemaps.write('./'))
             .pipe(gulp.dest( path.dist + '/css' ))
+    });
+
+    gulp.task('scss-lint', function() {
+        return gulp.src( [
+                path.src + '/_scss/**/*.scss',
+                '/_includes/**/*.scss',
+                '!' + path.src + '/_scss/legacy/**/*.scss',
+                '!' + path.src + '/_scss/drive/layout/_drv-grid.scss'
+            ] )
+            .pipe(cache('scsslint'))
+            .pipe(scsslint({
+                'config': 'scss-lint.yml',
+            }));
     });
 
 

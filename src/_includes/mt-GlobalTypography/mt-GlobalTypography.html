@@ -1,13 +1,48 @@
-<div>
-  <!-- Headers -->
-  <h1 class="h1">Heading 1</h1>
-  <h2 class="h2">Heading 2</h2>
-  <h3 class="h3">Heading 3</h3>
-  <h4 class="h4">Heading 4</h4>
-  <h5 class="h5">Heading 5</h5>
-  <h6 class="h6">Heading 6</h6>
 
-  <!-- Body copy -->
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure veritatis, nobis impedit quam reiciendis tempore recusandae animi dolorem cupiditate blanditiis error, dignissimos at iste voluptas? Tenetur excepturi consequatur quam magnam.</p>
-</div>
+<article
+  id="global-typography"
+  class="drv-Card"
+  data-card="card">
+  <header class="drv-Card-header drv-Card-section">
+    <h2 class="h1 drv-Card-title"><span>{{ site.data.mt-GlobalTypography.mt-GlobalTypography.Title }}</span></h2>
+    {{ site.data.mt-GlobalTypography.mt-GlobalTypography.Description }}
+  </header>
+
+  <section class="drv-Card-section">
+    <h3>{{ site.data.mt-GlobalTypography.mt-GlobalTypography.sections.Headings.title }}</h3>
+    {{ site.data.mt-GlobalTypography.mt-GlobalTypography.sections.Headings.description }}
+
+    <div class="drv-Card-example">
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+
+    </div>
+    <div class="drv-Card-codeToggleBtn" data-card="code-toggle">Code</div>
+    <div class="drv-Card-code" data-card="code">
+      <pre><code class="html">
+{{ site.data.mt-GlobalTypography.mt-GlobalTypography.sections.Headings.code }}
+      </code></pre>
+    </div>
+  </section>
+
+  <section class="drv-Card-section">
+    <h3>{{ site.data.mt-GlobalTypography.mt-GlobalTypography.sections.Body.title }}</h3>
+    {{ site.data.mt-GlobalTypography.mt-GlobalTypography.sections.Body.description }}
+
+    <div class="drv-Card-example">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure veritatis, nobis impedit quam reiciendis tempore recusandae animi dolorem cupiditate blanditiis error, dignissimos at iste voluptas? Tenetur excepturi consequatur quam magnam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure veritatis, nobis impedit quam reiciendis tempore recusandae animi dolorem cupiditate blanditiis error, dignissimos at iste voluptas? Tenetur excepturi consequatur quam magnam.</p>
+
+      <div class="drv-Card-code">
+        <pre><code class="html">
+{{ site.data.mt-GlobalTypography.mt-GlobalTypography.sections.Body.code }}
+        </code></pre>
+      </div>
+    </div>
+  </section>
+</article>

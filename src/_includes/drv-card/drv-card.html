@@ -1,7 +1,7 @@
 {% capture componentUrl %}{{component}}/{{component}}.html{% endcapture %}
 {% capture componentControlsUrl %}{{component}}/{{component}}-controls.html{% endcapture %}
 
-<section class="drv-Card">
+<article class="drv-Card">
   <div class="drv-Card-section">
     <h2 class="drv-Card-title"><span>{{ site.data.[component].[component].Title }}</span></h2>
     {% if site.data.[component].[component].Description %}
@@ -26,5 +26,5 @@
 
   </div>
     {% endif %}
-</section>
+</article>
 

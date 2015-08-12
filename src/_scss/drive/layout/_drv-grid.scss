@@ -2,17 +2,17 @@
 //  Mobile First Method GRID SYSTEM
 
 header .content {
-    margin-right:20px;
-    margin-left:20px;
+  margin-right:20px;
+  margin-left:20px;
 }
 .page{
-    max-width:970px;
-    width:100%;
+  max-width:970px;
+  width:100%;
 }
 .side{
-    width:300px;
-    float:right;
-    display:none;
+  width:300px;
+  float:right;
+  display:none;
 }
 .grid {
   width: 100%;
@@ -28,72 +28,72 @@ header .content {
 }
 
 @media only screen and (min-width : 480px) {
-    .row{
-        margin-left: -1%;
-        margin-right: -1%;
-        zoom: 1;
+  .row{
+    margin-left: -1%;
+    margin-right: -1%;
+    zoom: 1;
 
-        &:before, &:after{
-            display: table;
-            content: " ";
-        }
-        &:after{
-            clear: both;
-        }
+    &:before, &:after{
+      display: table;
+      content: " ";
     }
+    &:after{
+      clear: both;
+    }
+  }
 
-    [class*='grid-']{
-      margin-left: 1%;
-        margin-right: 1%;
-        float:left;
-    }
-    .grid-1 {
-      width:6.333%;
-    }
+  [class*='grid-']{
+    margin-left: 1%;
+    margin-right: 1%;
+    float:left;
+  }
+  .grid-1 {
+    width:6.333%;
+  }
 
-    .grid-2 {
-      width:14.667%;
-    }
+  .grid-2 {
+    width:14.667%;
+  }
 
-    .grid-3 {
-      width:23.0%;
-    }
+  .grid-3 {
+    width:23.0%;
+  }
 
-    .grid-4 {
-      width:31.333%;
-    }
+  .grid-4 {
+    width:31.333%;
+  }
 
-    .grid-5 {
-      width:39.667%;
-    }
+  .grid-5 {
+    width:39.667%;
+  }
 
-    .grid-6 {
-      width:48.0%;
-    }
+  .grid-6 {
+    width:48.0%;
+  }
 
-    .grid-7 {
-      width:56.333%;
-    }
+  .grid-7 {
+    width:56.333%;
+  }
 
-    .grid-8 {
-      width:64.667%;
-    }
+  .grid-8 {
+    width:64.667%;
+  }
 
-    .grid-9 {
-      width:73.0%;
-    }
+  .grid-9 {
+    width:73.0%;
+  }
 
-    .grid-10 {
-      width:81.333%;
-    }
+  .grid-10 {
+    width:81.333%;
+  }
 
-    .grid-11 {
-      width:89.667%;
-    }
+  .grid-11 {
+    width:89.667%;
+  }
 
-    .grid-12 {
-      width:98.0%;
-    }
+  .grid-12 {
+    width:98.0%;
+  }
 }
 
 // Tablets and up
@@ -103,29 +103,29 @@ header .content {
 
 // page(980) + (20 marginleft + 20 marginright) and up
 @media only screen and (min-width : $mq-desktop) {
-    .content {
-        max-width:970px;
-        margin-right:auto !important;
-        margin-left:auto !important;
-    }
+  .content {
+    max-width:970px;
+    margin-right:auto !important;
+    margin-left:auto !important;
+  }
 }
 
 // content(page + side) + (20 marginleft + 20 marginright) and up
 @media only screen and (min-width : $mq-wide) {
-    .side{
-        display:block;
-        float:right;
-    }
-    .content{
-        max-width: 1280px;
-    }
-    .page{
-        float:left;
-    }
-    .bannerless .content{
-        max-width:970px;
-    }
-    .bannerless .page{
-        float:none;
-    }
+  .side{
+    display:block;
+    float:right;
+  }
+  .content{
+    max-width: 1280px;
+  }
+  .page{
+    float:left;
+  }
+  .bannerless .content{
+    max-width:970px;
+  }
+  .bannerless .page{
+    float:none;
+  }
 }
