@@ -375,10 +375,34 @@ h6,
   line-height: 1.25rem;
   margin-bottom: 1rem; }
 
+a,
+a:focus,
+a:visited {
+  color: #4585F2;
+  text-decoration: none; }
+
+a:hover {
+  color: #2d75f0; }
+  p a:hover {
+    border-bottom: 1px solid;
+    border-bottom-color: #0f5bdb; }
+
+strong,
+b {
+  font-weight: 600; }
+
+em,
+i {
+  font-style: italic; }
+
 code {
   background: #EEF6F9;
   color: #E84C3D;
-  font-weight: 600; }
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0 0.25rem; }
+  p code {
+    font-size: 1.25rem; }
 
 .drv-PageHero {
   background-color: #FCFBF9;
@@ -440,21 +464,24 @@ code {
     border: 1px solid #DEDEDE;
     border-radius: 0.25rem 0.25rem 0 0;
     overflow: hidden;
-    padding: 2rem 1rem 1rem;
+    padding: 3rem 1rem 1rem;
     position: relative; }
     .drv-Card-example:before {
+      border-bottom: 1px solid #DEDEDE;
       color: #999;
       content: 'example';
       font-size: 0.75rem;
       font-weight: bold;
+      padding: 0 1rem;
       position: absolute;
       top: 0.5rem;
-      right: 1rem;
+      left: 0;
+      right: 0;
+      text-align: right;
       text-transform: uppercase; }
   .drv-Card-codeToggleBtn {
     background-color: #f9fcfd;
     border: 1px solid #DEDEDE;
-    border-top-width: 0;
     color: #999;
     cursor: pointer;
     font-size: 0.75rem;
@@ -463,6 +490,8 @@ code {
     position: relative;
     text-align: right;
     text-transform: uppercase; }
+    .drv-Card-example + .drv-Card-codeToggleBtn {
+      border-top-width: 0; }
     .drv-Card-codeToggleBtn:before,
     .drv-Card-codeToggleBtn:after {
       content: "";
@@ -491,7 +520,6 @@ code {
           -ms-transform: translate(3px, 0) rotate(-45deg);
               transform: translate(3px, 0) rotate(-45deg); }
   .drv-Card-code {
-    background: #EEF6F9;
     box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.1);
     display: block;
     position: relative;
@@ -505,10 +533,8 @@ code {
     .drv-Card-code pre {
       margin: 0; }
     .drv-Card-code code {
-      background-color: transparent;
       border: 1px solid #DEDEDE;
       border-left: 10px solid rgba(0, 0, 0, 0.1);
-      color: #000;
       display: block;
       font-weight: 300;
       padding-top: 0;
@@ -516,94 +542,142 @@ code {
       padding-bottom: 0;
       padding-left: 1.25rem;
       white-space: pre-wrap; }
-    .drv-Card-code .hljs-tag,
-    .drv-Card-code .hljs-title {
-      color: #080072; }
-    .drv-Card-code .hljs-value {
-      font-weight: bold;
-      color: #E84C3D; }
-    .drv-Card-code .hljs-comment {
-      font-weight: bold;
-      color: #008800; }
-    .drv-Card-code .hljs-number,
-    .drv-Card-code .hljs-date,
-    .drv-Card-code .hljs-regexp,
-    .drv-Card-code .hljs-literal,
-    .drv-Card-code .hljs-hexcolor,
-    .drv-Card-code .smalltalk .hljs-symbol,
-    .drv-Card-code .smalltalk .hljs-char,
-    .drv-Card-code .go .hljs-constant,
-    .drv-Card-code .hljs-change,
-    .drv-Card-code .lasso .hljs-variable,
-    .drv-Card-code .makefile .hljs-variable,
-    .drv-Card-code .asciidoc .hljs-bullet,
-    .drv-Card-code .markdown .hljs-bullet,
-    .drv-Card-code .asciidoc .hljs-link_url,
-    .drv-Card-code .markdown .hljs-link_url {
-      color: #080; }
-    .drv-Card-code .hljs-label,
-    .drv-Card-code .hljs-javadoc,
-    .drv-Card-code .ruby .hljs-string,
-    .drv-Card-code .hljs-decorator,
-    .drv-Card-code .hljs-filter .hljs-argument,
-    .drv-Card-code .hljs-localvars,
-    .drv-Card-code .hljs-array,
-    .drv-Card-code .hljs-attr_selector,
-    .drv-Card-code .hljs-important,
-    .drv-Card-code .hljs-pseudo,
-    .drv-Card-code .hljs-pi,
-    .drv-Card-code .haml .hljs-bullet,
-    .drv-Card-code .hljs-doctype,
-    .drv-Card-code .hljs-deletion,
-    .drv-Card-code .hljs-envvar,
-    .drv-Card-code .hljs-shebang,
-    .drv-Card-code .apache .hljs-sqbracket,
-    .drv-Card-code .nginx .hljs-built_in,
-    .drv-Card-code .tex .hljs-formula,
-    .drv-Card-code .erlang_repl .hljs-reserved,
-    .drv-Card-code .hljs-prompt,
-    .drv-Card-code .asciidoc .hljs-link_label,
-    .drv-Card-code .markdown .hljs-link_label,
-    .drv-Card-code .vhdl .hljs-attribute,
-    .drv-Card-code .clojure .hljs-attribute,
-    .drv-Card-code .asciidoc .hljs-attribute,
-    .drv-Card-code .lasso .hljs-attribute,
-    .drv-Card-code .coffeescript .hljs-property,
-    .drv-Card-code .hljs-phony {
-      color: #88F; }
-    .drv-Card-code .hljs-keyword,
-    .drv-Card-code .hljs-id,
-    .drv-Card-code .hljs-title,
-    .drv-Card-code .hljs-built_in,
-    .drv-Card-code .hljs-aggregate,
-    .drv-Card-code .css .hljs-tag,
-    .drv-Card-code .hljs-javadoctag,
-    .drv-Card-code .hljs-phpdoc,
-    .drv-Card-code .hljs-yardoctag,
-    .drv-Card-code .smalltalk .hljs-class,
-    .drv-Card-code .hljs-winutils,
-    .drv-Card-code .bash .hljs-variable,
-    .drv-Card-code .apache .hljs-tag,
-    .drv-Card-code .go .hljs-typename,
-    .drv-Card-code .tex .hljs-command,
-    .drv-Card-code .asciidoc .hljs-strong,
-    .drv-Card-code .markdown .hljs-strong,
-    .drv-Card-code .hljs-request,
-    .drv-Card-code .hljs-status {
-      font-weight: bold; }
-    .drv-Card-code .asciidoc .hljs-emphasis,
-    .drv-Card-code .markdown .hljs-emphasis {
-      font-style: italic; }
-    .drv-Card-code .nginx .hljs-built_in {
-      font-weight: normal; }
-    .drv-Card-code .coffeescript .javascript,
-    .drv-Card-code .javascript .xml,
-    .drv-Card-code .lasso .markup,
-    .drv-Card-code .tex .hljs-formula,
-    .drv-Card-code .xml .javascript,
-    .drv-Card-code .xml .vbscript,
-    .drv-Card-code .xml .css,
-    .drv-Card-code .xml .hljs-cdata {
-      opacity: 0.5; }
+
+/*
+
+Darkula color scheme from the JetBrains family of IDEs
+
+*/
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #222D33;
+  -webkit-text-size-adjust: none; }
+
+.hljs,
+.hljs-tag,
+.hljs-title,
+.css .hljs-rule,
+.css .hljs-value,
+.aspectj .hljs-function,
+.css .hljs-function .hljs-preprocessor,
+.hljs-pragma {
+  color: #D0D0D0; }
+
+.hljs-strongemphasis,
+.hljs-strong,
+.hljs-emphasis {
+  color: #a8a8a2; }
+
+.hljs-bullet,
+.hljs-blockquote,
+.hljs-horizontal_rule,
+.hljs-number,
+.hljs-regexp,
+.alias .hljs-keyword,
+.hljs-literal,
+.hljs-hexcolor {
+  color: #6896ba; }
+
+.hljs-tag .hljs-value,
+.hljs-code,
+.css .hljs-class,
+.hljs-class .hljs-title:last-child {
+  color: #a6e22e; }
+
+.hljs-link_url {
+  font-size: 80%; }
+
+.hljs-emphasis,
+.hljs-strongemphasis,
+.hljs-class .hljs-title:last-child,
+.hljs-typename {
+  font-style: italic; }
+
+.hljs-keyword,
+.ruby .hljs-class .hljs-keyword:first-child,
+.ruby .hljs-function .hljs-keyword,
+.hljs-function,
+.hljs-change,
+.hljs-winutils,
+.hljs-flow,
+.nginx .hljs-title,
+.tex .hljs-special,
+.hljs-header,
+.hljs-symbol,
+.hljs-symbol .hljs-string,
+.hljs-tag .hljs-title,
+.hljs-value,
+.alias .hljs-keyword:first-child,
+.css .hljs-tag,
+.css .unit,
+.css .hljs-important {
+  color: #EA7656; }
+
+.hljs-function .hljs-keyword,
+.hljs-class .hljs-keyword:first-child,
+.hljs-aspect .hljs-keyword:first-child,
+.hljs-constant,
+.hljs-typename,
+.css .hljs-attribute {
+  color: #cb7832; }
+
+.hljs-variable,
+.hljs-params,
+.hljs-class .hljs-title,
+.hljs-aspect .hljs-title {
+  color: #b9b9b9; }
+
+.hljs-attribute,
+.hljs-string,
+.css .hljs-id,
+.hljs-subst,
+.hljs-type,
+.ruby .hljs-class .hljs-parent,
+.hljs-built_in,
+.django .hljs-template_tag,
+.django .hljs-variable,
+.smalltalk .hljs-class,
+.django .hljs-filter .hljs-argument,
+.smalltalk .hljs-localvars,
+.smalltalk .hljs-array,
+.hljs-attr_selector,
+.hljs-pseudo,
+.hljs-addition,
+.hljs-stream,
+.hljs-envvar,
+.apache .hljs-tag,
+.apache .hljs-cbracket,
+.tex .hljs-command,
+.hljs-prompt,
+.hljs-link_label,
+.hljs-link_url,
+.hljs-name {
+  color: #DBC05E; }
+
+.hljs-comment,
+.hljs-annotation,
+.hljs-pi,
+.hljs-doctype,
+.hljs-deletion,
+.hljs-shebang,
+.apache .hljs-sqbracket,
+.tex .hljs-formula {
+  color: #999; }
+
+.hljs-decorator {
+  color: #bab429; }
+
+.coffeescript .javascript,
+.javascript .xml,
+.tex .hljs-formula,
+.xml .javascript,
+.xml .vbscript,
+.xml .css,
+.xml .hljs-cdata,
+.xml .php,
+.php .xml {
+  opacity: 0.5; }
 
 /*# sourceMappingURL=main.css.map */

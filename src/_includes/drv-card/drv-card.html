@@ -1,30 +1,39 @@
 {% capture componentUrl %}{{component}}/{{component}}.html{% endcapture %}
 {% capture componentControlsUrl %}{{component}}/{{component}}-controls.html{% endcapture %}
-
 <article class="drv-Card">
-  <div class="drv-Card-section">
-    <h2 class="drv-Card-title"><span>{{ site.data.[component].[component].Title }}</span></h2>
-    {% if site.data.[component].[component].Description %}
-      <p>{{ site.data.[component].[component].Description }}</p>
-    {% endif %}
+  <header class="drv-Card-header drv-Card-section">
+    <h2 class="h1 drv-Card-title"><span>{{ site.data.[component].[component].Title }}</span></h2>
+    {{ site.data.[component].[component].Description }}
+  </header>
 
-    {% if hasControls == true %}
-      <div class="drv-Card-section drv-Card-controls">
-        {% include {{ componentControlsUrl }} %}
+  {% for section in site.data.[component].[component].sections %}
+    <section
+      id="type-headings"
+      class="drv-Card-section"
+      data-card="card">
+
+      {% if section.title %}
+      <h3>{{ section.title }}</h3>
+      {% endif %}
+
+      {{ section.description }}
+
+      {% if section.demo %}
+      <div class="drv-Card-example">
+      {% capture subComponentUrl %}{{ component }}/{{ section.demo }}.html{% endcapture %}
+      {% include {{ subComponentUrl }} %}
       </div>
-    {% endif %}
+      {% endif %}
 
-    {% include {{ componentUrl }} %}
+      {% if section.code %}
+      <div class="drv-Card-codeToggleBtn" data-card="code-toggle">Code (HTML)</div>
+      <div class="drv-Card-code" data-card="code">
+        <pre><code class="hljs html">
+{{ section.code }}
+        </code></pre>
+      </div>
+      {% endif %}
+    </section>
+  {% endfor %}
 
-  </div>
-
-  {% if site.data.[component].[component].Code %}
-  <div class="drv-Card-code">
-    <pre><code class="html">
-{{ site.data.[component].[component].Code }}
-    </code></pre>
-
-  </div>
-    {% endif %}
 </article>
-

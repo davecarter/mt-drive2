@@ -2,6 +2,8 @@ $root-text-size: 100% !default;
 
 $color-body: #000;
 $color-hedings: #202020;
+$color-link: #4585F2;
+$color-link-hover: #2D75F0;
 $bg-code: #EEF6F9;
 $bg-code: #EEF6F9;
 $color-code: #E84C3D;
@@ -88,9 +90,44 @@ body {
 
     // PARAGRPAHS
     // ------------------------------------
+    pre {
+    }
 
+    // Inline elements
+    // ------------------------------------
+    a {
+      &,
+      &:focus,
+      &:visited {
+          color: #4585F2;
+          text-decoration: none;
+      }
+      &:hover {
+        color: $link-hover-color;
+
+        p & {
+          border-bottom: 1px solid;
+          border-bottom-color: darken($link-hover-color, 10%);
+
+        }
+      }
+    }
+    strong,
+    b {
+      font-weight: 600;
+    }
+    em,
+    i {
+      font-style: italic;
+    }
     code {
       background: $bg-code;
       color: $color-code;
       font-weight: 600;
+      font-size: 1rem;
+      padding: 0 .25rem;
+
+      p & {
+        font-size: 1.25rem;
+      }
     }
