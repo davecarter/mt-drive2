@@ -18,97 +18,114 @@
 <body>
 
   
-  <!-- <div id="mainTopbar" class="drv-Topbar clearfix" data-topbar="btn-container">
-  <div class="drv-Logo-wrap">
-    <img class="drv-Logo" src="./img/logo.svg" alt="Drive">
-  </div>
-
-  <div class="drv-Topbar-content">
-    <nav class="drv-MainNav">
-      <ul>
-        
-          <li class="drv-MainNav-item">
-            <a href="base.html" class="drv-MainNav-btn">Base Styles</a>
-          </li>
-        
-      </ul>
-    </nav>
-  </div>
-</div>
- -->
+  <!-- {#% include drv-Topbar/drv-Topbar.html %#} -->
 
   
-  <!-- <div class="drv-PageHero">
-  <div class="drv-Wrapper">
-    <h1 class="drv-PageHero-title">Components</h1>
-    <div class="drv-PageHero-text">
-      <p>Reusable modules to provide modal dialog, iconography alerts.</p>
-<p>Extensible objects.</p>
-
-    </div>
-  </div>
-</div>
- -->
+  <!-- {#% include drv-PageHero/drv-PageHero.html %#} -->
 
 
   <div class="drv-Wrapper">
     
 
+<!-- 
+
+<article class="drv-Card">
+  <header class="drv-Card-header drv-Card-section">
+    <h2 class="h1 drv-Card-title"><span>Modal dialog</span></h2>
+    <p>Perfect for contextual message to show only that functionality to the users in a given time.</p>
+<p>JS needed: <code>drive.min.js</code></p>
+
+  </header>
+
+  
+    <section
+      id="type-headings"
+      class="drv-Card-section"
+      data-card="card">
+
+      
+      <h3>Modal</h3>
+      
+
+      
+
+      
+      <div class="drv-Card-example">
+
+
+
+
+
+
+      <!--
+      <button
+        class="btn"
+        data-modal="open"
+        data-modal-id="example-modal">exemple-modal</button>
+      -->
+
+
+
+
+
+
+
+
+      
+      <div id="example-modal"
+     class="mt-Modal"
+     data-modal="modal"
+     style="">
+
+    <div class="mt-Modal-header">
+        <h3 class="mt-Modal-title">Ejemplo de Modal</h3>
+        <div class="mt-Modal-closeBtn" data-modal="close">
+            <span class="icon-tancar2"></span>
+        </div>
+    </div>
+
+    <div class="mt-Modal-body">
+      <div class="mt-Modal-bodySection">
+  <h2>Lorem ipsum dolor sit amet!</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis nulla vitae fringilla pharetra. Suspendisse tristique risus ut turpis varius auctor.</p>
+</div>
+
+<div class="mt-Modal-bodySection">
+  <h3>¿Con qué periodicidad quieres recibir tu alerta?</h3>
+</div>
+
+<div class="mt-Modal-bodySection">
+  <div class="mt-radio">
+    <label class="mt-radio__label"><input type="radio" name="radios" id="radio1" data-days="1">Periodicidad cada día</label>
+  </div>
+</div>
+
+    </div>
+
+    <div class="mt-Modal-footer">
+        <input type="button" class="btn btn-s mgright10" value="Acció secundaria">
+        <button class="btn btn-s btn-border-dark" data-modal="close">Acció alternativa</button>
+    </div>
+</div>
+
+      </div>
+      
+
+      
+    </section>
+  
+
+</article>
+ -->
+
 
   </div>
 
   
-  <!-- <div id="right-nav" class="side" style="display: none;">
-    <ul class="side-nav list">
-        <li>
-            <span>Drive CDN</span>
-            <ul>
-                <li><a class="go" href="#install-drive">Links</a></li>
-            </ul>
-        </li>
-        <li>
-            <span>Drive</span>
-            <ul>
-                <li><a class="go" href="#estructura-drive">Structure</a></li>
-            </ul>
-        </li>
-        <li>
-            <span>SASS</span>
-            <ul>
-                <li><a class="go" href="#arquitectura-sass">Architecture</a></li>
-            </ul>
-        </li>
-    </ul>
-</div>
- -->
+  <!-- {#% include ldrv-Sidebar/ldrv-Sidebar.html %#} -->
 
   
-  <!-- <footer class="drv-Footer">
-    <p>&copy; 2014 All Rights Reserved Motor UX ;)</p>
-</footer>
-
-<footer style="display: none;">
-    <div class="content">
-        <div class="fleft">
-            <nav>
-                <ul class="nav">
-                    <li><a class="logo" href="index.html"><b>Drive</b></a></li>
-                    <li><a href="start.html">Start</a></li>
-                    <li><a href="grid.html">Grid</a></li>
-                    <li><a href="CSS.html">CSS</a></li>
-                    <li><a href="components.html">Components</a></li>
-                    <li><a href="docs/cochesGuideLines.pdf" id="pdf-icon" target="_blank">Brand Manual</a></li>
-                </ul>
-            </nav>
-            <p class="mgtop20">© 2014 All Rights Reserved Motor UX ;)</p>
-        </div>
-        <!--
-        <div class="fright mgtop10"><img src="img/logo-footer.png" /></div>
-        -->
-        <div class="clear"></div>
-    </div>
-</footer>
- -->
+  <!-- {#% include drv-Footer/drv-Footer.html %#} -->
 
 
   <!-- Jquery-->
