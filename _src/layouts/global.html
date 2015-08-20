@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include_relative _src/includes/head.html %}
+
+<body>
+
+  {% include_relative _src/components/drv-Topbar/drv-Topbar.html component='drv-Topbar' %}
+
+  {% include_relative _src/components/drv-PageHero/drv-PageHero.html component='drv-PageHero' %}
+
+
+  <div class="drv-Wrapper">
+    {{ content }}
+  </div>
+
+  {% assign component = 'ldrv-Sidebar' %}
+  <!-- {#% include ldrv-Sidebar/ldrv-Sidebar.html %#} -->
+
+  {% include_relative _src/components/drv-Footer/drv-Footer.html component='drv-Footer' %}
+
+
+  {% include_relative _src/includes/scripts-footer.html %}
+</body>
+</html>

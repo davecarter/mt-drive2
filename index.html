@@ -1,20 +1,19 @@
 ---
 
 layout: global
-title: 'Drive'
-pageHeroTitle: 'CSS'
+title: 'Base Styles | Drive: Framework SCM Motor'
+pageHeroTitle: 'Base Styles'
 pageHeroText: |
-  <p>Global CSS settings.</p>
-  <p>Basic HTML elements with variations via extensible classes.</p>
+  <p></p>
 
 version: 'new'
 
 ---
 
-{% include_relative _comp/test/test.html %}
+{% include_relative _src/components/drv-Card/drv-Card.html component='mt-GlobalTypography' %}
 
-{% assign component = 'mt-Button' %}
 <!-- {#% include drv-Card/drv-Card.html %#} -->
+
 
 {% assign component = 'drv-ColorList' %}
 <!-- {#% include drv-Card/drv-Card.html %#} -->

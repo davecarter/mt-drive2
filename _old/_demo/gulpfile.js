@@ -69,7 +69,7 @@ yaml = require('gulp-yaml');
         '-q',
         '--source=' + path.src,
         '--destination=' + path.tmp + '/jekyll',
-        '--config=config.yml'
+        '--config=_config.yml'
       ], { stdio: 'inherit' })
       .on('close', done);
   });

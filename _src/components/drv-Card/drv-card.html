@@ -1,12 +1,12 @@
-{% capture componentUrl %}{{component}}/{{component}}.html{% endcapture %}
-{% capture componentControlsUrl %}{{component}}/{{component}}-controls.html{% endcapture %}
+{% capture componentUrl %}{{include.component}}/{{include.component}}.html{% endcapture %}
+{% capture componentControlsUrl %}{{include.component}}/{{include.component}}-controls.html{% endcapture %}
 <article class="drv-Card">
   <header class="drv-Card-header drv-Card-section">
-    <h2 class="h1 drv-Card-title"><span>{{ site.data.[component].[component].Title }}</span></h2>
-    {{ site.data.[component].[component].Description }}
+    <h2 class="h1 drv-Card-title"><span>{{ site.data.[include.component].[include.component].Title }}</span></h2>
+    {{ site.data.[include.component].[include.component].Description }}
   </header>
 
-  {% for section in site.data.[component].[component].sections %}
+  {% for section in site.data.[include.component].[include.component].sections %}
     <section
       id="type-headings"
       class="drv-Card-section"
@@ -40,8 +40,8 @@
 
 
 
-      {% capture subComponentUrl %}{{ component }}/{{ section.demo }}.html{% endcapture %}
-      {% include {{ subComponentUrl }} %}
+      {% capture subComponentUrl %}_src/components/{{ include.component }}/{{ section.demo }}.html{% endcapture %}
+      {% include_relative {{ subComponentUrl }} %}
       </div>
       {% endif %}
 
