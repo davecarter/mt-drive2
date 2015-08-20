@@ -1,2 +1,6 @@
 encoding: 'utf-8'
+
+source:      .
+destination: ./_site
+layouts:     ./_layouts
 data_source: ./_includes
