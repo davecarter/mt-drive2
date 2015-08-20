@@ -1,3 +1,4 @@
 encoding: 'utf-8'
 data_source: ./_includes
-source: ./demo
+source: ./src
+destination: ./demo
