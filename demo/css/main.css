@@ -370,6 +370,17 @@ code {
     .drv-MainNav-item:first-child .drv-MainNav-btn {
       padding-top: 1.5rem; } }
 
+.drv-Footer {
+  background-color: #242424;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  background-position: right 2rem center;
+  background-size: auto 3rem;
+  color: #666666;
+  padding: 3rem 2rem; }
+  .drv-Footer > :last-child {
+    margin-bottom: 0; }
+
 .drv-PageHero {
   background-color: #fcfbf9;
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.25);

@@ -1,0 +1,27 @@
+$mq-main-nav-horizontal: $mq-tablet;
+
+$bg-footer: #242424;
+
+$color-footer: #666666;
+$color-main-nav-hover: $link-hover-color;
+
+$height-topbar: 3.25rem;
+$z-topbar: $z-topbar;
+
+$anim-speed-main-nav: $anim-speed;
+
+// DRIVE TOOLBAR
+// ----------------------------------------------------------------------------
+.drv-Footer {
+  background-color: $bg-footer;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  background-position: right 2rem center;
+  background-size: auto 3rem;
+  color: $color-footer;
+  padding: 3rem 2rem;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
