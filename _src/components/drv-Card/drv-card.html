@@ -1,5 +1,4 @@
-{% capture componentUrl %}{{include.component}}/{{include.component}}.html{% endcapture %}
-{% capture componentControlsUrl %}{{include.component}}/{{include.component}}-controls.html{% endcapture %}
+<h1>{{path_components}}</h1>
 <article class="drv-Card">
   <header class="drv-Card-header drv-Card-section">
     <h2 class="h1 drv-Card-title"><span>{{ site.data.[include.component].[include.component].Title }}</span></h2>
@@ -40,8 +39,8 @@
 
 
 
-      {% capture subComponentUrl %}_src/components/{{ include.component }}/{{ section.demo }}.html{% endcapture %}
-      {% include_relative {{ subComponentUrl }} %}
+      {% capture path_subComponent %}{{ site.data.path.componentsSrc }}/{{ include.component }}/{{ section.demo }}.html{% endcapture %}
+      {% include_relative {{ path_subComponent }} %}
       </div>
       {% endif %}
 

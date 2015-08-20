@@ -546,4 +546,49 @@ Darkula color scheme from the JetBrains family of IDEs
 .php .xml {
   opacity: .5; }
 
+.mt-Overlay {
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100; }
+  .is--mt-Overlay-visible .mt-Overlay {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn; }
+
+.mt-Overlay {
+  background-color: #000000; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  100% {
+    opacity: 0.7; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  100% {
+    opacity: 0.7; } }
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 0.7; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  from {
+    opacity: 0.7; }
+  100% {
+    opacity: 0; } }
+
 /*# sourceMappingURL=main.css.map */

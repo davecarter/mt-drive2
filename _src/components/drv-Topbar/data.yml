@@ -14,5 +14,5 @@ menu:
       href: 'docs/motor-brand-manual.pdf'
 
   new:
-    - text: 'Base Styles'
-      href: 'base.html'
+    #- text: 'Base Styles'
+    #  href: 'base.html'
