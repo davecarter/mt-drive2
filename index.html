@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-</head>
-<body>
-  <h1>hell world</h1>
-</body>
-</html>
+---
+
+layout: global
+title: 'Drive'
+pageHeroTitle: 'CSS'
+pageHeroText: |
+  <p>Global CSS settings.</p>
+  <p>Basic HTML elements with variations via extensible classes.</p>
+
+version: 'new'
+
+---
+
+<h1>test</h1>
+{% assign component = 'mt-Button' %}
+<!-- {#% include drv-Card/drv-Card.html %#} -->
+
+{% assign component = 'drv-ColorList' %}
+<!-- {#% include drv-Card/drv-Card.html %#} -->
