@@ -6,11 +6,11 @@ var basePath = {
 var assetsPath = {
   componentsSrc: basePath.src + '/components',
   stylesSrc: basePath.src + '/scss',
-  stylesDist: basePath.dist + '/css',
+  stylesDist: './css',
   scriptsSrc: basePath.src + '/js',
-  scriptsDist: basePath.dist + '/js',
+  scriptsDist: './js',
   imgSrc: basePath.src + '/img',
-  imgDist: basePath.dist + '/img',
+  imgDist: './img',
   zeus: '_zeus'
 };
 
@@ -203,13 +203,13 @@ var gulp = require('gulp'),
     runSequence(
       'clean',
       [
-        'html',
         'svg',
         'scss-lint',
         'css',
         'js'
       ],
-  callback);
+      'html',
+    callback);
   });
 
   gulp.task('default', function(callback) {

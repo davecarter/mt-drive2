@@ -17,10 +17,7 @@ exclude:      [
   'scss-lint.yml'
 
 ]
-keep_files:   [
-  'css',
-  'img',
-  'js'
+keep_files: [
 ]
 encoding: 'utf-8'
 
