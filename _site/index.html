@@ -49,7 +49,20 @@
     {#% include_relative _src/components/drv-Card/drv-Card.html component='mt-GlobalTypography' %}
 {#% include_relative ../components/drv-Card/drv-Card.html component='mt-GlobalTypography' %}
 
-<h1>card</h1>
+{#% include_relative _src/components/drv-Card/drv-Card.html %}
+<h1>scripts footer in components</h1>
+<!-- Jquery-->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Drive Components-->
+<script src="js/drive.min.js"></script>
+<script>
+  $('#mainTopbar').Topbar();
+</script>
+
+<!-- Code Highlighter-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 <h1>scripts footer</h1>
 <!-- Jquery-->
