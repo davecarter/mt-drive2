@@ -15,6 +15,7 @@ $anim-speed-main-nav: $anim-speed;
 // ----------------------------------------------------------------------------
 .drv-Topbar {
   background-color: $bg-topbar-horizontal;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
   font-family: $font-stack-title;
   height: $height-topbar;
 
@@ -26,7 +27,6 @@ $anim-speed-main-nav: $anim-speed;
   }
   @media screen and (min-width: $mq-main-nav-horizontal) {
     background-color: $bg-topbar-horizontal;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
     padding: 0 2rem;
   }
 

@@ -189,8 +189,8 @@ var gulp = require('gulp'),
   gulp.task('watch', ['browsersync'], function() {
     gulp.watch( ['./*.+(html|yml)', '!' + basePath.dist],         ['html'] );
     gulp.watch( basePath.src + '/**/*.+(html|yml)',   ['html'] );
-    gulp.watch( assetsPath.stylesSrc + '/**/*.scss',              ['css'] );
-    gulp.watch( assetsPath.componentsSrc + '/**/*.scss',          ['css'] );
+    gulp.watch( assetsPath.stylesSrc + '/**/*.scss',              ['css', 'html'] );
+    gulp.watch( assetsPath.componentsSrc + '/**/*.scss',          ['css', 'html'] );
     gulp.watch( assetsPath.componentsSrc + '/**/*.js',            ['js'] );
     gulp.watch( assetsPath.scriptsSrc + '/*.js',                  ['js'] );
     //gulp.watch( path.src + '/_img/**/*.+(png|jpg)',  ['images'] );
