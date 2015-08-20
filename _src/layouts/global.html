@@ -8,7 +8,7 @@
 
   {% include_relative {{ site.data.path.componentsSrc }}/drv-Topbar/drv-Topbar.html component='drv-Topbar' %}
 
-  {#% include_relative {{ site.data.path.componentsSrc }}/drv-PageHero/drv-PageHero.html component='drv-PageHero' %}
+  {% include_relative {{ site.data.path.componentsSrc }}/drv-PageHero/drv-PageHero.html component='drv-PageHero' %}
 
 
   <div class="drv-Wrapper">
@@ -17,8 +17,8 @@
 
   <!-- {#% include ldrv-Sidebar/ldrv-Sidebar.html %#} -->
 
-  {#% include_relative {{ site.data.path.componentsSrc }}/drv-Footer/drv-Footer.html component='drv-Footer' %}
+  {% include_relative {{ site.data.path.componentsSrc }}/drv-Footer/drv-Footer.html component='drv-Footer' %}
 
-  {#% include_relative {{ site.data.path.includesSrc }}/scripts-footer.html %}
+  {% include_relative {{ site.data.path.includesSrc }}/scripts-footer.html %}
 </body>
 </html>
