@@ -6,16 +6,15 @@
           $modalId,
           $modal;
 
-      var showModal = function(e, trigger) {
-        $modalId = $(trigger).data('modal-id');
-        var $modal = $('#' + $modalId);
+      var showModal = function(e, modalId) {
+        var $modal = $('#' + modalId);
 
-        $body.addClass('is--modal-open');
+        $body.addClass('is--mt-Modal-visible');
         $modal.show();
       }
 
       var closeModal = function(e, trigger) {
-        $body.removeClass('is--modal-open');
+        $body.removeClass('is--mt-Modal-visible');
         $self.hide();
       }
 
@@ -35,12 +34,14 @@
   $('[data-modal="modal"]').Modal();
 
   $('[data-modal="open"]').on('click', function(e) {
-    window.bus.emit('say-modal-on', [this]);
+    var modalId = $(this).data('modal-id');
+
+    window.bus.emit('say-modal-on', [modalId]);
     e.preventDefault();
   });
 
   $('[data-modal="close"]').on('click', function(e) {
-    window.bus.emit('say-modal-off', [this]);
+    window.bus.emit('say-modal-off');
     e.preventDefault();
   });
 }( jQuery ));

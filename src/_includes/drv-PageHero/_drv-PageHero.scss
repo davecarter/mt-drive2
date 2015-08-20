@@ -1,26 +1,28 @@
-$bg-PageHero: #FCFBF9;
-$color-PageHero-title: #666;
-$color-PageHero-text: #202020;
+$bg-page-hero: #fcfbf9;
+$color-page-hero-title: #666666;
+$color-page-hero-text: #202020;
 
 // PAGE HERO
 // ----------------------------------------------------------------------------
 
 .drv-PageHero {
-  background-color: $bg-PageHero;
-  box-shadow: inset 0 0 3px rgba(0,0,0,.25);
+  background-color: $bg-page-hero;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, .25);
   margin-bottom: 2.5rem;
   padding: 3rem;
+  position: relative;
 
   &-title {
-    color: $color-PageHero-title;
+    color: $color-page-hero-title;
     font-size: 3rem;
     font-weight: 300;
     line-height: 4rem;
     margin-bottom:  1.25rem;
   }
+
   &-text {
-    color: $color-PageHero-text;
-    font-family:  $font-stackTitle;
+    color: $color-page-hero-text;
+    font-family:  $font-stack-title;
     font-size: 1.25rem;
     line-height: 1.75rem;
 

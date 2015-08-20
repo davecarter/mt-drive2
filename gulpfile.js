@@ -3,6 +3,8 @@ var path = {
     dist: 'demo',
     tmp: '.tmp',
     stylesSrc: 'src/_scss',
+    imgSrc: 'src/_img',
+    imgDist: 'demo/img',
     zeus: 'zeus'
 };
 
@@ -19,7 +21,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     babel = require('gulp-babel'),
-    //merge       = require('merge-stream'),
+    // merge       = require('merge-stream'),
     del = require('del'),
     //changed     = require('gulp-changed'),
     cp = require('child_process'),
@@ -74,7 +76,7 @@ var gulp = require('gulp'),
 
 
 // STYLES =====================================================================
-    gulp.task('css', function() {
+    gulp.task('css', ['scss-lint'], function() {
         return gulp.src( path.src + '/_scss/*.scss' )
 
             .pipe(plumber({
@@ -90,7 +92,7 @@ var gulp = require('gulp'),
     gulp.task('scss-lint', function() {
         return gulp.src( [
                 path.src + '/_scss/**/*.scss',
-                '/_includes/**/*.scss',
+                path.src + '/_includes/**/*.scss',
                 '!' + path.src + '/_scss/legacy/**/*.scss',
                 '!' + path.src + '/_scss/drive/layout/_drv-grid.scss'
             ] )
@@ -107,14 +109,25 @@ var gulp = require('gulp'),
                 path.src + '/_js/BusEvents.js',
                 path.src + '/_js/JQueryBusEvents.js',
                 path.src + '/_js/mediator.js',
+                path.src + '/_js/helpers.js',
                 path.src + '/_includes/**/*.js'
             ])
-            .pipe(concat('drive.min.js'))
+            .pipe(plumber({
+                errorHandler: onError
+            }))
             .pipe(babel())
-            // .pipe(uglify())
+            .pipe(concat('drive.min.js'))
+            .pipe(uglify())
             .pipe(gulp.dest(path.dist + '/js'));
     });
 
+
+
+// IMAGES =====================================================================
+    gulp.task('svg', function() {
+        return gulp.src( path.imgSrc + '/**/*.svg' )
+            .pipe(gulp.dest( path.imgDist ))
+    });
 
 // BROWSER SYNC ===============================================================
     gulp.task('browsersync', function() {
@@ -185,6 +198,7 @@ var gulp = require('gulp'),
                 //'images',
                 //'files',
                 //'svg',
+                'scss-lint',
                 'css',
                 //'fonts',
                 'js'

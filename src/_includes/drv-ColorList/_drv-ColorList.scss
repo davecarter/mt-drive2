@@ -1,4 +1,4 @@
-$color-ColorSample-text: #FFF;
+$color-color-sample-text: #ffffff;
 
 // COLOR LIST
 // ----------------------------------------------------------------------------
@@ -12,23 +12,25 @@ $color-ColorSample-text: #FFF;
   }
 }
 
-  // COLOR LIST
-  // --------------------------------------------------------
-  .drv-ColorSample {
-    color: $color-ColorSample-text;
-    font-size: 1.25rem;
-    font-weight: 300;
-    line-height: 1.5rem;
-    padding: 1.25rem;
-    text-align: center;
+// COLOR LIST
+// --------------------------------------------------------
+.drv-ColorSample {
+  color: $color-color-sample-text;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  padding: 1.25rem;
+  text-align: center;
 
-    > :last-child {
-      margin-bottom: 0;
-    }
+  > :last-child {
+    margin-bottom: 0;
   }
-  .drv-ColorSample-name {
-    margin-bottom: .25rem;
-  }
-  .drv-ColorSample-code {
-    font-weight: 600;
-  }
+}
+
+.drv-ColorSample-name {
+  margin-bottom: .25rem;
+}
+
+.drv-ColorSample-code {
+  font-weight: 600;
+}

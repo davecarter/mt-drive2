@@ -1,0 +1,47 @@
+<div id="mainTopbar" class="drv-Topbar clearfix" data-topbar="btn-container">
+  <div class="drv-Logo-wrap">
+    <img class="drv-Logo" src="" alt="Drive">
+  </div>
+
+  <div class="drv-Topbar-content">
+    <nav class="drv-MainNav">
+      <ul>
+        {% for item in site.data.[component].data.menu.[page.version] %}
+          <li class="drv-MainNav-item">
+            <a href="{{ item.href }}" class="drv-MainNav-btn">{{ item.text }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+<div class="drv-Topbar" style="display: none;">
+  <div class="content">
+    <div class="drv-Topbar-logoWrap">
+      <a href="#"
+         class=""
+         data-navslide="open">
+        <span class="icon-menu"></span>
+      </a>
+      <a class="drv-Topbar-logo" href="index.html"><b>Drive</b></a>
+    </div>
+
+    <div class="nav-slide_mask" data-navslide="close"></div>
+
+    <header class="">
+      <nav class="">
+        <ul class="">
+
+          {% for item in site.data.[component].data.menu.[page.version] %}
+            <li>
+              <a href="{{ item.href }}" class="nav_btn">{{ item.text }}</a>
+            </li>
+          {% endfor %}
+
+        </ul>
+      </nav>
+    </header>
+  </div>
+</div>

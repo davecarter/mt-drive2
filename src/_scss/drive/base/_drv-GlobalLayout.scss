@@ -1,22 +1,24 @@
-$bg-body: #F5F0EC;
-$color-PageHero-title: #666;
-$color-PageHero-text: #202020;
+$bg-body: #f5f0ec;
+$color-page-hero-title: #666666;
+$color-page-hero-text: #202020;
 
 // PAGE LAYOUT
 // ----------------------------------------------------------------------------
-
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
+
 body {
   background-color: $bg-body;
   margin: 0;
 }
+
 .drv-Wrapper {
   margin: 0 auto;
   width: 100%;

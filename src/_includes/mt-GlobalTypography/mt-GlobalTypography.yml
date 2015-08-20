@@ -48,3 +48,6 @@ sections:
 
       &lt;p>Lorem ipsum dolor sit amet, &lt;code>code text&lt;/code> consectetur &lt;mark>marked #text&lt;/mark> adipisicing elit. Ut, incidunt, ullam, voluptatibus minus.&lt;/p>
 
+  - Lists:
+    title: 'Lists elements'
+    demo: 'mt-GlobalTypography-lists'

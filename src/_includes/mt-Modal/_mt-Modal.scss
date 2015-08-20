@@ -1,32 +1,31 @@
-$bg-Modal: $lighter-grey-color;
-$bg-Modal-header: $blue-color;
-$color-Modal-header: #FFF;
+$bg-modal: $lighter-grey-color;
+$bg-modal-header: $blue-color;
+$color-modal-header: #ffffff;
 
-$z-Modal-header: 100;
+$z-modal-header: $z-modal-header;
 
 // MODAL SUI
 // ----------------------------------------------------------------------------
 .mt-Modal {
-  background-color: $bg-Modal;
+  background-color: $bg-modal;
   display: none;
   margin: 0 auto;
   opacity: 0;
   overflow: auto;
   position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   max-width: 600px;
   z-index: -1;
 
-  -webkit-animation: moveUpFadeIn .3s cubic-bezier(0.51,.92,.24,1.15);
-          animation: moveUpFadeIn .3s cubic-bezier(0.51,.92,.24,1.15);
+  animation: moveUpFadeIn .3s cubic-bezier(.51, .92, .24, 1.15);
 
   @media only screen and (min-width: $mq-mobile-landscape) {
-      top: 50%;
-      bottom: auto;
+    top: 50%;
+    bottom: auto;
     transform: translateY(-50%);
     width: 80%;
     max-height: 90%;
@@ -36,18 +35,19 @@ $z-Modal-header: 100;
   // --------------------------------------------------------
   &-header {
     position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
+    top: 0;
+    right: 0;
+    left: 0;
     width: 100%;
     height: 3.5rem;
-    z-index: $z-Modal-header;
+    z-index: $z-modal-header;
 
     @media only screen and (min-width: $mq-mobile-landscape) {
       position: relative;
       height: auto;
     }
   }
+
   &-title {
     margin: 0;
     overflow: hidden;
@@ -58,12 +58,13 @@ $z-Modal-header: 100;
       white-space: normal;
     }
   }
+
   &-closeBtn {
     cursor: pointer;
     position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
 //         transition: all 0.2s ease-out;
 
 //         &:hover {
@@ -75,26 +76,26 @@ $z-Modal-header: 100;
   // MODAL BODY
   // --------------------------------------------------------
   &-body {
-      overflow: auto;
-      padding-top: 3.5rem;
-      padding-bottom: 3.5rem;
-      position: absolute;
-        top: 0;
-        bottom: 0;
-      width: 100%;
+    overflow: auto;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
 
-      @media only screen and (min-width: $mq-mobile-landscape) {
-        position: static;
-        padding: 0;
-      }
+    @media only screen and (min-width: $mq-mobile-landscape) {
+      position: static;
+      padding: 0;
     }
+  }
 
 
 }
 
 // MODAL MOTOR
 // ----------------------------------------------------------------------------
-// .is--modal-open {
+// .is--modal-visible {
 //     @media only screen and (max-width: $mq-mobile-landscape) {
 //         overflow: hidden;
 //         // position: fixed;
@@ -106,32 +107,33 @@ $z-Modal-header: 100;
 
 
 .mt-Modal {
-  outline: 1px solid lime;
-  box-shadow: 0 6px 6px rgba(0,0,0,.2);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, .2);
 
-    .is--modal-open & {
-        opacity: 1;
-        z-index: 100010;
-    }
+  .is--mt-Modal-visible & {
+    opacity: 1;
+    z-index: 100010;
+  }
 
 
   // MODAL HEADER
   // --------------------------------------------------------
   &-header {
-    background-color: $bg-Modal-header;
+    background-color: $bg-modal-header;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 1.25rem;
     padding-right: 3.65rem;
   }
+
   &-title {
-      color: $color-Modal-header;
-      font-size: 1.25rem;
-      font-weight: 600;
-      line-height: 1.5rem;
+    color: $color-modal-header;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5rem;
   }
+
   &-closeBtn {
-    color: $color-Modal-header;
+    color: $color-modal-header;
     font-size: 1.25rem;
     line-height: 1.5rem;
     padding-top: 1rem;
@@ -142,8 +144,6 @@ $z-Modal-header: 100;
 
   // MODAL BODY
   // --------------------------------------------------------
-  &-body {
-  }
   &-bodySection {
     background-color: $lighter-grey-color;
     border-bottom: 1px solid $grey-color;
@@ -164,8 +164,8 @@ $z-Modal-header: 100;
   &-footer {
     background-color: $lighter-grey-color;
     border-top: 1px solid $grey-color;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     text-align: right;

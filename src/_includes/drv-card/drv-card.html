@@ -20,6 +20,26 @@
 
       {% if section.demo %}
       <div class="drv-Card-example">
+
+
+
+
+
+
+
+      <button
+        class="btn"
+        data-modal="open"
+        data-modal-id="example-modal">exemple-modal</button>
+
+
+
+
+
+
+
+
+
       {% capture subComponentUrl %}{{ component }}/{{ section.demo }}.html{% endcapture %}
       {% include {{ subComponentUrl }} %}
       </div>

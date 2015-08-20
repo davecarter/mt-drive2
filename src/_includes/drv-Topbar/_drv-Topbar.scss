@@ -1,0 +1,127 @@
+$mq-main-nav-horizontal: $mq-tablet;
+
+$bg-topbar-vertical: #fcfaf9;
+$bg-topbar-horizontal: #ffffff;
+
+$color-main-nav: #202020;
+$color-main-nav-hover: $link-hover-color;
+
+$height-topbar: 3.25rem;
+$z-topbar: $z-topbar;
+
+$anim-speed-main-nav: $anim-speed;
+
+// DRIVE TOOLBAR
+// ----------------------------------------------------------------------------
+.drv-Topbar {
+  background-color: $bg-topbar-horizontal;
+  font-family: $font-stack-title;
+  height: $height-topbar;
+
+  @media screen and (max-width: $mq-main-nav-horizontal - 1) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: $z-topbar;
+  }
+  @media screen and (min-width: $mq-main-nav-horizontal) {
+    background-color: $bg-topbar-horizontal;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
+    padding: 0 2rem;
+  }
+
+  &-content {
+    @media screen and (max-width: $mq-main-nav-horizontal - 1) {
+      background-color: $bg-topbar-vertical;
+      position: fixed;
+      top: $height-topbar;
+      bottom: 0;
+      transform: translateX(-100%);
+      transition: all $anim-speed-main-nav ease-in-out;
+      width: 100%;
+      max-width: 19rem;
+      z-index: $z-topbar;
+    }
+    @media screen and (min-width: $mq-main-nav-horizontal) {
+      float: left;
+    }
+
+    .is--drv-MainNav-open & {
+      @media screen and (max-width: $mq-main-nav-horizontal - 1) {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+.drv-Logo-wrap {
+  float: left;
+
+  @media screen and (min-width: $mq-main-nav-horizontal) {
+    height: 3.25rem;
+  }
+}
+
+.drv-Logo {
+  display: block;
+}
+
+
+// DRIVE MAIN NAVIGATION
+// ----------------------------------------------------------------------------
+.drv-MainNav {
+
+  @media screen and (min-width: $mq-main-nav-horizontal) {
+    margin-left: 2rem;
+  }
+
+  &-toggleBtn {
+    cursor: pointer;
+    float: left;
+    line-height: 1.25rem;
+    padding: 1rem;
+
+    @media screen and (min-width: $mq-main-nav-horizontal) {
+      display: none;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-item {
+    @media screen and (min-width: $mq-main-nav-horizontal) {
+      display: inline-block;
+    }
+  }
+
+  &-btn {
+    display: block;
+    font-size: rem(18px);
+    line-height: 1.25rem;
+    padding: 1rem;
+
+    @media screen and (min-width: $mq-main-nav-horizontal) {
+      padding-left: .75rem;
+      padding-right: .75rem;
+    }
+
+    &,
+    &:visited {
+      color: $color-main-nav;
+    }
+
+    &:hover {
+      color: $color-main-nav-hover;
+    }
+
+    @media screen and (max-width: $mq-main-nav-horizontal - 1) {
+      .drv-MainNav-item:first-child & {
+        padding-top: 1.5rem;
+      }
+    }
+  }
+}

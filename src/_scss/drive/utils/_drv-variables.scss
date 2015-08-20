@@ -1,5 +1,5 @@
-$font-stackText: Arial, Verdana, sans-serif;
-$font-stackTitle: 'Source Sans Pro', Arial, Verdana, sans-serif;
+$font-stack-text: Arial, Verdana, sans-serif;
+$font-stack-title: 'Source Sans Pro', Arial, Verdana, sans-serif;
 
 $mq-mobile:             320px;
 $mq-mobile-landscape:   480px;
@@ -7,8 +7,9 @@ $mq-tablet:             768px;
 $mq-desktop:            970px;
 $mq-wide:               1320px;
 
-// #FCFBF9
-// #F5F0EC
 
-// #666;
-// #202020;
+$z-overlay: 100;
+$z-modal-header: 100;
+$z-topbar: 10;
+
+$anim-speed: .3s;

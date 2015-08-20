@@ -1,12 +1,12 @@
 $root-text-size: 100% !default;
 
-$color-body: #000;
+$color-body: #000000;
 $color-hedings: #202020;
-$color-link: #4585F2;
-$color-link-hover: #2D75F0;
-$bg-code: #EEF6F9;
-$bg-code: #EEF6F9;
-$color-code: #E84C3D;
+$color-link: #4585f2;
+$color-link-hover: #2d75f0;
+$bg-code: #eef6f9;
+$bg-code: #eef6f9;
+$color-code: #e84c3d;
 
 
 // BASE TYPOGRAPHY
@@ -15,119 +15,125 @@ html {
   font-size: 100%;
   font-size: $root-text-size;
 }
+
 body {
   color: $color-body;
-  font-family: $font-stackText;
+  font-family: $font-stack-text;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 300;
 }
 
 
-  // BLOCK ELEMENTS
-  // --------------------------------------------------------
-  h1,
-  .h1,
-  h2,
-  .h2,
-  h3,
-  .h3,
-  h4,
-  .h4,
-  h5,
-  .h5,
-  h6,
-  .h6,
-  p,
-  ul,
-  ol,
-  dl {
-    margin-top: 0;
+// BLOCK ELEMENTS
+// --------------------------------------------------------
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p,
+ul,
+ol,
+dl {
+  margin-top: 0;
+}
+
+// HEADINGS
+// ------------------------------------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-hedings;
+  font-family: $font-stack-title;
+  font-weight: 300;
+}
+
+h1,
+.h1 {
+  font-size: rem(30px);
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h2,
+.h2 {
+  font-size: rem(26px);
+  line-height: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+h3,
+.h3 {
+  font-size: rem(22px);
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-size: rem(18px);
+  line-height: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+
+// PARAGRPAHS
+// ------------------------------------
+
+// Inline elements
+// ------------------------------------
+a {
+  &,
+  &:focus,
+  &:visited {
+    color: #4585f2;
+    text-decoration: none;
   }
 
-    // HEADINGS
-    // ------------------------------------
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: $color-hedings;
-      font-family: $font-stackTitle;
-      font-weight: 300;
-    }
+  &:hover {
+    color: $link-hover-color;
 
-    h1,
-    .h1 {
-      font-size: rem(30px);
-      line-height: 2rem;
-      margin-bottom: 1.5rem;
-    }
-    h2,
-    .h2 {
-      font-size: rem(26px);
-      line-height: 1.75rem;
-      margin-bottom: 1.25rem;
-    }
-    h3,
-    .h3 {
-      font-size: rem(22px);
-      line-height: 1.5rem;
-      margin-bottom: 1rem;
-    }
-    h4,
-    .h4,
-    h5,
-    .h5,
-    h6,
-    .h6 {
-      font-size: rem(18px);
-      line-height: 1.25rem;
-      margin-bottom: 1rem;
-    }
+    p & {
+      border-bottom: 1px solid;
+      border-bottom-color: darken($link-hover-color, 10%);
 
-
-    // PARAGRPAHS
-    // ------------------------------------
-    pre {
     }
+  }
+}
 
-    // Inline elements
-    // ------------------------------------
-    a {
-      &,
-      &:focus,
-      &:visited {
-          color: #4585F2;
-          text-decoration: none;
-      }
-      &:hover {
-        color: $link-hover-color;
+strong,
+b {
+  font-weight: 600;
+}
 
-        p & {
-          border-bottom: 1px solid;
-          border-bottom-color: darken($link-hover-color, 10%);
+em,
+i {
+  font-style: italic;
+}
 
-        }
-      }
-    }
-    strong,
-    b {
-      font-weight: 600;
-    }
-    em,
-    i {
-      font-style: italic;
-    }
-    code {
-      background: $bg-code;
-      color: $color-code;
-      font-weight: 600;
-      font-size: 1rem;
-      padding: 0 .25rem;
+code {
+  background: $bg-code;
+  color: $color-code;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0 .25rem;
 
-      p & {
-        font-size: 1.25rem;
-      }
-    }
+  p & {
+    font-size: 1.25rem;
+  }
+}

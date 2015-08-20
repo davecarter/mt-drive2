@@ -72,8 +72,9 @@ linters:
     enabled: true
     style: exclude_zero
 
+## Cambiada
   MergeableSelector:
-    enabled: true
+    enabled: false
 
   NameFormat:
     enabled: true
@@ -86,9 +87,9 @@ linters:
 
   PlaceholderInExtend:
     enabled: true
-
+## Cambiada
   PropertySortOrder:
-    enabled: true
+    enabled: false
     order: concentric
 
   PropertySpelling:
@@ -99,8 +100,9 @@ linters:
     enabled: true
     max_depth: 3
 
+## Cambiada
   SelectorFormat:
-    enabled: true
+    enabled: false
     class_convention: '^(?:[a-zA-Z0-9]*)\-[A-Z]{1}[a-z][a-zA-Z0-9]*(?:\-[a-z][a-zA-Z0-9]*)?(?:\-\-[a-z][a-zA-Z0-9]*)?$'
 
   Shorthand:
