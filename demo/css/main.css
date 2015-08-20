@@ -326,7 +326,9 @@ code {
       height: 3.25rem; } }
 
 .drv-Logo {
-  display: block; }
+  display: block;
+  margin-top: .75rem;
+  height: 1.75rem; }
 
 @media screen and (min-width: 768px) {
   .drv-MainNav {
