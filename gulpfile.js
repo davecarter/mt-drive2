@@ -166,7 +166,7 @@ var gulp = require('gulp'),
 
   gulp.task('deploy', ['upload'], function(callback) {
     runSequence(
-      'cleangulp',
+      'clean',
       callback)
   });
 
@@ -208,8 +208,8 @@ var gulp = require('gulp'),
 
 // WATCH ======================================================================
   gulp.task('watch', ['browsersync'], function() {
-    gulp.watch( ['./*.+(html|yml)', '!' + basePath.dist],         ['html'] );
-    gulp.watch( basePath.src + '/**/*.+(html|yml)',   ['html'] );
+    gulp.watch( basePath.src + '/**/*.+(html|yml)',               ['html'] );
+    gulp.watch( assetsPath.componentsSrc + '/**/*.+(html|yml)',   ['html'] );
     gulp.watch( assetsPath.stylesSrc + '/**/*.scss',              ['css'] );
     gulp.watch( assetsPath.componentsSrc + '/**/*.scss',          ['css'] );
     gulp.watch( assetsPath.componentsSrc + '/**/*.js',            ['js'] );
