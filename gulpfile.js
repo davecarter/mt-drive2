@@ -1,16 +1,20 @@
 var basePath = {
   src: './_src',
-  dist: './_site',
+  dist: '.',
   tmp: '.tmp',
+  demo: './_site',
 };
 var assetsPath = {
   componentsSrc: basePath.src + '/components',
   stylesSrc: basePath.src + '/scss',
-  stylesDist: './css',
+  stylesDist: basePath.dist + '/css',
+  stylesDemo: basePath.demo + '/css',
   scriptsSrc: basePath.src + '/js',
-  scriptsDist: './js',
+  scriptsDist: basePath.dist + '/js',
+  scriptsDemo: basePath.demo + '/js',
   imgSrc: basePath.src + '/img',
-  imgDist: './img',
+  imgDist: basePath.dist + '/img',
+  imgDemo: basePath.demo + '/img',
   zeus: '_zeus'
 };
 
@@ -56,7 +60,7 @@ var gulp = require('gulp'),
 
 // CLEAN ======================================================================
   gulp.task('clean', function(callback) {
-    del(basePath.dist + '/*', function(err, deletedFiles) {
+    del(basePath.demo + '/*', function(err, deletedFiles) {
       console.log('Files deleted:\n'.bold.green , deletedFiles.join(',\n '));
       callback();
     });
@@ -92,8 +96,9 @@ var gulp = require('gulp'),
       .pipe(sourcemaps.init())
       .pipe(sass())
       .pipe(autoprefixer())
-      .pipe(sourcemaps.write('./'))
       .pipe(gulp.dest( assetsPath.stylesDist ))
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest( assetsPath.stylesDemo ))
   });
 
   gulp.task('scss-lint', function() {
@@ -140,11 +145,11 @@ var gulp = require('gulp'),
 // BROWSER SYNC ===============================================================
   gulp.task('browsersync', function() {
     browsersync({
-      server: { baseDir: basePath.dist },
+      server: { baseDir: basePath.demo },
       port: 8000,
       files: [
-        assetsPath.stylesDist + '/*.css',
-        assetsPath.scriptsDist + '/*.js',
+        assetsPath.stylesDemo + '/*.css',
+        assetsPath.scriptsDemo + '/*.js',
       ]
     })
   });
@@ -189,8 +194,8 @@ var gulp = require('gulp'),
   gulp.task('watch', ['browsersync'], function() {
     gulp.watch( ['./*.+(html|yml)', '!' + basePath.dist],         ['html'] );
     gulp.watch( basePath.src + '/**/*.+(html|yml)',   ['html'] );
-    gulp.watch( assetsPath.stylesSrc + '/**/*.scss',              ['css', 'html'] );
-    gulp.watch( assetsPath.componentsSrc + '/**/*.scss',          ['css', 'html'] );
+    gulp.watch( assetsPath.stylesSrc + '/**/*.scss',              ['css'] );
+    gulp.watch( assetsPath.componentsSrc + '/**/*.scss',          ['css'] );
     gulp.watch( assetsPath.componentsSrc + '/**/*.js',            ['js'] );
     gulp.watch( assetsPath.scriptsSrc + '/*.js',                  ['js'] );
     //gulp.watch( path.src + '/_img/**/*.+(png|jpg)',  ['images'] );

@@ -6,6 +6,7 @@ $color-card-code: #999999;
 // CARD
 // ----------------------------------------------------------------------------
 .drv-Card {
+  border: 10px solid lime;
   background-color: $bg-card;
   box-shadow: 0 0 2px rgba(0, 0, 0, .2);
   margin-bottom: 1.75rem;
