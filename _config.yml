@@ -1,23 +1,23 @@
 
 # Where things are
-destination: ./_site
-layouts:     ./_src/layouts
-data_source: ./_src/components
+source:      ./src
+destination: ./dist
+layouts:     ./src/layouts
+data_source: components
 
 # Handling Reading
 exclude:      [
-  'node_modules',
-  '.gitignore',
-  'drive2.sublime-project',
-  'drive2.sublime-workspace',
-  'Gemfile',
-  'Gemfile.lock',
-  'gulpfile.js',
-  'package.json',
-  'scss-lint.yml'
-
+  'components',
+  'img',
+  'includes',
+  'js',
+  'layouts',
+  'scss'
 ]
 keep_files: [
+  'css',
+  'img',
+  'js'
 ]
 encoding: 'utf-8'
 

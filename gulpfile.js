@@ -1,20 +1,16 @@
 var basePath = {
-  src: './_src',
-  dist: '.',
+  src: './src',
+  dist: './dist',
   tmp: '.tmp',
-  demo: './_site',
 };
 var assetsPath = {
   componentsSrc: basePath.src + '/components',
   stylesSrc: basePath.src + '/scss',
   stylesDist: basePath.dist + '/css',
-  stylesDemo: basePath.demo + '/css',
   scriptsSrc: basePath.src + '/js',
   scriptsDist: basePath.dist + '/js',
-  scriptsDemo: basePath.demo + '/js',
   imgSrc: basePath.src + '/img',
   imgDist: basePath.dist + '/img',
-  imgDemo: basePath.demo + '/img',
   zeus: '_zeus'
 };
 
@@ -62,7 +58,7 @@ var gulp = require('gulp'),
 // CLEAN ======================================================================
   gulp.task('clean', function(callback) {
     del([
-      basePath.demo,
+      basePath.dist,
       basePath.tmp,
       basePath.dist + '/css',
       basePath.dist + '/img',
@@ -110,9 +106,8 @@ var gulp = require('gulp'),
       .pipe(sourcemaps.init())
       .pipe(sass())
       .pipe(autoprefixer())
-      // .pipe(gulp.dest( assetsPath.stylesDist ))
       .pipe(sourcemaps.write('./'))
-      .pipe(gulp.dest( assetsPath.stylesDemo ))
+      .pipe(gulp.dest( assetsPath.stylesDist ));
   });
 
   gulp.task('scss-lint', function() {
@@ -144,8 +139,7 @@ var gulp = require('gulp'),
     .pipe(babel())
     .pipe(concat('drive.min.js'))
     .pipe(uglify())
-    // .pipe(gulp.dest(assetsPath.scriptsDist))
-    .pipe(gulp.dest(assetsPath.scriptsDemo));
+    .pipe(gulp.dest(assetsPath.scriptsDist));
   });
 
 
@@ -153,27 +147,26 @@ var gulp = require('gulp'),
   gulp.task('svg', function() {
     return gulp.src(assetsPath.imgSrc + '/**/*.svg')
     .pipe(svgmin())
-    // .pipe(gulp.dest(assetsPath.imgDist))
-    .pipe(gulp.dest(assetsPath.imgDemo));
+    .pipe(gulp.dest(assetsPath.imgDist));
   });
 
 
 // BROWSER SYNC ===============================================================
   gulp.task('browsersync', function() {
     browsersync({
-      server: { baseDir: basePath.demo },
+      server: { baseDir: basePath.dist },
       port: 8000,
       files: [
-        assetsPath.stylesDemo + '/*.css',
-        assetsPath.scriptsDemo + '/*.js',
+        assetsPath.stylesDist + '/*.css',
+        assetsPath.scriptsDist + '/*.js',
       ]
     })
   });
 
-// DEPLOY ====================================================================
 
+// DEPLOY ====================================================================
   gulp.task('upload', ['build'], function() {
-    return gulp.src( basePath.demo + '/**/*')
+    return gulp.src( basePath.dist + '/**/*')
       .pipe(ghPages());
   });
 
