@@ -166,7 +166,7 @@ var gulp = require('gulp'),
 
   gulp.task('deploy', ['upload'], function(callback) {
     runSequence(
-      'cleangulp',
+      'clean',
       callback)
   });
 
