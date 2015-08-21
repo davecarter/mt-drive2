@@ -60,7 +60,7 @@ var gulp = require('gulp'),
 
 // CLEAN ======================================================================
   gulp.task('clean', function(callback) {
-    del(basePath.demo + '/*', function(err, deletedFiles) {
+    del(basePath.demo, function(err, deletedFiles) {
       console.log('Files deleted:\n'.bold.green , deletedFiles.join(',\n '));
       callback();
     });
@@ -96,7 +96,7 @@ var gulp = require('gulp'),
       .pipe(sourcemaps.init())
       .pipe(sass())
       .pipe(autoprefixer())
-      .pipe(gulp.dest( assetsPath.stylesDist ))
+      // .pipe(gulp.dest( assetsPath.stylesDist ))
       .pipe(sourcemaps.write('./'))
       .pipe(gulp.dest( assetsPath.stylesDemo ))
   });
@@ -115,6 +115,9 @@ var gulp = require('gulp'),
   });
 
 
+
+
+
 // SCRIPTS ====================================================================
   gulp.task('js', function() {
     return gulp.src([
@@ -130,7 +133,8 @@ var gulp = require('gulp'),
     .pipe(babel())
     .pipe(concat('drive.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest(assetsPath.scriptsDist));
+    // .pipe(gulp.dest(assetsPath.scriptsDist))
+    .pipe(gulp.dest(assetsPath.scriptsDemo));
   });
 
 
@@ -138,7 +142,8 @@ var gulp = require('gulp'),
   gulp.task('svg', function() {
     return gulp.src(assetsPath.imgSrc + '/**/*.svg')
     .pipe(svgmin())
-    .pipe(gulp.dest(assetsPath.imgDist));
+    // .pipe(gulp.dest(assetsPath.imgDist))
+    .pipe(gulp.dest(assetsPath.imgDemo));
   });
 
 
@@ -153,6 +158,37 @@ var gulp = require('gulp'),
       ]
     })
   });
+
+// PUBLISH ====================================================================
+  gulp.task('clean-publish', function(callback) {
+    del([
+        basePath.demo,
+        basePath.tmp,
+        basePath.dist + '/css',
+        basePath.dist + '/img',
+        basePath.dist + '/js',
+      ], function(err, deletedFiles) {
+      console.log('Files deleted:\n'.bold.green , deletedFiles.join(',\n '));
+      callback();
+    });
+  });
+
+  gulp.task('copy-publish', ['build'] function() {
+    return gulp.src( [
+      basePath.demo + '/css',
+      basePath.demo + '/js',
+      basePath.demo + '/img'
+    ])
+      .pipe(gulp.dest( assetsPath.stylesDist ))
+  });
+
+  gulp.task('publish', function(callback) {
+    runSequence(
+      'clean-publish',
+      'copy-publish'
+    callback);
+  });
+
 
 
 // ZEUS  ======================================================================
@@ -223,3 +259,4 @@ var gulp = require('gulp'),
       ['watch'],
       callback);
   });
+
