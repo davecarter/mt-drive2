@@ -8,7 +8,7 @@
 
 // Partials
 // --------------------------------------------------------
-// @import './legacy/sass/partials/grid';
+@import './legacy/sass/partials/grid';
 // @import './legacy/sass/partials/fonts';
 // @import './legacy/sass/partials/buttons';
 // @import './legacy/sass/partials/forms';
@@ -52,7 +52,7 @@
 @import '../components/drv-Footer/drv-Footer';
 @import '../components/drv-PageHero/drv-PageHero';
 @import '../components/drv-Card/drv-Card';
-// // @import '../_includes/drv-ColorList/drv-ColorList';
+@import '../components/drv-ColorList/drv-ColorList';
 
 
 @import '../components/mt-Overlay/mt-Overlay';

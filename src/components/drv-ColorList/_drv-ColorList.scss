@@ -16,21 +16,25 @@ $color-color-sample-text: #ffffff;
 // --------------------------------------------------------
 .drv-ColorSample {
   color: $color-color-sample-text;
-  font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 1.5rem;
-  padding: 1.25rem;
-  text-align: center;
+  position: relative;
+  height: 8rem;
 
   > :last-child {
     margin-bottom: 0;
   }
 }
 
-.drv-ColorSample-name {
-  margin-bottom: .25rem;
+.drv-ColorSample-code {
+  background: rgba(0, 0, 0, .3);
+  font-size: rem(18px);
+  line-height: 1.5rem;
+  padding: .5rem 1rem;
+  position: absolute;
+    bottom: 0;
+    right: 0;
+  text-transform: uppercase;
 }
 
-.drv-ColorSample-code {
-  font-weight: 600;
+.drv-ColorSample-name {
+  margin-bottom: .25rem;
 }

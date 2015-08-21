@@ -1,9 +1,7 @@
-title: 'Colors'
+Title: 'Colors'
+Description: |
+  <p>Default style for headers h1, h2, h3, h4, h5, h6, style paragraphs p and links or anchors a.</p>
 
-colorList:
-  - name: 'Red'
-    code: '#e74c3d'
-  - name: 'Blue'
-    code: '#4585f2'
-  - name: 'Turquoise'
-    code: '#007a87'
+sections:
+  - Colors:
+    demo: 'drv-ColorList'
