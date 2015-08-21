@@ -1,0 +1,1453 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"img",
+				"imgSrc"
+			],
+			[
+				"components",
+				"componentsSrc"
+			],
+			[
+				"scrip",
+				"scriptsSrc"
+			],
+			[
+				"style",
+				"stylesSrc"
+			],
+			[
+				"scr",
+				"scriptsDist"
+			],
+			[
+				"transla",
+				"translateY()"
+			],
+			[
+				"modal",
+				"modalId"
+			],
+			[
+				"create",
+				"createOverlay"
+			],
+			[
+				"button",
+				"buttonText"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"to",
+				"tov	text-overflow: ${ellipsis};"
+			],
+			[
+				"tr",
+				"transform"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"pta_",
+				"pta_desktop_wrap"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"wsp",
+				"white-space"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"tra",
+				"translateX()"
+			],
+			[
+				"border-s",
+				"border-style"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"n",
+				"nowrap"
+			],
+			[
+				"border-",
+				"border-radius"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"is",
+				"is_selected"
+			],
+			[
+				"z-",
+				"z-index"
+			],
+			[
+				"pane",
+				"panelOwnedId"
+			],
+			[
+				"dist",
+				"distStyles"
+			],
+			[
+				"src",
+				"srcStyles"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"ren",
+				"ren	React: render: fn() { return ... }"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 6327,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_src/components/drv-Card/_drv-Card.scss",
+			"settings":
+			{
+				"buffer_size": 3328,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "# OS generated files ================================================================== #\n.DS_Store\n.DS_Store?\n._*\n.Spotlight-V100\n.Trashes\nIcon?\nehthumbs.db\nThumbs.db\n\n\n# RUBY     ============================================================================ #\nGemfile.lock\n.sass-cache/\ncodekit-config.json\n*.css.map\n\n\n# GRUNT =============================================================================== #\nnode_modules/\nlogs/\ndist/\nnpm-debug.log\nconfig.json\n\n\n# DESIGN ============================================================================== #\n_design/\n*.sublime-workspace\n*.sublime-project\n\n\n# OTHER =============================================================================== #\n_site/\nsitespeed-result/\n.tmp\napp/components\n",
+			"file": ".gitignore",
+			"file_size": 729,
+			"file_write_time": 130845644410000000,
+			"settings":
+			{
+				"buffer_size": 736,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "rei",
+		"selected_items":
+		[
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"gutter",
+				"GutterColor: Clear Cache"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pretty",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"raz",
+				"Set Syntax: Razor"
+			],
+			[
+				"ra",
+				"Set Syntax: Razor"
+			],
+			[
+				"razor",
+				"Set Syntax: Razor"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"razo",
+				"Set Syntax: Razor"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"asp",
+				"Set Syntax: ASP"
+			],
+			[
+				"indt",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"r",
+				"Set Syntax: Razor"
+			],
+			[
+				"css",
+				"CSSLint: Run CSSLint"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				":s",
+				":w - Save"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"encod",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"low",
+				"Convert Case: Lower Case"
+			],
+			[
+				"linter",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"up",
+				"Convert Case: Upper Case"
+			],
+			[
+				"upp",
+				"Convert Case: Upper Case"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lint d",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"idne",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lin",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"toggle l",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"rao",
+				"Set Syntax: Razor"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"c#",
+				"Set Syntax: C#"
+			],
+			[
+				"Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markup",
+				"Markdown Preview: Export HTML in Sublime Text"
+			],
+			[
+				"lowe",
+				"Convert Case: Lower Case"
+			],
+			[
+				"markd",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"comme",
+				"Toggle Comment"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"jek",
+				"Set Syntax: HTML (Jekyll)"
+			],
+			[
+				"liq",
+				"Set Syntax: HTML (Liquid)"
+			],
+			[
+				"liqu",
+				"Set Syntax: HTML (Liquid)"
+			],
+			[
+				"babe",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"i",
+				"Indentation: Convert to Spaces"
+			]
+		],
+		"width": 610.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"24 -10"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2"
+	],
+	"file_history":
+	[
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/_src/_components/path.yml",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/_config.yml",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/_src/includes/scripts-footer.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/gulpfile.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/.gitignore",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/node_modules/browser-sync/node_modules/browser-sync-ui/node_modules/weinre/node_modules/express/node_modules/mkdirp/.gitignore.orig",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/_src/layouts/global.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/_src/components/drv-Topbar/_drv-Topbar.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/_src/components/drv-Card/drv-Card.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/index.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/_src/components/drv-Card/scripts-footer.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/_src/components/scripts-footer.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/_src/components/drv-Card/drv-Card.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/_site/index.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/_src/components/drv-Topbar/data.yml",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/_src/scss/main.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/_src/components/path.yml",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/_src/components/drv-Card/drv-card.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/_site/js/drive.min.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/_src/components/drv-Topbar/drv-Topbar.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/_src/scss/drive/utils/_drv-variables.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/_scss/main.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Scripts/Ficha2.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Controls/FichaTecnica/SlidePopupEquipment.ascx",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/web.config",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass/layout/_topbar.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass/base/_variables.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass/partials/_grid.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Styles/look2014.css",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2/Content/main.css",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2/Controllers/ApplicationController.vb",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2/Views/Shared/_Layout.52.vbhtml",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2/Views/Shared/_Layout.53.vbhtml",
+		"/Users/nahuel.sotelo/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/nahuel.sotelo/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/drive.css",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Controls/2015/MenuDesktop.ascx",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Controls/2015/MenuMobile.ascx",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Masters/Layout-Banner.master",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/GTA_new/Default.aspx",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Controls/Menu.ascx",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Masters/Normal.master",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/nochange/styles/com_3.css",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Controls/Header.ascx",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Bin/RazorEngine.pdb",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Masters/Layout-Bannerless.master",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Controls/Parrilla.ascx",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/coches-de-ocasion.aspx",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/ofertas_especiales/Default.aspx",
+		"/Users/nahuel.sotelo/Documents/sites/personal/learn-js/frontend-masters/02-advanced-js-fundamentals-to-jquery-and-pure-dom-scripting/exercises/test.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2/Web.config",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2/Views/Shared/_drawer.53.vbhtml",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2/Views/Shared/_drawer.52.vbhtml",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass/components/_user-thumb.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2/Views/Ocasion/Busqueda2.vbhtml",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/js/components/slide-nav.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2/Scripts/commonlogin.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2/Content/anuncio-vendido.css",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Styles/GTA/gta.css",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Styles/2015/login.css",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass/components/_navs.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Controls/Menu.ascx.vb",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Scripts/common.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass/partials/_forms.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Scripts/login.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/coches-de-ocasion.aspx.vb",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/coches-de-ocasion.ashx",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Controls/GTA/Menu.ascx",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/GTA_new/editar-mi-anuncio.aspx",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass/components/_dropdown.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Scripts/commonlogin.js.orig",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Controls/GTA_New/VehicleAdDataNew.ascx",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/nochange/html/policitycookies.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/js/components/mt-tooltip.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/src/_scss/main.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/src/components.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/src/_includes/mt-Marc/data.yml",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/src/_includes/mt-Marc/mt-Marc.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive2/src/_includes/mt-Marc/_mt-Marc.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass/base/_utils.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/js/components/dropbubble.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2/Scripts/exif.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/drive copy.css",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass/base/_init.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass/drive.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/GTA/Web.config",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/SignUpIn.aspx.vb",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/GTA_new/editar-mi-cuenta.aspx",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Styles/2015/home.css",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Styles/home3.css",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Styles/noticias/suggest.css",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/SignUpIn.aspx",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/GTA_new/anuncios.aspx",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/nochange/styles/com.css",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass/components/_cards.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/js/components/mt-modal.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/components.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass/components/_tooltip.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass/components/_modal.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass/utils/_mixins.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Styles/common.css",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/js/components/common.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass/components/_toast.scss",
+		"/Users/nahuel.sotelo/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/js/components/mt-toast.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/js/components/email-suggest.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Styles/modal.css",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass/base/_animations.scss",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass/components/_tooltip.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/.eslintrc",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2/Views/Shared/_header.vbhtml",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2/adRequest.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2/Web.config.motos",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2/Web.Motos.config",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Styles/no_margins.css",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/node_modules/eslint/lib/rules/no-implied-eval.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/gulpfile.js",
+		"/Users/nahuel.sotelo/Documents/Box Sync/UX & Design/coches.net 2015/ICONOGRAFIA/webfont/gulpfile.js",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Drive/components.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Controls/GTA/Menu.ascx.orig",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/guide/guide-styles.css",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/CSS.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/grid.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/index.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/start.html",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Styles/generic.css",
+		"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Scripts/commonlogin.js",
+		"/Users/nahuel.sotelo/Documents/sites/personal/react-starter-kit-master/src/components/Header/Header.js"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/js",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/js",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass/components",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/js",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/personal/react-starter-kit-master/src",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Styles",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2/Views",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2/Scripts",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/MobileCochesMVC2",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Styles",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Styles",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Scripts",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Styles",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-drive/css/sass",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches",
+			"/Users/nahuel.sotelo/Documents/sites/sm-motor/mt-web/MOT_ESP_R1/Coches/Styles",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/WebMvc",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/WebMvc/Content",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/WebMvc/Content",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/WebMvc/Content/Themes",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/WebMvc",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/Web",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/Web",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/Web",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/Web",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/WebMvc",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/WebMvc/Scripts",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/Web",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/WebMvc",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/Web",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/WebMvc",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/Web",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/WebMvc",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/WebMvc/Content",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/WebMvc",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/Web",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/WebMvc",
+			"/Users/nahuel.sotelo/Documents/sites/realestate-fotocasa/Websites/Web",
+			"/Users/nahuel.sotelo/Documents/sites/fotocasa-prototype/src",
+			"/Users/nahuel.sotelo/Documents/sites/fotocasa-prototype/src/_assets/sass",
+			"/Users/nahuel.sotelo/Documents/sites/fotocasa-prototype/src/_assets/sass/legacy",
+			"/Users/nahuel.sotelo/Documents/sites/fotocasa-prototype/src/_includes/components-octopus",
+			"/Users/nahuel.sotelo/Documents/sites/fotocasa-prototype/src/_assets/sass",
+			"/Users/nahuel.sotelo/Documents/sites/fotocasa-prototype/src/_assets/sass/legacy",
+			"/Volumes/BOOTCAMP/GITproject/realestate-fotocasa/Websites/WebMvc/Content/Octopus/Components",
+			"/Volumes/BOOTCAMP/GITproject/realestate-fotocasa/Websites/WebMvc/Content/Octopus",
+			"/Volumes/BOOTCAMP/GITproject/realestate-fotocasa/Websites/WebMvc/Content/Octopus/Components",
+			"/Volumes/BOOTCAMP/GITproject/realestate-fotocasa/Websites/WebMvc/Content/Octopus",
+			"/Volumes/BOOTCAMP/GITproject/realestate-fotocasa/Websites/WebMvc/Content/Octopus/Components",
+			"/Volumes/BOOTCAMP/GITproject/realestate-fotocasa/Websites/WebMvc/Content/Octopus"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Dist",
+			" basePath.src + ",
+			"{%",
+			"componentUrl",
+			"path_subComponent",
+			"subComponentUrl",
+			"_src/includes",
+			"components",
+			"path-components",
+			"componentPath",
+			"subComponentUrl",
+			"./",
+			"drv-Footer",
+			"path.src",
+			"fixed-ficha",
+			"$mq-tablet",
+			"topbar_logo",
+			":",
+			"; ",
+			";",
+			"64px",
+			"_menus",
+			"__menus",
+			"topbar__log",
+			"page",
+			".page",
+			"topbar__lo",
+			"topbar-lo",
+			"nav-slide",
+			"nav__slide",
+			".page",
+			".topbar",
+			"fixed",
+			"drive",
+			"url_driveJs",
+			"drive.min",
+			".page",
+			":",
+			".publi-right",
+			".side",
+			"drop-bubble",
+			"#nav-gta",
+			":",
+			";",
+			"html body",
+			"html b",
+			":Footer",
+			"\"banner_top",
+			"Menu.ascx",
+			"Menu.ascx.",
+			"topbar_logo-wrap",
+			"Parrilla.as",
+			"page-ResultGrid",
+			"980px !important",
+			"169.254.14.53",
+			".nav-slide",
+			"nav-slide",
+			"navslide",
+			"HEADER",
+			"page-ResultGrid",
+			"parrilla",
+			"64px",
+			".content-gta",
+			".blur-bg",
+			".content",
+			"is--nav-slide-open",
+			"data-navslide=\"toggle\"",
+			"<%@",
+			"MenuDesktop",
+			"hide--",
+			"data-",
+			"logo",
+			"970",
+			".hide--in-mobile",
+			"gta_link",
+			"erver\" ",
+			"hide--",
+			"data-",
+			"sesio",
+			"data-logout",
+			"lime",
+			"cyan",
+			"red",
+			"mgbot20",
+			"oches.local:8111",
+			"coches.local:811",
+			"local",
+			"coches.local",
+			"geo",
+			"urlAPI",
+			"login",
+			"btn",
+			"apius",
+			"pd10",
+			"Menu.ascx",
+			"data-tooltip=\"front\"",
+			"nav-slide_mask",
+			"soy pro",
+			"hide--",
+			"Menu.ascx",
+			" hide--in-mobile",
+			"hide--in",
+			"pta",
+			"desktop-wrap",
+			"pta-",
+			"pta",
+			"hide--in",
+			"</li>",
+			"fichas",
+			"buscar",
+			"mis anun",
+			"buscar",
+			"LOGO",
+			"MenuDesktop",
+			"MenuMobile",
+			"drop-",
+			"logo-w",
+			"97",
+			"970",
+			"displayIsBiggerThanBreakpoint",
+			"mqDesktop",
+			"    ",
+			"uploadphotos-dialeg",
+			":",
+			".alert-field",
+			"pre2",
+			"coches.lo",
+			"data-navslide"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6327,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1764,
+								1764
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 943.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_src/components/drv-Card/_drv-Card.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3328,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								224,
+								224
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 736,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								697,
+								697
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Seti_UI/Langs/Git.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.csslint_result_view":
+	{
+		"height": 116.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "mt-drive2.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"config",
+				"_config.yml"
+			],
+			[
+				"gitigno",
+				".gitignore"
+			],
+			[
+				".gitig",
+				"node_modules/browser-sync/node_modules/browser-sync-ui/node_modules/weinre/node_modules/express/node_modules/mkdirp/.gitignore.orig"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"scripts",
+				"_src/includes/scripts-footer.html"
+			],
+			[
+				"globa",
+				"_src/layouts/global.html"
+			],
+			[
+				"gulpfile",
+				"gulpfile.js"
+			],
+			[
+				"loo",
+				"Coches/Styles/look2014.css"
+			],
+			[
+				"varia",
+				"mt-drive/css/sass/base/_variables.scss"
+			],
+			[
+				"web.",
+				"Coches/web.config"
+			],
+			[
+				"layout",
+				"MobileCochesMVC2/Views/Shared/_Layout.53.vbhtml"
+			],
+			[
+				"look",
+				"Coches/Styles/look2014.css"
+			],
+			[
+				"var",
+				"mt-drive/css/sass/base/_variables.scss"
+			],
+			[
+				"web.c",
+				"Coches/web.config"
+			],
+			[
+				"web.cong",
+				"Coches/web.config"
+			],
+			[
+				"deskt",
+				"Coches/Controls/2015/MenuDesktop.ascx"
+			],
+			[
+				"menum",
+				"Coches/Controls/2015/MenuMobile.ascx"
+			],
+			[
+				"banner",
+				"Coches/Masters/Layout-Banner.master"
+			],
+			[
+				"razo",
+				"Coches/Bin/RazorEngine.pdb"
+			],
+			[
+				"parrilla",
+				"Coches/Controls/Parrilla.ascx"
+			],
+			[
+				"draw",
+				"MobileCochesMVC2/Views/Shared/_drawer.53.vbhtml"
+			],
+			[
+				"web.con",
+				"Coches/web.config"
+			],
+			[
+				"web.co",
+				"MobileCochesMVC2/Web.config"
+			],
+			[
+				"look2",
+				"Coches/Styles/look2014.css"
+			],
+			[
+				"menudes",
+				"Coches/Controls/2015/MenuDesktop.ascx"
+			],
+			[
+				"menu",
+				"Coches/Controls/Menu.ascx"
+			],
+			[
+				"layoutba",
+				"Coches/Masters/Layout-Banner.master"
+			],
+			[
+				"anuncio-",
+				"MobileCochesMVC2/Content/anuncio-vendido.css"
+			],
+			[
+				"layou",
+				"Coches/Masters/Layout-Bannerless.master"
+			],
+			[
+				"menud",
+				"Coches/Controls/2015/MenuDesktop.ascx"
+			],
+			[
+				"menude",
+				"Coches/Controls/2015/MenuDesktop.ascx"
+			],
+			[
+				"menumob",
+				"Coches/Controls/2015/MenuMobile.ascx"
+			],
+			[
+				"web",
+				"Coches/web.config"
+			],
+			[
+				"we",
+				"Coches/web.config"
+			],
+			[
+				"web.conf",
+				"MobileCochesMVC2/Web.config"
+			],
+			[
+				"web.confi",
+				"MobileCochesMVC2/Web.config"
+			],
+			[
+				"web.config",
+				"Coches/web.config"
+			],
+			[
+				"cochesde",
+				"Coches/coches-de-ocasion.aspx.vb"
+			],
+			[
+				"menumo",
+				"Coches/Controls/2015/MenuMobile.ascx"
+			],
+			[
+				"vari",
+				"mt-drive/css/sass/base/_variables.scss"
+			],
+			[
+				"vehicleaddatanew",
+				"Coches/Controls/GTA_New/VehicleAdDataNew.ascx"
+			],
+			[
+				"common",
+				"Coches/Scripts/common.js"
+			],
+			[
+				"webcon",
+				"MobileCochesMVC2/Web.config"
+			],
+			[
+				"webc",
+				"Coches/GTA/Web.config"
+			],
+			[
+				"anuncios",
+				"Coches/GTA_new/anuncios.aspx"
+			],
+			[
+				"nav",
+				"mt-drive/css/sass/components/_navs.scss"
+			],
+			[
+				"top",
+				"mt-drive/css/sass/layout/_topbar.scss"
+			],
+			[
+				"com.css",
+				"Coches/nochange/styles/com.css"
+			],
+			[
+				"com.cs",
+				"Coches/nochange/styles/com.css"
+			],
+			[
+				"modal",
+				"mt-drive/js/components/mt-modal.js"
+			],
+			[
+				"dropd",
+				"mt-drive/css/sass/components/_dropdown.scss"
+			],
+			[
+				"compo",
+				"mt-drive/components.html"
+			],
+			[
+				"mixin",
+				"mt-drive/css/sass/utils/_mixins.scss"
+			],
+			[
+				"comm",
+				"Coches/Styles/common.css"
+			],
+			[
+				"tooltip",
+				"mt-drive/css/sass/components/_tooltip.scss"
+			],
+			[
+				"tool",
+				"mt-drive/js/components/mt-tooltip.js"
+			],
+			[
+				"toast",
+				"mt-drive/css/sass/components/_toast.scss"
+			],
+			[
+				"toas",
+				"mt-drive/js/components/mt-toast.js"
+			],
+			[
+				"dektop",
+				"Coches/Controls/2015/MenuDesktop.ascx"
+			],
+			[
+				"mt",
+				"mt-drive/js/components/mt-tooltip.js"
+			],
+			[
+				"drop",
+				"mt-drive/css/sass/components/_dropdown.scss"
+			],
+			[
+				"topb",
+				"mt-drive/css/sass/layout/_topbar.scss"
+			],
+			[
+				"toolt",
+				"mt-drive/css/sass/components/_tooltip.scss"
+			],
+			[
+				"w",
+				"Coches/web.config"
+			],
+			[
+				"navs",
+				"mt-drive/css/sass/components/_navs.scss"
+			],
+			[
+				"web.configco",
+				"MobileCochesMVC2/Web.config.coches"
+			],
+			[
+				"webco",
+				"MobileCochesMVC2/Web.config.motos"
+			],
+			[
+				"web.mo",
+				"MobileCochesMVC2/Web.Motos.config"
+			],
+			[
+				"main",
+				"MobileCochesMVC2/Content/main.css"
+			],
+			[
+				"dri",
+				"mt-drive/css/sass/drive.scss"
+			],
+			[
+				"lime",
+				"mt-drive/node_modules/eslint/lib/rules/no-implied-eval.js"
+			],
+			[
+				"desktop",
+				"Coches/Controls/2015/MenuDesktop.ascx"
+			],
+			[
+				"main.",
+				"MobileCochesMVC2/Content/main.css"
+			],
+			[
+				"webconfi",
+				"Coches/web.config"
+			],
+			[
+				"commin",
+				"Coches/Scripts/commonlogin.js"
+			],
+			[
+				"packa",
+				"mt-drive/package.json"
+			],
+			[
+				"gul",
+				"mt-drive/gulpfile.js"
+			],
+			[
+				"navsc",
+				"mt-drive/css/sass/components/_navs.scss"
+			],
+			[
+				"dekst",
+				"Coches/Controls/2015/MenuDesktop.ascx"
+			],
+			[
+				"commonlo",
+				"Coches/Scripts/commonlogin.js"
+			],
+			[
+				"dropdow",
+				"mt-drive/css/sass/components/_dropdown.scss"
+			],
+			[
+				"2014",
+				"Styles/look2014.css"
+			],
+			[
+				"utils",
+				"mt-drive/css/sass/base/_utils.scss"
+			],
+			[
+				"topba",
+				"mt-drive/css/sass/layout/_topbar.scss"
+			],
+			[
+				"bannerle",
+				"Coches/Masters/Layout-Bannerless.master"
+			],
+			[
+				"alertas",
+				"Coches/GTA_new/alertas.aspx"
+			],
+			[
+				"butt",
+				"mt-drive/css/sass/partials/_buttons.scss"
+			],
+			[
+				"webconf",
+				"Coches/web.config"
+			],
+			[
+				"gri",
+				"WebMvc/Scripts/views/grid.map.js"
+			],
+			[
+				"gridp",
+				"Web/Search/UserControl/GridPhoto.ascx.cs"
+			],
+			[
+				"resul",
+				"Web/Search/Results.aspx"
+			],
+			[
+				"bu",
+				"_assets/sass/components/_button.scss"
+			],
+			[
+				"results.cs",
+				"Web/Search/Results.aspx.cs"
+			],
+			[
+				"res",
+				"Web/Search/Results.aspx"
+			],
+			[
+				"search-gri",
+				"WebMvc/Content/Themes/FotocasaOld/Modules/search-grid.scss"
+			],
+			[
+				"results",
+				"Web/Search/Results.aspx"
+			],
+			[
+				"them",
+				"WebMvc/Content/Octopus/_theme.scss"
+			],
+			[
+				"button",
+				"WebMvc/Content/Octopus/Components/Button/meta.scss"
+			],
+			[
+				"deta",
+				"Web/UserControl/ObjectViews/detail.ascx"
+			],
+			[
+				"newd",
+				"Web/UserControls/NewDetail.ascx"
+			],
+			[
+				"pack",
+				"realestate-fotocasa/package.json"
+			],
+			[
+				"barna.js",
+				"fotocasa-prototype/dist/assets/js/vendor/leaflet/barcelona.js"
+			],
+			[
+				"_map",
+				"fotocasa-prototype/src/_assets/sass/components/_map-area.scss"
+			],
+			[
+				"theme",
+				"_assets/sass/legacy/octopus/_theme.scss"
+			],
+			[
+				"sty",
+				"src/assets/sass/styles.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 374.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
