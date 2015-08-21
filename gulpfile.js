@@ -73,6 +73,13 @@ var gulp = require('gulp'),
     });
   });
 
+  gulp.task('clean-publish', function(callback) {
+    del(basePath.dist + '/.publish', function(err, deletedFiles) {
+      console.log('Files deleted:\n'.bold.green , deletedFiles.join(',\n '));
+      callback();
+    });
+  });
+
 
 // HTML =======================================================================
   gulp.task('jekyll', function(done) {
@@ -163,35 +170,18 @@ var gulp = require('gulp'),
     })
   });
 
-// PUBLISH ====================================================================
-  gulp.task('prod-css', function() {
-    return gulp.src(basePath.demo + '/css/**/*.css')
-      .pipe( gulp.dest( assetsPath.stylesDist ))
-  });
+// DEPLOY ====================================================================
 
-  gulp.task('prod-js', function() {
-    return gulp.src(basePath.demo + '/js/**/*.js')
-      .pipe( gulp.dest( assetsPath.scriptsDist ))
-  });
-
-  gulp.task('prod-img', function() {
-    return gulp.src(basePath.demo + '/img/*.*')
-      .pipe( gulp.dest(assetsPath.imgDist ))
-  });
-
-  gulp.task('prod-copy', ['build'], function(callback) {
-    runSequence(
-      'prod-css',
-      'prod-js',
-      'prod-img',
-    callback);
-  });
-
-  gulp.task('deploy', ['build'], function() {
+  gulp.task('upload', ['build'], function() {
     return gulp.src( basePath.demo + '/**/*')
       .pipe(ghPages());
   });
 
+  gulp.task('deploy', ['upload'], function(callback) {
+    runSequence(
+      'clean-publish',
+      callback)
+  });
 
 
 // ZEUS  ======================================================================
