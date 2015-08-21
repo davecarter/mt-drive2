@@ -43,6 +43,7 @@ var gulp = require('gulp'),
 
     svgmin = require('gulp-svgmin'),
 
+    ghPages = require('gulp-gh-pages'),
     yaml = require('gulp-yaml');
 
 
@@ -121,9 +122,6 @@ var gulp = require('gulp'),
   });
 
 
-
-
-
 // SCRIPTS ====================================================================
   gulp.task('js', function() {
     return gulp.src([
@@ -166,34 +164,32 @@ var gulp = require('gulp'),
   });
 
 // PUBLISH ====================================================================
-  gulp.task('publish-css', function() {
+  gulp.task('prod-css', function() {
     return gulp.src(basePath.demo + '/css/**/*.css')
       .pipe( gulp.dest( assetsPath.stylesDist ))
   });
 
-  gulp.task('publish-js', function() {
+  gulp.task('prod-js', function() {
     return gulp.src(basePath.demo + '/js/**/*.js')
       .pipe( gulp.dest( assetsPath.scriptsDist ))
   });
 
-  gulp.task('publish-img', function() {
+  gulp.task('prod-img', function() {
     return gulp.src(basePath.demo + '/img/*.*')
       .pipe( gulp.dest(assetsPath.imgDist ))
   });
 
-  gulp.task('publish-copy', ['build'], function(callback) {
+  gulp.task('prod-copy', ['build'], function(callback) {
     runSequence(
-      'publish-css',
-      'publish-js',
-      'publish-img',
+      'prod-css',
+      'prod-js',
+      'prod-img',
     callback);
   });
 
-  gulp.task('publish', function(callback) {
-    runSequence(
-      'clean',
-      'publish-copy',
-    callback);
+  gulp.task('deploy', ['build'], function() {
+    return gulp.src( basePath.demo + '/**/*')
+      .pipe(ghPages());
   });
 
 
