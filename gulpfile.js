@@ -58,19 +58,13 @@ var gulp = require('gulp'),
 // CLEAN ======================================================================
   gulp.task('clean', function(callback) {
     del([
+      './.publish',
       basePath.dist,
       basePath.tmp,
       basePath.dist + '/css',
       basePath.dist + '/img',
       basePath.dist + '/js',
       ],function(err, deletedFiles) {
-      console.log('Files deleted:\n'.bold.green , deletedFiles.join(',\n '));
-      callback();
-    });
-  });
-
-  gulp.task('clean-publish', function(callback) {
-    del(basePath.dist + '/.publish', function(err, deletedFiles) {
       console.log('Files deleted:\n'.bold.green , deletedFiles.join(',\n '));
       callback();
     });
@@ -172,7 +166,7 @@ var gulp = require('gulp'),
 
   gulp.task('deploy', ['upload'], function(callback) {
     runSequence(
-      'clean-publish',
+      'cleangulp',
       callback)
   });
 
