@@ -60,7 +60,13 @@ var gulp = require('gulp'),
 
 // CLEAN ======================================================================
   gulp.task('clean', function(callback) {
-    del(basePath.demo, function(err, deletedFiles) {
+    del([
+      basePath.demo,
+      basePath.tmp,
+      basePath.dist + '/css',
+      basePath.dist + '/img',
+      basePath.dist + '/js',
+      ],function(err, deletedFiles) {
       console.log('Files deleted:\n'.bold.green , deletedFiles.join(',\n '));
       callback();
     });
@@ -160,46 +166,33 @@ var gulp = require('gulp'),
   });
 
 // PUBLISH ====================================================================
-  gulp.task('clean-publish', function(callback) {
-    del([
-        basePath.demo,
-        basePath.tmp,
-        basePath.dist + '/css',
-        basePath.dist + '/img',
-        basePath.dist + '/js',
-      ], function(err, deletedFiles) {
-      console.log('Files deleted:\n'.bold.green , deletedFiles.join(',\n '));
-      callback();
-    });
-  });
-
-  gulp.task('css-publish', function() {
+  gulp.task('publish-css', function() {
     return gulp.src(basePath.demo + '/css/**/*.css')
       .pipe( gulp.dest( assetsPath.stylesDist ))
   });
 
-  gulp.task('js-publish', function() {
+  gulp.task('publish-js', function() {
     return gulp.src(basePath.demo + '/js/**/*.js')
       .pipe( gulp.dest( assetsPath.scriptsDist ))
   });
 
-  gulp.task('img-publish', function() {
+  gulp.task('publish-img', function() {
     return gulp.src(basePath.demo + '/img/*.*')
       .pipe( gulp.dest(assetsPath.imgDist ))
   });
 
-  gulp.task('copy-publish', ['build'], function(callback) {
+  gulp.task('publish-copy', ['build'], function(callback) {
     runSequence(
-      'css-publish',
-      'js-publish',
-      'img-publish',
+      'publish-css',
+      'publish-js',
+      'publish-img',
     callback);
   });
 
   gulp.task('publish', function(callback) {
     runSequence(
-      'clean-publish',
-      'copy-publish',
+      'clean',
+      'publish-copy',
     callback);
   });
 
