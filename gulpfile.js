@@ -173,19 +173,33 @@ var gulp = require('gulp'),
     });
   });
 
-  gulp.task('copy-publish', ['build'] function() {
-    return gulp.src( [
-      basePath.demo + '/css',
-      basePath.demo + '/js',
-      basePath.demo + '/img'
-    ])
-      .pipe(gulp.dest( assetsPath.stylesDist ))
+  gulp.task('css-publish', function() {
+    return gulp.src(basePath.demo + '/css/**/*.css')
+      .pipe( gulp.dest( assetsPath.stylesDist ))
+  });
+
+  gulp.task('js-publish', function() {
+    return gulp.src(basePath.demo + '/js/**/*.js')
+      .pipe( gulp.dest( assetsPath.scriptsDist ))
+  });
+
+  gulp.task('img-publish', function() {
+    return gulp.src(basePath.demo + '/img/*.*')
+      .pipe( gulp.dest(assetsPath.imgDist ))
+  });
+
+  gulp.task('copy-publish', ['build'], function(callback) {
+    runSequence(
+      'css-publish',
+      'js-publish',
+      'img-publish',
+    callback);
   });
 
   gulp.task('publish', function(callback) {
     runSequence(
       'clean-publish',
-      'copy-publish'
+      'copy-publish',
     callback);
   });
 
