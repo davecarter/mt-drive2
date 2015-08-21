@@ -40,6 +40,8 @@ var gulp = require('gulp'),
     svgmin = require('gulp-svgmin'),
 
     ghPages = require('gulp-gh-pages'),
+    slack = require('gulp-slack'),
+
     yaml = require('gulp-yaml');
 
 
@@ -161,7 +163,14 @@ var gulp = require('gulp'),
 // DEPLOY ====================================================================
   gulp.task('upload', ['build'], function() {
     return gulp.src( basePath.dist + '/**/*')
-      .pipe(ghPages());
+      .pipe(ghPages())
+      // .pipe(slack({
+      //   url: '*Your Webhook URL*',
+      //   channel: '#foo', // Optional
+      //   user: 'bar', // Optional
+      //   icon_url: 'http://foo.com/bar.jpg', // Optional
+      //   icon_emoji: ':bowtie:' // Optional
+      // });
   });
 
   gulp.task('deploy', ['upload'], function(callback) {
