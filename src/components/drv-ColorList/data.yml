@@ -35,47 +35,47 @@ swatches:
     - name: 'green'
       code: '#27ae60'
 
-  # ------------------------------
+  # # ------------------------------
 
-  - name: 'Out of Brand Colors'
-    colors:
-    - code: '#f8f8f8'
-    - code: '#f5f5f5'
-    - code: '#f1f1f1'
-    - code: '#eeeeee'
-    - code: '#dedede'
-    - code: '#dddddd'
-    - code: '#cccccc'
-    - code: '#bbbbbb'
-    - code: '#aaaaaa'
-    - code: '#7c7c7c'
-    - code: '#666666'
-    - code: '#333333'
-    - code: '#000000'
+  # - name: 'Out of Brand Colors'
+  #   colors:
+  #   - code: '#f8f8f8'
+  #   - code: '#f5f5f5'
+  #   - code: '#f1f1f1'
+  #   - code: '#eeeeee'
+  #   - code: '#dedede'
+  #   - code: '#dddddd'
+  #   - code: '#cccccc'
+  #   - code: '#bbbbbb'
+  #   - code: '#aaaaaa'
+  #   - code: '#7c7c7c'
+  #   - code: '#666666'
+  #   - code: '#333333'
+  #   - code: '#000000'
 
-  - colors:
-    - code: '#faf0f0'
-    - code: '#d3d0cd'
-    - code: '#d1cdcc'
-    - code: '#85807d'
-    - code: '#555459'
+  # - colors:
+  #   - code: '#faf0f0'
+  #   - code: '#d3d0cd'
+  #   - code: '#d1cdcc'
+  #   - code: '#85807d'
+  #   - code: '#555459'
 
-  - colors:
-    - code: '#00aced'
-    - code: '#5d95f4'
-    - code: '#3498db'
-    - code: '#6891c9'
-    - code: '#3b5998'
+  # - colors:
+  #   - code: '#00aced'
+  #   - code: '#5d95f4'
+  #   - code: '#3498db'
+  #   - code: '#6891c9'
+  #   - code: '#3b5998'
 
-  - colors:
-    - code: '#ffb400'
+  # - colors:
+  #   - code: '#ffb400'
 
-  - colors:
-    - code: '#e84c3d'
-    - code: '#e74c3c'
-    - code: '#dd4b39'
-    - code: '#bb0000'
+  # - colors:
+  #   - code: '#e84c3d'
+  #   - code: '#e74c3c'
+  #   - code: '#dd4b39'
+  #   - code: '#bb0000'
 
-  - colors:
-    - code: '#70c0bf'
-    - code: '#007a87'
+  # - colors:
+  #   - code: '#70c0bf'
+  #   - code: '#007a87'
