@@ -1,17 +1,17 @@
 swatches:
   - colors:
     - name: 'neutro-lightest'
-      code: '#ffffff'
-    - name: 'neutro-lighter'
       code: '#fcfaf9'
-    - name: 'neutro-light'
+    - name: 'neutro-lighter'
       code: '#f5f0ec'
-    - name: 'neutro'
+    - name: 'neutro-light'
       code: '#e1dedc'
-    - name: 'neutro-dark'
+    - name: 'neutro'
       code: '#c7c3c0'
-    - name: 'neutro-darker'
+    - name: 'neutro-dark'
       code: '#999999'
+    - name: 'neutro-darker'
+      code: '#333333'
     - name: 'neutro-darkest'
       code: '#202020'
 

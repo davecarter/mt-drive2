@@ -1,8 +1,8 @@
-$bg-card: $c-neutro-lighter;
-$bg-card-example: $c-neutro-lightest;
+$bg-card: $c-neutro-lightest;
+$bg-card-example: #ffffff;
 
-$border-card-code: $c-neutro;
-$color-card-code: $c-neutro-darker;
+$border-card-code: $c-neutro-light;
+$color-card-code: $c-neutro-dark;
 
 // CARD
 // ----------------------------------------------------------------------------
@@ -85,7 +85,7 @@ $color-card-code: $c-neutro-darker;
   // CODE BLOCK
   // --------------------------------------------------------
   &-codeToggleBtn {
-    background-color: $c-neutro-light;
+    background-color: $c-neutro-lighter;
     border: 1px solid $border-card-code;
     color: $color-card-code;
     cursor: pointer;
