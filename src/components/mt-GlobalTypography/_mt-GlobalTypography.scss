@@ -1,12 +1,10 @@
 $root-text-size: 100% !default;
 
-$color-body: #000000;
-$color-hedings: #202020;
-$color-link: #4585f2;
-$color-link-hover: #2d75f0;
-$bg-code: #eef6f9;
-$bg-code: #eef6f9;
-$color-code: #e84c3d;
+$color-body: $c-body-text;
+$color-hedings: $c-headings;
+
+$bg-code: $c-neutro;
+$color-code: $c-red;
 
 
 // BASE TYPOGRAPHY
@@ -54,7 +52,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $color-hedings;
+  color: $c-headings;
   font-family: $font-stack-title;
   font-weight: 300;
 }
@@ -101,16 +99,16 @@ a {
   &,
   &:focus,
   &:visited {
-    color: #4585f2;
+    color: $c-link;
     text-decoration: none;
   }
 
   &:hover {
-    color: $link-hover-color;
+    color: $c-link-hover;
 
     p & {
       border-bottom: 1px solid;
-      border-bottom-color: darken($link-hover-color, 10%);
+      border-bottom-color: darken($c-link-hover, 10%);
 
     }
   }
@@ -124,6 +122,10 @@ b {
 em,
 i {
   font-style: italic;
+}
+
+mark {
+  padding: 0 .25rem;
 }
 
 code {

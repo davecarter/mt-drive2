@@ -1,9 +1,13 @@
-<ul class="drv-ColorList row">
+{% for swatch in site.data.drv-ColorList.data.swatches %}
+  <ul class="drv-ColorList row">
+    {% if swatch.name %}
+    <h2>{{ swatch.name }}</h2>
+    {% endif %}
 
-  {% for color in site.data.drv-ColorList.data.colorList %}
-  <li class="grid-3">
-    {% include_relative {{ site.data.path.componentsSrc }}/drv-ColorList/drv-ColorSample.html %}
-  </li>
-  {% endfor %}
-
+    {% for color in swatch.colors %}
+    <li class="grid-3">
+      {% include_relative {{ site.data.path.componentsSrc }}/drv-ColorList/drv-ColorSample.html %}
+    </li>
+    {% endfor %}
 </ul>
+{% endfor %}

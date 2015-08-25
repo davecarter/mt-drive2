@@ -1,10 +1,10 @@
 $mq-main-nav-horizontal: $mq-tablet;
 
-$bg-topbar-vertical: #fcfaf9;
-$bg-topbar-horizontal: #ffffff;
+$bg-topbar-vertical: $c-neutro-light;
+$bg-topbar-horizontal: $c-neutro-lightest;
 
-$color-main-nav: #202020;
-$color-main-nav-hover: $link-hover-color;
+$color-main-nav: $c-body-text;
+$color-main-nav-hover: $c-link-hover;
 
 $height-topbar: 3.25rem;
 $z-topbar: $z-topbar;
