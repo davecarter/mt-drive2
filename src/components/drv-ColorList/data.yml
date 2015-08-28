@@ -9,7 +9,7 @@ swatches:
     - name: 'neutro'
       code: '#c7c3c0'
     - name: 'neutro-dark'
-      code: '#999999'
+      code: '#777777'
     - name: 'neutro-darker'
       code: '#333333'
     - name: 'neutro-darkest'

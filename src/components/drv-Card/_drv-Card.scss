@@ -85,7 +85,7 @@ $color-card-code: $c-neutro-dark;
   // CODE BLOCK
   // --------------------------------------------------------
   &-codeToggleBtn {
-    background-color: $c-neutro-lighter;
+    background-color: $c-neutro-lightest;
     border: 1px solid $border-card-code;
     color: $color-card-code;
     cursor: pointer;
@@ -95,6 +95,11 @@ $color-card-code: $c-neutro-dark;
     position: relative;
     text-align: right;
     text-transform: uppercase;
+    transition: background-color .25s ease-in-out;
+
+    &:hover {
+      background-color: $c-neutro-lighter;
+    }
 
     .drv-Card-example + & {
       border-top-width: 0;
@@ -103,6 +108,7 @@ $color-card-code: $c-neutro-dark;
     &:before,
     &:after {
       background-color: $color-card-code;
+      background-color: $c-link;
       content: '';
       position: absolute;
       right: 1rem;

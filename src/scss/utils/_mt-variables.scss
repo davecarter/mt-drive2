@@ -32,7 +32,7 @@ $c-neutro-lightest: #fcfaf9;
 $c-neutro-lighter: #f5f0ec;
 $c-neutro-light: #e1dedc;
 $c-neutro: #c7c3c0;
-$c-neutro-dark: #999999;
+$c-neutro-dark: #777777;
 $c-neutro-darker: #333333;
 $c-neutro-darkest: #202020;
 
@@ -49,6 +49,7 @@ $c-green: #27ae60;
 
 $c-link: $c-blue;
 $c-link-hover: $c-blue-dark;
+$c-focus: $c-neutro-dark;
 
 $c-body-text: $c-neutro-darkest;
 $c-headings: $c-neutro-darker;
