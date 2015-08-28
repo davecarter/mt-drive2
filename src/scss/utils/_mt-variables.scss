@@ -1,7 +1,59 @@
+// TYPOGRAPHY
+// ----------------------------------------------------------------------------
+$font-stack-text: Arial, Verdana, sans-serif;
+$font-stack-title: 'Source Sans Pro', Arial, Verdana, sans-serif;
 $root-text-size: 100%;
 
 
-// #000;
-// #202020;
-// #EEF6F9;
-// #E84C3D;
+// MEDIA QUERIES
+// ----------------------------------------------------------------------------
+$mq-mobile:             320px;
+$mq-mobile-landscape:   480px;
+$mq-tablet:             768px;
+$mq-desktop:            970px;
+$mq-wide:               1320px;
+
+
+// Z-INDEX
+// ----------------------------------------------------------------------------
+$z-overlay: 100;
+$z-modal-header: 100;
+$z-topbar: 10;
+
+
+// ANIMATION
+// ----------------------------------------------------------------------------
+$anim-speed: .3s;
+
+
+// COLORS
+// ----------------------------------------------------------------------------
+$c-neutro-lightest: #fcfaf9;
+$c-neutro-lighter: #f5f0ec;
+$c-neutro-light: #e1dedc;
+$c-neutro: #c7c3c0;
+$c-neutro-dark: #777777;
+$c-neutro-darker: #333333;
+$c-neutro-darkest: #202020;
+
+$c-blue: #4585f2;
+$c-blue-dark: #2d75f0;
+
+$c-yellow-lightest: #fffec6;
+$c-yellow: #f39c12;
+
+$c-red: #e74c3d;
+
+$c-green: #27ae60;
+
+
+$c-link: $c-blue;
+$c-link-hover: $c-blue-dark;
+$c-focus: $c-neutro-dark;
+
+$c-body-text: $c-neutro-darkest;
+$c-headings: $c-neutro-darker;
+
+$c-warning: $c-yellow;
+$c-error: $c-red;
+$c-success: $c-green;

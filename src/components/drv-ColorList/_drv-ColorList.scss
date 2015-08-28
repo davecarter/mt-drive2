@@ -1,4 +1,5 @@
-$color-color-sample-text: #ffffff;
+$color-sample-text: $c-neutro-lightest;
+
 
 // COLOR LIST
 // ----------------------------------------------------------------------------
@@ -6,6 +7,10 @@ $color-color-sample-text: #ffffff;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  h2 {
+    margin-top: 1rem;
+  }
 
   > li {
     margin-bottom: 1rem;
@@ -15,26 +20,82 @@ $color-color-sample-text: #ffffff;
 // COLOR LIST
 // --------------------------------------------------------
 .drv-ColorSample {
-  color: $color-color-sample-text;
+  border: 1px solid $c-neutro;
+  color: $color-sample-text;
   position: relative;
-  height: 8rem;
+  height: 9rem;
 
   > :last-child {
     margin-bottom: 0;
   }
-}
 
-.drv-ColorSample-code {
-  background: rgba(0, 0, 0, .3);
-  font-size: rem(18px);
-  line-height: 1.5rem;
-  padding: .5rem 1rem;
-  position: absolute;
+  &-text {
+    background: rgba(0, 0, 0, .3);
+    line-height: 1.5rem;
+    padding: .5rem 1rem;
+    position: absolute;
     bottom: 0;
     right: 0;
-  text-transform: uppercase;
-}
+    text-align: right;
+    width: 100%;
+  }
 
-.drv-ColorSample-name {
-  margin-bottom: .25rem;
+  &-name,
+  &-code {
+    margin-bottom: 0;
+  }
+
+  // COLORS
+  // ------------------------------------
+  &.is--neutro-lightest {
+    background-color: $c-neutro-lightest;
+  }
+
+  &.is--neutro-lighter {
+    background-color: $c-neutro-lighter;
+  }
+
+  &.is--neutro-light {
+    background-color: $c-neutro-light;
+  }
+
+  &.is--neutro {
+    background-color: $c-neutro;
+  }
+
+  &.is--neutro-dark {
+    background-color: $c-neutro-dark;
+  }
+
+  &.is--neutro-darker {
+    background-color: $c-neutro-darker;
+  }
+
+  &.is--neutro-darkest {
+    background-color: $c-neutro-darkest;
+  }
+
+  &.is--blue {
+    background-color: $c-blue;
+  }
+
+  &.is--blue-dark {
+    background-color: $c-blue-dark;
+  }
+
+  &.is--yellow {
+    background-color: $c-yellow;
+  }
+
+  &.is--yellow-lightest {
+    background-color: $c-yellow-lightest;
+  }
+
+  &.is--red {
+    background-color: $c-red;
+  }
+
+  &.is--green {
+    background-color: $c-green;
+  }
 }

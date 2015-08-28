@@ -3,6 +3,7 @@ var basePath = {
   dist: './dist',
   tmp: '.tmp',
 };
+
 var assetsPath = {
   componentsSrc: basePath.src + '/components',
   stylesSrc: basePath.src + '/scss',
@@ -158,7 +159,7 @@ var gulp = require('gulp'),
   });
 
 
-// DEPLOY ====================================================================
+// DEPLOY =====================================================================
   gulp.task('upload', ['build'], function() {
     return gulp.src( basePath.dist + '/**/*')
       .pipe(ghPages());

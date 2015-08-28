@@ -1,0 +1,30 @@
+// BASIC FORM
+// ----------------------------------------------------------------------------
+.mt-BasicForm {
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  fieldset {
+    margin-bottom: 2rem;
+  }
+
+  &-group {
+    margin-bottom: 1.25rem;
+
+    input {
+      margin-bottom: .25rem;
+    }
+  }
+
+  &-validationMsg {
+    font-size: rem(14px);
+    font-weight: bold;
+    margin-bottom: 0;
+
+    &.is--form-error {
+      color: $c-error;
+    }
+  }
+}
+

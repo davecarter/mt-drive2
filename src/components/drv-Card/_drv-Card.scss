@@ -1,7 +1,8 @@
-$bg-card: #f9f9f9;
-$bg-card-code: #eef6f9;
-$border-card-code: #dedede;
-$color-card-code: #999999;
+$bg-card: $c-neutro-lightest;
+$bg-card-example: #ffffff;
+
+$border-card-code: $c-neutro-light;
+$color-card-code: $c-neutro-dark;
 
 // CARD
 // ----------------------------------------------------------------------------
@@ -11,7 +12,7 @@ $color-card-code: #999999;
   margin-bottom: 1.75rem;
 
   &-header {
-    color: $color-hedings;
+    color: $c-headings;
     font-family: $font-stack-title;
     font-weight: 300;
     font-size: 1.25rem;
@@ -38,7 +39,7 @@ $color-card-code: #999999;
 
     &:before {
       content: '';
-      border-top: 2px solid #dedede;
+      border-top: 2px solid $c-neutro;
       display: block;
       position: absolute;
       top: 50%;
@@ -57,7 +58,7 @@ $color-card-code: #999999;
   }
 
   &-example {
-    background-color: #ffffff;
+    background-color: $bg-card-example;
     border: 1px solid $border-card-code;
     border-radius: .25rem .25rem 0 0;
     overflow: hidden;
@@ -84,7 +85,7 @@ $color-card-code: #999999;
   // CODE BLOCK
   // --------------------------------------------------------
   &-codeToggleBtn {
-    background-color: lighten($bg-code, 3%);
+    background-color: $c-neutro-lightest;
     border: 1px solid $border-card-code;
     color: $color-card-code;
     cursor: pointer;
@@ -94,6 +95,11 @@ $color-card-code: #999999;
     position: relative;
     text-align: right;
     text-transform: uppercase;
+    transition: background-color .25s ease-in-out;
+
+    &:hover {
+      background-color: $c-neutro-lighter;
+    }
 
     .drv-Card-example + & {
       border-top-width: 0;
@@ -102,6 +108,7 @@ $color-card-code: #999999;
     &:before,
     &:after {
       background-color: $color-card-code;
+      background-color: $c-link;
       content: '';
       position: absolute;
       right: 1rem;
@@ -119,7 +126,6 @@ $color-card-code: #999999;
   }
 
   &-code {
-    // background: $bg-code;
     box-shadow: inset 0 1px 6px rgba(0, 0, 0, .1);
     display: block;
     position: relative;
@@ -136,10 +142,6 @@ $color-card-code: #999999;
     }
 
     code {
-      // background-color: transparent;
-      border: 1px solid $border-card-code;
-      border-left: 10px solid rgba(0, 0, 0, .1);
-      // color: #000;
       display: block;
       font-weight: 300;
       padding-top: 0;

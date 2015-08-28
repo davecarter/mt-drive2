@@ -1,9 +1,11 @@
 $mq-main-nav-horizontal: $mq-tablet;
 
-$bg-footer: #242424;
+// $bg-footer: #242424;
+$bg-footer: $c-neutro-darkest;
 
-$color-footer: #666666;
-$color-main-nav-hover: $link-hover-color;
+// $color-footer: #666666;
+$color-footer: $c-neutro-dark;
+$color-main-nav-hover: $c-link-hover;
 
 $height-topbar: 3.25rem;
 $z-topbar: $z-topbar;

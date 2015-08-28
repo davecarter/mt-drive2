@@ -1,16 +1,81 @@
-colorList:
-  - code: '#ffffff'
-  - code: '#fcfaf9'
-  - code: '#f5f0ec'
-  - code: '#f1f1f1'
-  - code: '#bbbbbb'
-  - code: '#aaaaaa'
-  - code: '#999999'
-  - code: '#666666'
-  - code: '#202020'
-  - code: '#000000'
-  - code: '#4585f2'
-  - code: '#6891c9'
-  - code: '#70c0bf'
-  - code: '#ffb400'
-  - code: '#e84c3d'
+swatches:
+  - colors:
+    - name: 'neutro-lightest'
+      code: '#fcfaf9'
+    - name: 'neutro-lighter'
+      code: '#f5f0ec'
+    - name: 'neutro-light'
+      code: '#e1dedc'
+    - name: 'neutro'
+      code: '#c7c3c0'
+    - name: 'neutro-dark'
+      code: '#777777'
+    - name: 'neutro-darker'
+      code: '#333333'
+    - name: 'neutro-darkest'
+      code: '#202020'
+
+  - colors:
+    - name: 'blue'
+      code: '#4585f2'
+    - name: 'blue-dark'
+      code: '#2d75f0'
+
+  - colors:
+    - name: 'red'
+      code: '#e74c3d'
+
+  - colors:
+    - name: 'yellow'
+      code: '#f39c12'
+    - name: 'yellow-lightest'
+      code: '#fffec6'
+
+  - colors:
+    - name: 'green'
+      code: '#27ae60'
+
+  # # ------------------------------
+
+  # - name: 'Out of Brand Colors'
+  #   colors:
+  #   - code: '#f8f8f8'
+  #   - code: '#f5f5f5'
+  #   - code: '#f1f1f1'
+  #   - code: '#eeeeee'
+  #   - code: '#dedede'
+  #   - code: '#dddddd'
+  #   - code: '#cccccc'
+  #   - code: '#bbbbbb'
+  #   - code: '#aaaaaa'
+  #   - code: '#7c7c7c'
+  #   - code: '#666666'
+  #   - code: '#333333'
+  #   - code: '#000000'
+
+  # - colors:
+  #   - code: '#faf0f0'
+  #   - code: '#d3d0cd'
+  #   - code: '#d1cdcc'
+  #   - code: '#85807d'
+  #   - code: '#555459'
+
+  # - colors:
+  #   - code: '#00aced'
+  #   - code: '#5d95f4'
+  #   - code: '#3498db'
+  #   - code: '#6891c9'
+  #   - code: '#3b5998'
+
+  # - colors:
+  #   - code: '#ffb400'
+
+  # - colors:
+  #   - code: '#e84c3d'
+  #   - code: '#e74c3c'
+  #   - code: '#dd4b39'
+  #   - code: '#bb0000'
+
+  # - colors:
+  #   - code: '#70c0bf'
+  #   - code: '#007a87'
