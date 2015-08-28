@@ -114,12 +114,12 @@ body {
       padding-top: 1.5rem; } }
 
 .drv-Footer {
-  background-color: olive;
+  background-color: #202020;
   background-image: url(../img/logo.svg);
   background-repeat: no-repeat;
   background-position: right 2rem center;
   background-size: auto 3rem;
-  color: olive;
+  color: #777777;
   padding: 3rem 2rem; }
   .drv-Footer > :last-child {
     margin-bottom: 0; }
@@ -131,13 +131,13 @@ body {
   padding: 3rem;
   position: relative; }
   .drv-PageHero-title {
-    color: #202020;
+    color: #333333;
     font-size: 3rem;
     font-weight: 300;
     line-height: 4rem;
     margin-bottom: 1.25rem; }
   .drv-PageHero-text {
-    color: #202020;
+    color: #333333;
     font-family: "Source Sans Pro", Arial, Verdana, sans-serif;
     font-size: 1.25rem;
     line-height: 1.75rem; }
@@ -149,7 +149,7 @@ body {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   margin-bottom: 1.75rem; }
   .drv-Card-header {
-    color: #202020;
+    color: #333333;
     font-family: "Source Sans Pro", Arial, Verdana, sans-serif;
     font-weight: 300;
     font-size: 1.25rem; }
@@ -167,7 +167,7 @@ body {
       position: relative; }
     .drv-Card-title:before {
       content: '';
-      border-top: 2px solid #e1dedc;
+      border-top: 2px solid #c7c3c0;
       display: block;
       position: absolute;
       top: 50%;
@@ -189,7 +189,7 @@ body {
     position: relative; }
     .drv-Card-example:before {
       border-bottom: 1px solid #e1dedc;
-      color: #999999;
+      color: #777777;
       content: 'example';
       font-size: 0.75rem;
       font-weight: bold;
@@ -201,21 +201,26 @@ body {
       text-align: right;
       text-transform: uppercase; }
   .drv-Card-codeToggleBtn {
-    background-color: #f5f0ec;
+    background-color: #fcfaf9;
     border: 1px solid #e1dedc;
-    color: #999999;
+    color: #777777;
     cursor: pointer;
     font-size: 0.75rem;
     font-weight: bold;
     padding: 0.25rem 2rem;
     position: relative;
     text-align: right;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    -webkit-transition: background-color 0.25s ease-in-out;
+            transition: background-color 0.25s ease-in-out; }
+    .drv-Card-codeToggleBtn:hover {
+      background-color: #f5f0ec; }
     .drv-Card-example + .drv-Card-codeToggleBtn {
       border-top-width: 0; }
     .drv-Card-codeToggleBtn:before,
     .drv-Card-codeToggleBtn:after {
-      background-color: #999999;
+      background-color: #777777;
+      background-color: #4585f2;
       content: '';
       position: absolute;
       right: 1rem;
@@ -409,8 +414,8 @@ Darkula color scheme from the JetBrains family of IDEs
     margin-bottom: 1rem; }
 
 .drv-ColorSample {
-  border: 1px solid #e1dedc;
-  color: #ffffff;
+  border: 1px solid #c7c3c0;
+  color: #fcfaf9;
   position: relative;
   height: 9rem; }
   .drv-ColorSample > :last-child {
@@ -428,17 +433,17 @@ Darkula color scheme from the JetBrains family of IDEs
   .drv-ColorSample-code {
     margin-bottom: 0; }
   .drv-ColorSample.is--neutro-lightest {
-    background-color: #ffffff; }
-  .drv-ColorSample.is--neutro-lighter {
     background-color: #fcfaf9; }
-  .drv-ColorSample.is--neutro-light {
+  .drv-ColorSample.is--neutro-lighter {
     background-color: #f5f0ec; }
-  .drv-ColorSample.is--neutro {
+  .drv-ColorSample.is--neutro-light {
     background-color: #e1dedc; }
-  .drv-ColorSample.is--neutro-dark {
+  .drv-ColorSample.is--neutro {
     background-color: #c7c3c0; }
+  .drv-ColorSample.is--neutro-dark {
+    background-color: #777777; }
   .drv-ColorSample.is--neutro-darker {
-    background-color: #999999; }
+    background-color: #333333; }
   .drv-ColorSample.is--neutro-darkest {
     background-color: #202020; }
   .drv-ColorSample.is--blue {
