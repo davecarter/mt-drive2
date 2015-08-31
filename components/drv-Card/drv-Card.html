@@ -1,0 +1,69 @@
+<article class="drv-Card">
+  <header class="drv-Card-header drv-Card-section">
+    <h2 class="h1 drv-Card-title"><span>{{ site.data.[include.component].[include.component].Title }}</span></h2>
+
+    {% if site.data.[include.component].[include.component].Description %}
+    <div class="drv-Card-description">
+      {{ site.data.[include.component].[include.component].Description }}
+    </div>
+    {% endif %}
+  </header>
+
+
+  {% for section in site.data.[include.component].[include.component].sections %}
+    <section
+      id="type-headings"
+      class="drv-Card-section"
+      data-card="card">
+
+      {% if section.title %}
+      <h3>{{ section.title }}</h3>
+      {% endif %}
+
+      {{ section.description }}
+
+
+
+      {% if section.demo %}
+      <div class="drv-Card-example">
+
+        {% if section.controls %}
+        <div class="drv-Card-controls">
+        {% capture path_subComponent %}{{ site.data.path.componentsSrc }}/{{ include.component }}/{{ section.controls }}.html{% endcapture %}
+        {% include_relative {{ path_subComponent }} %}
+        </div>
+        {% endif %}
+
+
+
+
+
+      <!--
+      <button
+        class="btn"
+        data-modal="open"
+        data-modal-id="example-modal">exemple-modal</button>
+      -->
+
+
+
+
+
+
+      {% capture path_subComponent %}{{ site.data.path.componentsSrc }}/{{ include.component }}/{{ section.demo }}.html{% endcapture %}
+      {% include_relative {{ path_subComponent }} %}
+      </div>
+      {% endif %}
+
+      {% if section.code %}
+      <div class="drv-Card-codeToggleBtn" data-card="code-toggle">Code (HTML)</div>
+      <div class="drv-Card-code" data-card="code">
+        <pre><code class="hljs html">
+{{ section.code }}
+        </code></pre>
+      </div>
+      {% endif %}
+    </section>
+  {% endfor %}
+
+</article>

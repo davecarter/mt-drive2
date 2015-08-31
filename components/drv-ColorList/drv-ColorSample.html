@@ -1,0 +1,8 @@
+<div class="drv-ColorSample {% if color.name %}is--{{ color.name }}{% endif %} {% if color.name %}is--{{ color.name }}{% endif %}" {% if color.name == null %}style="background-color: {{ color.code }}"{% endif %}>
+  <div class="drv-ColorSample-text">
+    {% if color.name %}
+    <p class="drv-ColorSample-name">$c-{{ color.name }}</p>
+    {% endif %}
+    <p class="drv-ColorSample-code">{{ color.code }}</p>
+  </div>
+</div>

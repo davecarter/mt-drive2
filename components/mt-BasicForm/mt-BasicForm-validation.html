@@ -1,0 +1,46 @@
+<form action="" class="mt-BasicForm">
+  <fieldset>
+    <legend>Error States</legend>
+    <div class="mt-BasicForm-group">
+      <label for="">Input error empty *</label>
+      <input type="text" class="is--form-error" placeholder="You need to complete this field" required>
+      <small class="mt-BasicForm-validationMsg is--form-error">This field is required.</small>
+    </div>
+
+    <div class="mt-BasicForm-group">
+      <label for="">Input error with data</label>
+      <input type="text" class="is--form-error" value="Wrong data" required>
+      <small class="mt-BasicForm-validationMsg is--form-error">The information is incorrect.</small>
+    </div>
+
+    <div class="mt-BasicForm-group">
+      <label for="select">Select error *</label>
+      <select id="select" class="is--form-error" required>
+        <option value="">Option 1</option>
+        <option value="">Option 2</option>
+        <option value="">Option 3</option>
+        <option value="">Option 4</option>
+      </select>
+    </div>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Success States</legend>
+
+    <div class="mt-BasicForm-group">
+      <label for="">Input success with data</label>
+      <input type="text" class="is--form-success" value="Wrong data" required>
+    </div>
+
+    <div class="mt-BasicForm-group">
+      <label for="select">Select success *</label>
+      <select id="select" class="is--form-success" required>
+        <option value="">Option 1</option>
+        <option value="">Option 2</option>
+        <option value="">Option 3</option>
+        <option value="">Option 4</option>
+      </select>
+    </div>
+  </fieldset>
+</form>

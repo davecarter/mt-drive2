@@ -1,0 +1,70 @@
+Title: 'Button'
+Description: |
+  <p>Types, sizes and colors to create buttons. Extensible classes applicable to any element.</p>
+  <p>Preferably with <code>input type="submit"</code>, <code>input type="button"</code>, <code>a href="#"</code>.</p>
+
+sections:
+  - Colors:
+    title: 'Colors'
+    description: |
+      <p>Segmentation buttons and colors according to the order of action: primary, secondary or tertiary.</p>
+    demo: 'mt-Button-colors'
+    code: |
+      &lt;!-- Botó acció primaria -->
+      &lt;button class="btn">Primari&lt;/button>
+
+      &lt;!-- Botó acció secundaria -->
+      &lt;input type="button" class="btn btn-secondary" value="Secundari" />
+
+      &lt;!-- Botó acció terciaria -->
+      &lt;a href="#" class="btn btn-tertiary">Terciari&lt;/a>
+
+      &lt;!-- Botó dark border -->
+      &lt;span class="btn btn-border-dark">Dark border&lt;/span>
+
+      &lt;!-- Botó light border -->
+      &lt;span class="btn btn-border-light">Light border&lt;/span>
+
+  - Disabled:
+    title: 'Disabled Buttons'
+    description: |
+      <p>Buttons disabled. Add <code>btn-disabled</code>.</p>
+    demo: 'mt-Button-disabled'
+    code: |
+      &lt;!-- Disabled Button -->
+      &lt;a class="btn btn-disabled">Disabled&lt;/a>
+
+
+  - Sizes:
+    title: 'Sizes'
+    description: |
+      <p>Segmentation sizes for buttons in the order action.</p>
+    demo: 'mt-Button-sizes'
+    code: |
+      &lt;!-- Default size -->
+      &lt;button class="btn fleft">Default&lt;/button>
+      &lt;button class="btn btn-secondary fleft">Default&lt;/button>
+
+      &lt;!-- Middle size -->
+      &lt;button class="btn btn-m fleft">Middle&lt;/button>
+      &lt;button class="btn btn-m btn-secondary fleft">Middle&lt;/button>
+
+      &lt;!-- Small size -->
+      &lt;button class="btn btn-s fleft">Small&lt;/button>
+      &lt;button class="btn btn-s btn-secondary fleft">Small&lt;/button>
+
+  - Icon:
+    title: 'Icon buttons'
+    description: |
+      <p>Buttons with inside icon.</p>
+    demo: 'mt-Button-icon'
+    code: |
+      &lt;!-- Button with icon -->
+      &lt;a href="" class="btn btn-secondary">&lt;span class="icon-info">&lt;/span>Icon button&lt;/a>
+      &lt;a href="" class="btn btn-secondary btn-m">&lt;span class="icon-info">&lt;/span>Icon button middle&lt;/a>
+      &lt;a href="" class="btn btn-secondary btn-s">&lt;span class="icon-info">&lt;/span>Icon button small&lt;/a>
+
+      &lt;!-- Icon button -->
+      &lt;a href="" class="btn-icon inline-block grey-color">&lt;span class="icon-editar">&lt;/span>Editar&lt;/a>
+      &lt;a href="" class="btn-icon inline-block blue-color">&lt;span class="icon-estadistiques2">&lt;/span>Estadísticas&lt;/a>
+      &lt;a href="" class="btn-icon inline-block red-color">&lt;span class="icon-borrar">&lt;/span>Borrar</a>

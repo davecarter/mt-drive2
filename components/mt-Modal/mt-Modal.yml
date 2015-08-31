@@ -1,0 +1,11 @@
+Title: 'Modal dialog'
+Description: |
+  <p>Perfect for contextual message to show only that functionality to the users in a given time.</p>
+  <p>JS needed: <code>drive.min.js</code></p>
+
+sections:
+  - Modal:
+    title: 'Modal'
+    description:
+    controls: 'mt-Modal-controls'
+    demo: 'mt-Modal'

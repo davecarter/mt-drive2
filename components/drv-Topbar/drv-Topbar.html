@@ -1,0 +1,18 @@
+<div id="mainTopbar" class="drv-Topbar clearfix" data-topbar="btn-container">
+  <div class="drv-Logo-wrap">
+    <img class="drv-Logo" src="./img/logo.svg" alt="Drive">
+  </div>
+
+  <div class="drv-Topbar-content">
+    <nav class="drv-MainNav">
+      <ul>
+        {% for item in site.data.[include.component].data.menu.[page.version] %}
+          <li class="drv-MainNav-item">
+            <a href="{{ item.href }}" class="drv-MainNav-btn">{{ item.text }}</a>
+            }
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</div>

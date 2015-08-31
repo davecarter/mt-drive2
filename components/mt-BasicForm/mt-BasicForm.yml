@@ -1,0 +1,79 @@
+Title: 'Forms'
+Description: |
+  <p>Individual form controls.</p>
+
+sections:
+  - Validation:
+    title: 'Form Validation State'
+    description: |
+      <p>Form validation states.</p>
+    demo: 'mt-BasicForm-validation'
+  - Form:
+    title: 'Basic Form'
+    demo: 'mt-BasicForm'
+    code: |
+      &lt;form action="" class="mt-BasicForm">
+
+        &lt;!-- Use &lt;fieldset> to group form controls -->
+        &lt;fieldset>
+
+          &lt;!-- Use &lt;legend> to title a &lt;fieldset> -->
+          &lt;legend>User Login&lt;/legend>
+
+          &lt;!-- Use the class "mt-BasicForm-group" to group a control and it's label -->
+          &lt;div class="mt-BasicForm-group">
+            &lt;label for="input-text">Input text&lt;/label>
+            &lt;input id="input-text" type="text" placeholder="Enter your name">
+          &lt;/div>
+
+          &lt;div class="mt-BasicForm-group">
+            &lt;label for="input-mail">Input mail&lt;/label>
+            &lt;input id="input-mail" type="mail" placeholder="Enter your mail (example@mail.com)">
+          &lt;/div>
+
+          &lt;div class="mt-BasicForm-group">
+            &lt;label for="input-password">Input password&lt;/label>
+            &lt;input id="input-password" type="password" placeholder="Enter password (min. 8 characters)">
+          &lt;/div>
+        &lt;/fieldset>
+
+        &lt;fieldset>
+          &lt;legend>User Login&lt;/legend>
+
+          &lt;div class="mt-BasicForm-group">
+            &lt;label for="select">Select&lt;/label>
+            &lt;select id="select">
+              &lt;option value="">Option 1&lt;/option>
+              &lt;option value="">Option 2&lt;/option>
+              &lt;option value="">Option 3&lt;/option>
+              &lt;option value="">Option 4&lt;/option>
+            &lt;/select>
+          &lt;/div>
+
+          &lt;div class="mt-BasicForm-group">
+            &lt;label for="textarea">Textarea&lt;/label>
+            &lt;textarea id="textarea" placeholder="Write some text here...">&lt;/textarea>
+          &lt;/div>
+        &lt;/fieldset>
+
+        &lt;fieldset>
+          &lt;div class="mt-BasicForm-group">
+
+            &lt;!-- Put input types checkbox and radio inside their labels -->
+            &lt;label for="input-checkbox">
+              &lt;input id="input-checkbox" type="checkbox">
+              Checkbox
+            &lt;/label>
+
+          &lt;/div>
+
+          &lt;div class="mt-BasicForm-group">
+            &lt;label for="input-radio">
+              &lt;input id="input-radio" type="radio">
+              Radio
+            &lt;/label>
+          &lt;/div>
+        &lt;/fieldset>
+      &lt;/form>
+
+

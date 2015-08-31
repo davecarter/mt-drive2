@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+  
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style-guide.css">
+  
+
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic' rel='stylesheet' type='text/css'>
+</head>
+
+
+
+<body>
+  <div id="mainTopbar" class="drv-Topbar clearfix" data-topbar="btn-container">
+  <div class="drv-Logo-wrap">
+    <img class="drv-Logo" src="./img/logo.svg" alt="Drive">
+  </div>
+
+  <div class="drv-Topbar-content">
+    <nav class="drv-MainNav">
+      <ul>
+        
+          <li class="drv-MainNav-item">
+            <a href="index.html" class="drv-MainNav-btn">Base Styles</a>
+            }
+          </li>
+        
+          <li class="drv-MainNav-item">
+            <a href="components.html" class="drv-MainNav-btn">Components</a>
+            }
+          </li>
+        
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+  <div class="drv-PageHero">
+  <div class="drv-Wrapper">
+    <h1 class="drv-PageHero-title">Components</h1>
+    <div class="drv-PageHero-text">
+      <p>Reusable modules to provide modal dialog, iconography alerts.</p>
+<p>Extensible objects.</p>
+
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="drv-Wrapper">
+    <article class="drv-Card">
+  <header class="drv-Card-header drv-Card-section">
+    <h2 class="h1 drv-Card-title"><span>Modal dialog</span></h2>
+
+    
+    <div class="drv-Card-description">
+      <p>Perfect for contextual message to show only that functionality to the users in a given time.</p>
+<p>JS needed: <code>drive.min.js</code></p>
+
+    </div>
+    
+  </header>
+
+
+  
+    <section
+      id="type-headings"
+      class="drv-Card-section"
+      data-card="card">
+
+      
+      <h3>Modal</h3>
+      
+
+      
+
+
+
+      
+      <div class="drv-Card-example">
+
+        
+        <div class="drv-Card-controls">
+        
+        <button
+  class="btn"
+  data-modal="open"
+  data-modal-id="example-modal">exemple-modal</button>
+
+        </div>
+        
+
+
+
+
+
+      <!--
+      <button
+        class="btn"
+        data-modal="open"
+        data-modal-id="example-modal">exemple-modal</button>
+      -->
+
+
+
+
+
+
+      
+      <div id="example-modal"
+     class="mt-Modal"
+     data-modal="modal"
+     style="">
+
+    <div class="mt-Modal-header">
+        <h3 class="mt-Modal-title"></h3>
+        <div class="mt-Modal-closeBtn" data-modal="close">
+            <span class="icon-tancar2"></span>
+        </div>
+    </div>
+
+    <div class="mt-Modal-body">
+      <div class="mt-Modal-bodySection">
+  <h2>Lorem ipsum dolor sit amet!</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis nulla vitae fringilla pharetra. Suspendisse tristique risus ut turpis varius auctor.</p>
+</div>
+
+<div class="mt-Modal-bodySection">
+  <h3>¿Con qué periodicidad quieres recibir tu alerta?</h3>
+</div>
+
+<div class="mt-Modal-bodySection">
+  <div class="mt-radio">
+    <label class="mt-radio__label"><input type="radio" name="radios" id="radio1" data-days="1">Periodicidad cada día</label>
+  </div>
+</div>
+
+    </div>
+
+    <div class="mt-Modal-footer">
+        <input type="button" class="btn btn-s mgright10" value="Acció secundaria">
+        <button class="btn btn-s btn-border-dark" data-modal="close">Acció alternativa</button>
+    </div>
+</div>
+
+      </div>
+      
+
+      
+    </section>
+  
+
+</article>
+
+
+<article class="drv-Card">
+  <header class="drv-Card-header drv-Card-section">
+    <h2 class="h1 drv-Card-title"><span>Cards</span></h2>
+
+    
+  </header>
+
+
+  
+    <section
+      id="type-headings"
+      class="drv-Card-section"
+      data-card="card">
+
+      
+
+      
+
+
+
+      
+      <div class="drv-Card-example">
+
+        
+
+
+
+
+
+      <!--
+      <button
+        class="btn"
+        data-modal="open"
+        data-modal-id="example-modal">exemple-modal</button>
+      -->
+
+
+
+
+
+
+      
+      <div class="grid-4">
+  <div class="card">
+    <img src="../img/noImage.jpg" alt="" />
+
+    <div class="content-card">
+      <span class="label-news fleft">label</span>
+      <span class="icon-comentaris fright">23</span>
+      <span class="icon-visites fright mgright20">215</span>
+      <div class="clear"></div>
+      <h3>Lorem ipsum dolor sit</h3>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+
+      
+      <div class="drv-Card-codeToggleBtn" data-card="code-toggle">Code (HTML)</div>
+      <div class="drv-Card-code" data-card="code">
+        <pre><code class="hljs html">
+&lt;!-- Card -->
+&lt;div class="card">
+    &lt;img src="" alt="" />
+    &lt;div class="content-card">
+        &lt;span class="label-news fleft">label&lt;/span>
+        &lt;span class="icon-comentaris fright">23&lt;/span>
+        &lt;span class="icon-visites fright mgright20">215&lt;/span>
+        &lt;div class="clear">&lt;/div>
+        &lt;h3>Lorem ipsum dolor sit&lt;/h3>
+    &lt;/div>
+&lt;/div>
+
+        </code></pre>
+      </div>
+      
+    </section>
+  
+
+</article>
+
+
+<article class="drv-Card">
+  <header class="drv-Card-header drv-Card-section">
+    <h2 class="h1 drv-Card-title"><span>Button</span></h2>
+
+    
+    <div class="drv-Card-description">
+      <p>Types, sizes and colors to create buttons. Extensible classes applicable to any element.</p>
+<p>Preferably with <code>input type="submit"</code>, <code>input type="button"</code>, <code>a href="#"</code>.</p>
+
+    </div>
+    
+  </header>
+
+
+  
+    <section
+      id="type-headings"
+      class="drv-Card-section"
+      data-card="card">
+
+      
+      <h3>Colors</h3>
+      
+
+      <p>Segmentation buttons and colors according to the order of action: primary, secondary or tertiary.</p>
+
+
+
+
+      
+      <div class="drv-Card-example">
+
+        
+
+
+
+
+
+      <!--
+      <button
+        class="btn"
+        data-modal="open"
+        data-modal-id="example-modal">exemple-modal</button>
+      -->
+
+
+
+
+
+
+      
+      <!-- Botó acció primaria -->
+<button class="btn">Primari</button>
+
+<!-- Botó acció secundaria -->
+<input type="button" class="btn btn-secondary" value="Secundari" />
+
+<!-- Botó acció terciaria -->
+<a href="#" class="btn btn-tertiary">Terciari</a>
+
+<!-- Botó dark border -->
+<span class="btn btn-border-dark">Dark border</span>
+
+<!-- Botó light border -->
+<span class="btn btn-border-light">Light border</span>
+
+      </div>
+      
+
+      
+      <div class="drv-Card-codeToggleBtn" data-card="code-toggle">Code (HTML)</div>
+      <div class="drv-Card-code" data-card="code">
+        <pre><code class="hljs html">
+&lt;!-- Botó acció primaria -->
+&lt;button class="btn">Primari&lt;/button>
+
+&lt;!-- Botó acció secundaria -->
+&lt;input type="button" class="btn btn-secondary" value="Secundari" />
+
+&lt;!-- Botó acció terciaria -->
+&lt;a href="#" class="btn btn-tertiary">Terciari&lt;/a>
+
+&lt;!-- Botó dark border -->
+&lt;span class="btn btn-border-dark">Dark border&lt;/span>
+
+&lt;!-- Botó light border -->
+&lt;span class="btn btn-border-light">Light border&lt;/span>
+
+        </code></pre>
+      </div>
+      
+    </section>
+  
+    <section
+      id="type-headings"
+      class="drv-Card-section"
+      data-card="card">
+
+      
+      <h3>Disabled Buttons</h3>
+      
+
+      <p>Buttons disabled. Add <code>btn-disabled</code>.</p>
+
+
+
+
+      
+      <div class="drv-Card-example">
+
+        
+
+
+
+
+
+      <!--
+      <button
+        class="btn"
+        data-modal="open"
+        data-modal-id="example-modal">exemple-modal</button>
+      -->
+
+
+
+
+
+
+      
+      <!-- Botó acció primaria -->
+<button class="btn btn-disabled">Primari</button>
+
+<!-- Botó acció secundaria -->
+<input type="button" class="btn btn-secondary btn-disabled" value="Secundari" />
+
+<!-- Botó acció terciaria -->
+<a href="#" class="btn btn-tertiary btn-disabled">Terciari</a>
+
+<!-- Botó dark border -->
+<span class="btn btn-border-dark btn-disabled">Dark border</span>
+
+<!-- Botó light border -->
+<span class="btn btn-border-light btn-disabled">Light border</span>
+
+      </div>
+      
+
+      
+      <div class="drv-Card-codeToggleBtn" data-card="code-toggle">Code (HTML)</div>
+      <div class="drv-Card-code" data-card="code">
+        <pre><code class="hljs html">
+&lt;!-- Disabled Button -->
+&lt;a class="btn btn-disabled">Disabled&lt;/a>
+
+        </code></pre>
+      </div>
+      
+    </section>
+  
+    <section
+      id="type-headings"
+      class="drv-Card-section"
+      data-card="card">
+
+      
+      <h3>Sizes</h3>
+      
+
+      <p>Segmentation sizes for buttons in the order action.</p>
+
+
+
+
+      
+      <div class="drv-Card-example">
+
+        
+
+
+
+
+
+      <!--
+      <button
+        class="btn"
+        data-modal="open"
+        data-modal-id="example-modal">exemple-modal</button>
+      -->
+
+
+
+
+
+
+      
+      <!-- Default size -->
+<p>
+  <input type="button" class="btn fleft" value="Default" />
+  <input type="button" class="btn btn-secondary fleft" value="Default" />
+</p>
+
+<!-- Middle size -->
+<p>
+  <input type="button" class="btn btn-m fleft" value="Middle" />
+  <input type="button" class="btn btn-m btn-secondary fleft" value="Middle" />
+</p>
+
+<!-- Small size -->
+<p>
+  <input type="button" class="btn btn-s fleft" value="Small" />
+  <input type="button" class="btn btn-s btn-secondary fleft" value="Small" />
+</p>
+
+      </div>
+      
+
+      
+      <div class="drv-Card-codeToggleBtn" data-card="code-toggle">Code (HTML)</div>
+      <div class="drv-Card-code" data-card="code">
+        <pre><code class="hljs html">
+&lt;!-- Default size -->
+&lt;button class="btn fleft">Default&lt;/button>
+&lt;button class="btn btn-secondary fleft">Default&lt;/button>
+
+&lt;!-- Middle size -->
+&lt;button class="btn btn-m fleft">Middle&lt;/button>
+&lt;button class="btn btn-m btn-secondary fleft">Middle&lt;/button>
+
+&lt;!-- Small size -->
+&lt;button class="btn btn-s fleft">Small&lt;/button>
+&lt;button class="btn btn-s btn-secondary fleft">Small&lt;/button>
+
+        </code></pre>
+      </div>
+      
+    </section>
+  
+    <section
+      id="type-headings"
+      class="drv-Card-section"
+      data-card="card">
+
+      
+      <h3>Icon buttons</h3>
+      
+
+      <p>Buttons with inside icon.</p>
+
+
+
+
+      
+      <div class="drv-Card-example">
+
+        
+
+
+
+
+
+      <!--
+      <button
+        class="btn"
+        data-modal="open"
+        data-modal-id="example-modal">exemple-modal</button>
+      -->
+
+
+
+
+
+
+      
+      <!-- Button with icon -->
+<p>
+  <a href="#" class="btn btn-secondary"><span class="icon-info"></span>Icon button</a>
+</p>
+<p>
+  <a href="#" class="btn btn-secondary btn-m"><span class="icon-info"></span>Icon button middle</a>
+</p>
+<p>
+  <a href="#" class="btn btn-secondary btn-s"><span class="icon-info"></span>Icon button small</a>
+</p>
+
+<!-- Icon button -->
+<div>
+  <a href="#" class="btn-icon inline-block grey-color"><span class="icon-editar"></span>Editar</a>
+  <a href="#" class="btn-icon inline-block blue-color"><span class="icon-estadistiques2"></span>Estadísticas</a>
+  <a href="#" class="btn-icon inline-block red-color"><span class="icon-borrar"></span>Borrar</a>
+</div>
+
+      </div>
+      
+
+      
+      <div class="drv-Card-codeToggleBtn" data-card="code-toggle">Code (HTML)</div>
+      <div class="drv-Card-code" data-card="code">
+        <pre><code class="hljs html">
+&lt;!-- Button with icon -->
+&lt;a href="" class="btn btn-secondary">&lt;span class="icon-info">&lt;/span>Icon button&lt;/a>
+&lt;a href="" class="btn btn-secondary btn-m">&lt;span class="icon-info">&lt;/span>Icon button middle&lt;/a>
+&lt;a href="" class="btn btn-secondary btn-s">&lt;span class="icon-info">&lt;/span>Icon button small&lt;/a>
+
+&lt;!-- Icon button -->
+&lt;a href="" class="btn-icon inline-block grey-color">&lt;span class="icon-editar">&lt;/span>Editar&lt;/a>
+&lt;a href="" class="btn-icon inline-block blue-color">&lt;span class="icon-estadistiques2">&lt;/span>Estadísticas&lt;/a>
+&lt;a href="" class="btn-icon inline-block red-color">&lt;span class="icon-borrar">&lt;/span>Borrar</a>
+
+        </code></pre>
+      </div>
+      
+    </section>
+  
+
+</article>
+
+
+  </div>
+
+  <!-- {#% include ldrv-Sidebar/ldrv-Sidebar.html %#} -->
+
+  <footer class="drv-Footer">
+    <p>&copy; 2014 All Rights Reserved Motor UX ;)</p>
+</footer>
+
+<footer style="display: none;">
+    <div class="content">
+        <div class="fleft">
+            <nav>
+                <ul class="nav">
+                    <li><a class="logo" href="index.html"><b>Drive</b></a></li>
+                    <li><a href="start.html">Start</a></li>
+                    <li><a href="grid.html">Grid</a></li>
+                    <li><a href="CSS.html">CSS</a></li>
+                    <li><a href="components.html">Components</a></li>
+                    <li><a href="docs/cochesGuideLines.pdf" id="pdf-icon" target="_blank">Brand Manual</a></li>
+                </ul>
+            </nav>
+            <p class="mgtop20">© 2014 All Rights Reserved Motor UX ;)</p>
+        </div>
+        <!--
+        <div class="fright mgtop10"><img src="img/logo-footer.png" /></div>
+        -->
+        <div class="clear"></div>
+    </div>
+</footer>
+
+
+  <!-- Jquery-->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Drive Components-->
+<script src="js/drive.min.js"></script>
+<script>
+  $('#mainTopbar').Topbar();
+</script>
+
+<!-- Code Highlighter-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

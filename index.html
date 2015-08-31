@@ -29,6 +29,16 @@
     <nav class="drv-MainNav">
       <ul>
         
+          <li class="drv-MainNav-item">
+            <a href="index.html" class="drv-MainNav-btn">Base Styles</a>
+            }
+          </li>
+        
+          <li class="drv-MainNav-item">
+            <a href="components.html" class="drv-MainNav-btn">Components</a>
+            }
+          </li>
+        
       </ul>
     </nav>
   </div>
@@ -39,8 +49,7 @@
   <div class="drv-Wrapper">
     <h1 class="drv-PageHero-title">Base Styles</h1>
     <div class="drv-PageHero-text">
-      <p></p>
-
+      
     </div>
   </div>
 </div>
@@ -48,276 +57,16 @@
 
 
   <div class="drv-Wrapper">
-    <h1></h1>
-<article class="drv-Card">
-  <header class="drv-Card-header drv-Card-section">
-    <h2 class="h1 drv-Card-title"><span>Forms</span></h2>
-    <p>Individual form controls.</p>
-
-  </header>
-
-
-  
-    <section
-      id="type-headings"
-      class="drv-Card-section"
-      data-card="card">
-
-      
-      <h3>Form Validation State</h3>
-      
-
-      <p>Form validation states.</p>
-
-
-      
-      <div class="drv-Card-example">
-
-
-
-
-
-
-      <!--
-      <button
-        class="btn"
-        data-modal="open"
-        data-modal-id="example-modal">exemple-modal</button>
-      -->
-
-
-
-
-
-
-      
-      <form action="" class="mt-BasicForm">
-  <fieldset>
-    <legend>Error States</legend>
-    <div class="mt-BasicForm-group">
-      <label for="">Input error empty *</label>
-      <input type="text" class="is--form-error" placeholder="You need to complete this field" required>
-      <small class="mt-BasicForm-validationMsg is--form-error">This field is required.</small>
-    </div>
-
-    <div class="mt-BasicForm-group">
-      <label for="">Input error with data</label>
-      <input type="text" class="is--form-error" value="Wrong data" required>
-      <small class="mt-BasicForm-validationMsg is--form-error">The information is incorrect.</small>
-    </div>
-
-    <div class="mt-BasicForm-group">
-      <label for="select">Select error *</label>
-      <select id="select" class="is--form-error" required>
-        <option value="">Option 1</option>
-        <option value="">Option 2</option>
-        <option value="">Option 3</option>
-        <option value="">Option 4</option>
-      </select>
-    </div>
-
-  </fieldset>
-
-  <fieldset>
-    <legend>Success States</legend>
-
-    <div class="mt-BasicForm-group">
-      <label for="">Input success with data</label>
-      <input type="text" class="is--form-success" value="Wrong data" required>
-    </div>
-
-    <div class="mt-BasicForm-group">
-      <label for="select">Select success *</label>
-      <select id="select" class="is--form-success" required>
-        <option value="">Option 1</option>
-        <option value="">Option 2</option>
-        <option value="">Option 3</option>
-        <option value="">Option 4</option>
-      </select>
-    </div>
-  </fieldset>
-</form>
-
-      </div>
-      
-
-      
-    </section>
-  
-    <section
-      id="type-headings"
-      class="drv-Card-section"
-      data-card="card">
-
-      
-      <h3>Basic Form</h3>
-      
-
-      
-
-      
-      <div class="drv-Card-example">
-
-
-
-
-
-
-      <!--
-      <button
-        class="btn"
-        data-modal="open"
-        data-modal-id="example-modal">exemple-modal</button>
-      -->
-
-
-
-
-
-
-      
-      <form action="" class="mt-BasicForm">
-  <fieldset>
-    <legend>User Login</legend>
-
-    <div class="mt-BasicForm-group">
-      <label for="input-text">Input text</label>
-      <input id="input-text" type="text" placeholder="Enter your name">
-    </div>
-
-    <div class="mt-BasicForm-group">
-      <label for="input-mail">Input mail</label>
-      <input id="input-mail" type="mail" placeholder="Enter your mail (example@mail.com)">
-    </div>
-    <div class="mt-BasicForm-group">
-      <label for="input-password">Input password</label>
-      <input id="input-password" type="password" placeholder="Enter password (min. 8 characters)">
-    </div>
-  </fieldset>
-
-  <fieldset>
-    <legend>Select and Textarea</legend>
-
-    <div class="mt-BasicForm-group">
-      <label for="select">Select</label>
-      <select id="select">
-        <option value="">Option 1</option>
-        <option value="">Option 2</option>
-        <option value="">Option 3</option>
-        <option value="">Option 4</option>
-      </select>
-    </div>
-
-    <div class="mt-BasicForm-group">
-      <label for="textarea">Textarea</label>
-      <textarea id="textarea" placeholder="Write some text here..."></textarea>
-    </div>
-  </fieldset>
-
-  <fieldset>
-    <legend>Checkbox and radio button</legend>
-    <div class="mt-BasicForm-group">
-      <label for="input-checkbox">
-        <input id="input-checkbox" type="checkbox">
-        Checkbox
-      </label>
-    </div>
-
-    <div class="mt-BasicForm-group">
-      <label for="input-radio">
-        <input id="input-radio" type="radio">
-        Radio
-      </label>
-    </div>
-  </fieldset>
-</form>
-
-      </div>
-      
-
-      
-      <div class="drv-Card-codeToggleBtn" data-card="code-toggle">Code (HTML)</div>
-      <div class="drv-Card-code" data-card="code">
-        <pre><code class="hljs html">
-&lt;form action="" class="mt-BasicForm">
-
-  &lt;!-- Use &lt;fieldset> to group form controls -->
-  &lt;fieldset>
-
-    &lt;!-- Use &lt;legend> to title a &lt;fieldset> -->
-    &lt;legend>User Login&lt;/legend>
-
-    &lt;!-- Use the class "mt-BasicForm-group" to group a control and it's label -->
-    &lt;div class="mt-BasicForm-group">
-      &lt;label for="input-text">Input text&lt;/label>
-      &lt;input id="input-text" type="text" placeholder="Enter your name">
-    &lt;/div>
-
-    &lt;div class="mt-BasicForm-group">
-      &lt;label for="input-mail">Input mail&lt;/label>
-      &lt;input id="input-mail" type="mail" placeholder="Enter your mail (example@mail.com)">
-    &lt;/div>
-
-    &lt;div class="mt-BasicForm-group">
-      &lt;label for="input-password">Input password&lt;/label>
-      &lt;input id="input-password" type="password" placeholder="Enter password (min. 8 characters)">
-    &lt;/div>
-  &lt;/fieldset>
-
-  &lt;fieldset>
-    &lt;legend>User Login&lt;/legend>
-
-    &lt;div class="mt-BasicForm-group">
-      &lt;label for="select">Select&lt;/label>
-      &lt;select id="select">
-        &lt;option value="">Option 1&lt;/option>
-        &lt;option value="">Option 2&lt;/option>
-        &lt;option value="">Option 3&lt;/option>
-        &lt;option value="">Option 4&lt;/option>
-      &lt;/select>
-    &lt;/div>
-
-    &lt;div class="mt-BasicForm-group">
-      &lt;label for="textarea">Textarea&lt;/label>
-      &lt;textarea id="textarea" placeholder="Write some text here...">&lt;/textarea>
-    &lt;/div>
-  &lt;/fieldset>
-
-  &lt;fieldset>
-    &lt;div class="mt-BasicForm-group">
-
-      &lt;!-- Put input types checkbox and radio inside their labels -->
-      &lt;label for="input-checkbox">
-        &lt;input id="input-checkbox" type="checkbox">
-        Checkbox
-      &lt;/label>
-
-    &lt;/div>
-
-    &lt;div class="mt-BasicForm-group">
-      &lt;label for="input-radio">
-        &lt;input id="input-radio" type="radio">
-        Radio
-      &lt;/label>
-    &lt;/div>
-  &lt;/fieldset>
-&lt;/form>
-
-        </code></pre>
-      </div>
-      
-    </section>
-  
-
-</article>
-
-
-<h1></h1>
-<article class="drv-Card">
+    <article class="drv-Card">
   <header class="drv-Card-header drv-Card-section">
     <h2 class="h1 drv-Card-title"><span>Colors</span></h2>
-    <p>Default style for headers h1, h2, h3, h4, h5, h6, style paragraphs p and links or anchors a.</p>
 
+    
+    <div class="drv-Card-description">
+      <p>Default style for headers h1, h2, h3, h4, h5, h6, style paragraphs p and links or anchors a.</p>
+
+    </div>
+    
   </header>
 
 
@@ -331,9 +80,12 @@
 
       
 
+
+
       
       <div class="drv-Card-example">
 
+        
 
 
 
@@ -550,12 +302,16 @@
 </article>
 
 
-<h1></h1>
 <article class="drv-Card">
   <header class="drv-Card-header drv-Card-section">
     <h2 class="h1 drv-Card-title"><span>Global Typography</span></h2>
-    <p>Default style for headers h1, h2, h3, h4, h5, h6, style paragraphs p and links or anchors a.</p>
 
+    
+    <div class="drv-Card-description">
+      <p>Default style for headers h1, h2, h3, h4, h5, h6, style paragraphs p and links or anchors a.</p>
+
+    </div>
+    
   </header>
 
 
@@ -571,9 +327,12 @@
 
       
 
+
+
       
       <div class="drv-Card-example">
 
+        
 
 
 
@@ -641,9 +400,12 @@
 
       
 
+
+
       
       <div class="drv-Card-example">
 
+        
 
 
 
@@ -693,9 +455,12 @@
 
       
 
+
+
       
       <div class="drv-Card-example">
 
+        
 
 
 
@@ -753,9 +518,12 @@
 
       
 
+
+
       
       <div class="drv-Card-example">
 
+        
 
 
 
@@ -793,6 +561,280 @@
       </div>
       
 
+      
+    </section>
+  
+
+</article>
+
+
+<article class="drv-Card">
+  <header class="drv-Card-header drv-Card-section">
+    <h2 class="h1 drv-Card-title"><span>Forms</span></h2>
+
+    
+    <div class="drv-Card-description">
+      <p>Individual form controls.</p>
+
+    </div>
+    
+  </header>
+
+
+  
+    <section
+      id="type-headings"
+      class="drv-Card-section"
+      data-card="card">
+
+      
+      <h3>Form Validation State</h3>
+      
+
+      <p>Form validation states.</p>
+
+
+
+
+      
+      <div class="drv-Card-example">
+
+        
+
+
+
+
+
+      <!--
+      <button
+        class="btn"
+        data-modal="open"
+        data-modal-id="example-modal">exemple-modal</button>
+      -->
+
+
+
+
+
+
+      
+      <form action="" class="mt-BasicForm">
+  <fieldset>
+    <legend>Error States</legend>
+    <div class="mt-BasicForm-group">
+      <label for="">Input error empty *</label>
+      <input type="text" class="is--form-error" placeholder="You need to complete this field" required>
+      <small class="mt-BasicForm-validationMsg is--form-error">This field is required.</small>
+    </div>
+
+    <div class="mt-BasicForm-group">
+      <label for="">Input error with data</label>
+      <input type="text" class="is--form-error" value="Wrong data" required>
+      <small class="mt-BasicForm-validationMsg is--form-error">The information is incorrect.</small>
+    </div>
+
+    <div class="mt-BasicForm-group">
+      <label for="select">Select error *</label>
+      <select id="select" class="is--form-error" required>
+        <option value="">Option 1</option>
+        <option value="">Option 2</option>
+        <option value="">Option 3</option>
+        <option value="">Option 4</option>
+      </select>
+    </div>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Success States</legend>
+
+    <div class="mt-BasicForm-group">
+      <label for="">Input success with data</label>
+      <input type="text" class="is--form-success" value="Wrong data" required>
+    </div>
+
+    <div class="mt-BasicForm-group">
+      <label for="select">Select success *</label>
+      <select id="select" class="is--form-success" required>
+        <option value="">Option 1</option>
+        <option value="">Option 2</option>
+        <option value="">Option 3</option>
+        <option value="">Option 4</option>
+      </select>
+    </div>
+  </fieldset>
+</form>
+
+      </div>
+      
+
+      
+    </section>
+  
+    <section
+      id="type-headings"
+      class="drv-Card-section"
+      data-card="card">
+
+      
+      <h3>Basic Form</h3>
+      
+
+      
+
+
+
+      
+      <div class="drv-Card-example">
+
+        
+
+
+
+
+
+      <!--
+      <button
+        class="btn"
+        data-modal="open"
+        data-modal-id="example-modal">exemple-modal</button>
+      -->
+
+
+
+
+
+
+      
+      <form action="" class="mt-BasicForm">
+  <fieldset>
+    <legend>User Login</legend>
+
+    <div class="mt-BasicForm-group">
+      <label for="input-text">Input text</label>
+      <input id="input-text" type="text" placeholder="Enter your name">
+    </div>
+
+    <div class="mt-BasicForm-group">
+      <label for="input-mail">Input mail</label>
+      <input id="input-mail" type="mail" placeholder="Enter your mail (example@mail.com)">
+    </div>
+    <div class="mt-BasicForm-group">
+      <label for="input-password">Input password</label>
+      <input id="input-password" type="password" placeholder="Enter password (min. 8 characters)">
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Select and Textarea</legend>
+
+    <div class="mt-BasicForm-group">
+      <label for="select">Select</label>
+      <select id="select">
+        <option value="">Option 1</option>
+        <option value="">Option 2</option>
+        <option value="">Option 3</option>
+        <option value="">Option 4</option>
+      </select>
+    </div>
+
+    <div class="mt-BasicForm-group">
+      <label for="textarea">Textarea</label>
+      <textarea id="textarea" placeholder="Write some text here..."></textarea>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Checkbox and radio button</legend>
+    <div class="mt-BasicForm-group">
+      <label for="input-checkbox">
+        <input id="input-checkbox" type="checkbox">
+        Checkbox
+      </label>
+    </div>
+
+    <div class="mt-BasicForm-group">
+      <label for="input-radio">
+        <input id="input-radio" type="radio">
+        Radio
+      </label>
+    </div>
+  </fieldset>
+</form>
+
+      </div>
+      
+
+      
+      <div class="drv-Card-codeToggleBtn" data-card="code-toggle">Code (HTML)</div>
+      <div class="drv-Card-code" data-card="code">
+        <pre><code class="hljs html">
+&lt;form action="" class="mt-BasicForm">
+
+  &lt;!-- Use &lt;fieldset> to group form controls -->
+  &lt;fieldset>
+
+    &lt;!-- Use &lt;legend> to title a &lt;fieldset> -->
+    &lt;legend>User Login&lt;/legend>
+
+    &lt;!-- Use the class "mt-BasicForm-group" to group a control and it's label -->
+    &lt;div class="mt-BasicForm-group">
+      &lt;label for="input-text">Input text&lt;/label>
+      &lt;input id="input-text" type="text" placeholder="Enter your name">
+    &lt;/div>
+
+    &lt;div class="mt-BasicForm-group">
+      &lt;label for="input-mail">Input mail&lt;/label>
+      &lt;input id="input-mail" type="mail" placeholder="Enter your mail (example@mail.com)">
+    &lt;/div>
+
+    &lt;div class="mt-BasicForm-group">
+      &lt;label for="input-password">Input password&lt;/label>
+      &lt;input id="input-password" type="password" placeholder="Enter password (min. 8 characters)">
+    &lt;/div>
+  &lt;/fieldset>
+
+  &lt;fieldset>
+    &lt;legend>User Login&lt;/legend>
+
+    &lt;div class="mt-BasicForm-group">
+      &lt;label for="select">Select&lt;/label>
+      &lt;select id="select">
+        &lt;option value="">Option 1&lt;/option>
+        &lt;option value="">Option 2&lt;/option>
+        &lt;option value="">Option 3&lt;/option>
+        &lt;option value="">Option 4&lt;/option>
+      &lt;/select>
+    &lt;/div>
+
+    &lt;div class="mt-BasicForm-group">
+      &lt;label for="textarea">Textarea&lt;/label>
+      &lt;textarea id="textarea" placeholder="Write some text here...">&lt;/textarea>
+    &lt;/div>
+  &lt;/fieldset>
+
+  &lt;fieldset>
+    &lt;div class="mt-BasicForm-group">
+
+      &lt;!-- Put input types checkbox and radio inside their labels -->
+      &lt;label for="input-checkbox">
+        &lt;input id="input-checkbox" type="checkbox">
+        Checkbox
+      &lt;/label>
+
+    &lt;/div>
+
+    &lt;div class="mt-BasicForm-group">
+      &lt;label for="input-radio">
+        &lt;input id="input-radio" type="radio">
+        Radio
+      &lt;/label>
+    &lt;/div>
+  &lt;/fieldset>
+&lt;/form>
+
+        </code></pre>
+      </div>
       
     </section>
   

@@ -1,0 +1,17 @@
+Title: 'Cards'
+
+sections:
+  - Colors:
+    demo: 'mt-Card'
+    code: |
+      &lt;!-- Card -->
+      &lt;div class="card">
+          &lt;img src="" alt="" />
+          &lt;div class="content-card">
+              &lt;span class="label-news fleft">label&lt;/span>
+              &lt;span class="icon-comentaris fright">23&lt;/span>
+              &lt;span class="icon-visites fright mgright20">215&lt;/span>
+              &lt;div class="clear">&lt;/div>
+              &lt;h3>Lorem ipsum dolor sit&lt;/h3>
+          &lt;/div>
+      &lt;/div>
