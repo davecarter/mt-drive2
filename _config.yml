@@ -7,7 +7,6 @@ data_source: components
 
 # Handling Reading
 exclude:      [
-  'components',
   'img',
   'includes',
   'js',

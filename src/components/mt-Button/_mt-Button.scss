@@ -15,7 +15,10 @@ $turquoise-color:    #007a87;
   color: #ffffff !important;
   cursor: pointer;
   display:  inline-block;
-  font: 600 17px/20px Coches, Verdana;
+  font-weight: 600;
+  font-family: $font-stack-title;
+  font-size: 17px;
+  line-height: 20px;
   margin: 0;
   outline: none;
   padding: 13px 55px;
@@ -23,6 +26,7 @@ $turquoise-color:    #007a87;
   text-decoration: none;
   transition: background-color .2s ease-in-out;
   -webkit-appearance: none;
+  width: auto;
 
   &:hover:not(.btn-disabled) {
     background: lighten($red-color, 5%);
@@ -131,7 +135,7 @@ $turquoise-color:    #007a87;
 }
 
 .btn-disabled {
-  // @include opacity(0.6);
+  opacity: .6;
   cursor: default;
   box-shadow: none;
 }

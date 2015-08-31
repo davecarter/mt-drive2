@@ -39,6 +39,7 @@ var gulp = require('gulp'),
     babel = require('gulp-babel'),
 
     svgmin = require('gulp-svgmin'),
+    imagemin = require('gulp-imagemin'),
 
     ghPages = require('gulp-gh-pages'),
     yaml = require('gulp-yaml');
@@ -145,6 +146,12 @@ var gulp = require('gulp'),
     .pipe(gulp.dest(assetsPath.imgDist));
   });
 
+  gulp.task('images', function() {
+    return gulp.src(assetsPath.imgSrc + '/**/*.+(png|jpg)')
+    .pipe(imagemin())
+    .pipe(gulp.dest(assetsPath.imgDist));
+  });
+
 
 // BROWSER SYNC ===============================================================
   gulp.task('browsersync', function() {
@@ -215,7 +222,7 @@ var gulp = require('gulp'),
     gulp.watch( assetsPath.componentsSrc + '/**/*.scss',          ['css'] );
     gulp.watch( assetsPath.componentsSrc + '/**/*.js',            ['js'] );
     gulp.watch( assetsPath.scriptsSrc + '/*.js',                  ['js'] );
-    //gulp.watch( path.src + '/_img/**/*.+(png|jpg)',  ['images'] );
+    gulp.watch( assetsPath.imgSrc + '/**/*.+(png|jpg)',           ['images'] );
     gulp.watch( assetsPath.imgSrc + '/**/*.svg',                  ['svg'] );
   });
 
@@ -226,6 +233,7 @@ var gulp = require('gulp'),
       'clean',
       [
         'svg',
+        'images',
         'scss-lint',
         'css',
         'js'
