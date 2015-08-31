@@ -1,0 +1,61 @@
+.card {
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
+
+  .content-card {
+    padding: 10px;
+  }
+
+  a {
+    display: block;
+  }
+
+  p {
+    font-family: $font-stack-title;
+    font-size: 15px;
+    margin: 0;
+    color: #000000;
+  }
+
+  img {
+    margin: 0;
+    vertical-align: bottom;
+    width: 100%;
+  }
+
+  h3 {
+    font-weight: bold;
+    margin: 10px 0 0;
+    border-top: 1px solid #f1f1f1;
+    padding-top: 10px;
+  }
+
+  [class^="icon-"] {
+    color: #bbbbbb;
+    font-size: 12px;
+
+    &:before {
+      margin-right: 3px;
+      font-size: 16px;
+      vertical-align: -3px;
+    }
+
+  }
+
+  .icon-play {
+    font-size: 16px;
+  }
+
+}
+
+.label-news {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 0 5px;
+  font-family: $font-stack-title;
+  font-size: 14px;
+  background-color: $grey-color;
+}
+

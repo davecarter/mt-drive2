@@ -140,21 +140,19 @@ input {
 
   &.is--form-success {
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%22196.8%20166.05%2018%2013%22%3E%3Cstyle%3E.st0%7Bfill%3A%2327ae60%3B%7D%3C/style%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M212.998%20166.357l-9.93%2010.097-4.466-4.514c-.41-.414-1.086-.414-1.495%200-.41.414-.41%201.097%200%201.51l5.235%205.29c.41.414%201.086.414%201.495%200%20.045-.046.085-.098.125-.155l10.532-10.71c.41-.415.41-1.098%200-1.51-.404-.416-1.086-.42-1.496-.008z%22/%3E%3C/svg%3E');
-
   }
 }
+
 select {
   &.is--form-error {
-    background-image:
-      url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%22-223%2024%2018%2018%22%3E%3Cstyle%3E.st0%7Bfill%3A%23e74c3d%3B%7D%3C/style%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M-214%2035.79c-.63%200-1.17.542-1.17%201.172s.54%201.17%201.17%201.17%201.17-.54%201.17-1.17c-.09-.633-.54-1.17-1.17-1.17z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M-214%2024c-4.95%200-9%204.05-9%209s4.05%209%209%209%209-4.05%209-9-4.05-9-9-9zm0%2016.92c-4.41%200-7.92-3.508-7.92-7.92%200-4.32%203.6-7.92%207.92-7.92s7.92%203.51%207.92%207.92c0%204.32-3.51%207.92-7.92%207.92z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M-214%2034.71c.27%200%20.54-.272.54-.542v-5.576c0-.27-.27-.54-.54-.54s-.54.27-.54.54v5.58c0%20.27.27.537.54.537z%22/%3E%3C/svg%3E'),
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%22-223%2024%2018%2018%22%3E%3Cstyle%3E.st0%7Bfill%3A%23e74c3d%3B%7D%3C/style%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M-214%2035.79c-.63%200-1.17.542-1.17%201.172s.54%201.17%201.17%201.17%201.17-.54%201.17-1.17c-.09-.633-.54-1.17-1.17-1.17z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M-214%2024c-4.95%200-9%204.05-9%209s4.05%209%209%209%209-4.05%209-9-4.05-9-9-9zm0%2016.92c-4.41%200-7.92-3.508-7.92-7.92%200-4.32%203.6-7.92%207.92-7.92s7.92%203.51%207.92%207.92c0%204.32-3.51%207.92-7.92%207.92z%22/%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M-214%2034.71c.27%200%20.54-.272.54-.542v-5.576c0-.27-.27-.54-.54-.54s-.54.27-.54.54v5.58c0%20.27.27.537.54.537z%22/%3E%3C/svg%3E'),
       url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2020%2011%22%3E%3Cstyle%3E.st0%7Bfill%3Anone%3Bstroke%3A%23777777%3Bstroke-width%3A2%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A10%3B%7D%3C/style%3E%3Cpath%20id%3D%22XMLID_6_%22%20class%3D%22st0%22%20d%3D%22M19%201l-9%209-9-9%22/%3E%3C/svg%3E');
     background-position: right 3rem center,
                          right 1rem center;
   }
 
   &.is--form-success {
-    background-image:
-      url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%22196.8%20166.05%2018%2013%22%3E%3Cstyle%3E.st0%7Bfill%3A%2327ae60%3B%7D%3C/style%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M212.998%20166.357l-9.93%2010.097-4.466-4.514c-.41-.414-1.086-.414-1.495%200-.41.414-.41%201.097%200%201.51l5.235%205.29c.41.414%201.086.414%201.495%200%20.045-.046.085-.098.125-.155l10.532-10.71c.41-.415.41-1.098%200-1.51-.404-.416-1.086-.42-1.496-.008z%22/%3E%3C/svg%3E'),
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%22196.8%20166.05%2018%2013%22%3E%3Cstyle%3E.st0%7Bfill%3A%2327ae60%3B%7D%3C/style%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M212.998%20166.357l-9.93%2010.097-4.466-4.514c-.41-.414-1.086-.414-1.495%200-.41.414-.41%201.097%200%201.51l5.235%205.29c.41.414%201.086.414%201.495%200%20.045-.046.085-.098.125-.155l10.532-10.71c.41-.415.41-1.098%200-1.51-.404-.416-1.086-.42-1.496-.008z%22/%3E%3C/svg%3E'),
       url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2020%2011%22%3E%3Cstyle%3E.st0%7Bfill%3Anone%3Bstroke%3A%23777777%3Bstroke-width%3A2%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3Bstroke-miterlimit%3A10%3B%7D%3C/style%3E%3Cpath%20id%3D%22XMLID_6_%22%20class%3D%22st0%22%20d%3D%22M19%201l-9%209-9-9%22/%3E%3C/svg%3E');
     background-position: right 3rem center,
                          right 1rem center;

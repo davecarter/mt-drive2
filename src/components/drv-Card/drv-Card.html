@@ -1,8 +1,12 @@
-<h1>{{path_components}}</h1>
 <article class="drv-Card">
   <header class="drv-Card-header drv-Card-section">
     <h2 class="h1 drv-Card-title"><span>{{ site.data.[include.component].[include.component].Title }}</span></h2>
-    {{ site.data.[include.component].[include.component].Description }}
+
+    {% if site.data.[include.component].[include.component].Description %}
+    <div class="drv-Card-description">
+      {{ site.data.[include.component].[include.component].Description }}
+    </div>
+    {% endif %}
   </header>
 
 
@@ -18,9 +22,17 @@
 
       {{ section.description }}
 
+
+
       {% if section.demo %}
       <div class="drv-Card-example">
 
+        {% if section.controls %}
+        <div class="drv-Card-controls">
+        {% capture path_subComponent %}{{ site.data.path.componentsSrc }}/{{ include.component }}/{{ section.controls }}.html{% endcapture %}
+        {% include_relative {{ path_subComponent }} %}
+        </div>
+        {% endif %}
 
 
 
