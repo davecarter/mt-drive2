@@ -21,4 +21,9 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 970px;
+
+  &--fullWidth {
+    padding: 0 2rem;
+    max-width: none;
+  }
 }
