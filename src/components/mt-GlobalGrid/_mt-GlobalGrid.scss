@@ -39,7 +39,7 @@
 $susy: (
   container: 61em,
   columns: 12,
-  column-width: 3em,
+  column-width: 4em,
   gutter-position: 'inside-static',
 );
 
@@ -48,13 +48,11 @@ $susy: (
 // --------------------------------------------------------
 .mt-Grid-container {
   @include container;
+  padding: 0 (gutter() * 2);
 }
 
 .row {
   @include clearfix;
-}
-
-[class*='grid-'] .row {
   margin-left: -(gutter());
   margin-right: -(gutter());
 }
@@ -105,12 +103,4 @@ $susy: (
 
 .grid-12 {
   @include span(12);
-}
-
-#paco {
-  background: rgba(255, 0, 0, .1);
-
-  > div {
-    margin-bottom: 0;
-  }
 }
