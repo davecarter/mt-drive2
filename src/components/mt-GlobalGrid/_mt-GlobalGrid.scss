@@ -56,51 +56,102 @@ $susy: (
   margin-left: -(gutter());
   margin-right: -(gutter());
 }
+// $mq-mobile:             320px;
+// $mq-mobile-landscape:   480px;
+// $mq-tablet:             768px;
+// $mq-desktop:            970px;
+// $mq-wide:               1320px;
 
-.grid-1 {
-  @include span(1);
-}
 
-.grid-2 {
-  @include span(2);
-}
-
-.grid-3 {
-  @include span(3);
-}
-
-.grid-4 {
-  @include span(4);
-}
-
-.grid-5 {
-  @include span(5);
-}
-
-.grid-6 {
-  @include span(6);
-}
-
-.grid-7 {
-  @include span(7);
-}
-
-.grid-8 {
-  @include span(8);
-}
-
-.grid-9 {
-  @include span(9);
-}
-
-.grid-10 {
-  @include span(10);
-}
-
-.grid-11 {
-  @include span(11);
-}
-
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
 .grid-12 {
   @include span(12);
+}
+
+@media screen and (min-width: $mq-mobile-landscape) {
+  .grid-1,
+  .grid-2,
+  .grid-3 {
+    @include span(3);
+  }
+
+  .grid-4 {
+    @include span(4);
+  }
+
+  .grid-5,
+  .grid-6,
+  .grid-7 {
+    @include span(6);
+  }
+
+  .grid-8 {
+    @include span(8);
+  }
+
+  .grid-9,
+  .grid-10,
+  .grid-11 {
+    @include span(9);
+  }
+
+  .grid-12 {
+    @include span(12);
+  }
+}
+
+@media screen and (min-width: $mq-tablet) {
+  .grid-1 {
+    @include span(1);
+  }
+
+  .grid-2 {
+    @include span(2);
+  }
+
+  .grid-3 {
+    @include span(3);
+  }
+
+  .grid-4 {
+    @include span(4);
+  }
+
+  .grid-5 {
+    @include span(5);
+  }
+
+  .grid-6 {
+    @include span(6);
+  }
+
+  .grid-7 {
+    @include span(7);
+  }
+
+  .grid-8 {
+    @include span(8);
+  }
+
+  .grid-9 {
+    @include span(9);
+  }
+
+  .grid-10 {
+    @include span(10);
+  }
+
+  .grid-11 {
+    @include span(11);
+  }
 }
