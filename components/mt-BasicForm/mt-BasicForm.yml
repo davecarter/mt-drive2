@@ -3,11 +3,6 @@ Description: |
   <p>Individual form controls.</p>
 
 sections:
-  - Validation:
-    title: 'Form Validation State'
-    description: |
-      <p>Form validation states.</p>
-    demo: 'mt-BasicForm-validation'
   - Form:
     title: 'Basic Form'
     demo: 'mt-BasicForm'
@@ -75,5 +70,11 @@ sections:
           &lt;/div>
         &lt;/fieldset>
       &lt;/form>
+
+  - Validation:
+    title: 'Form Validation State'
+    description: |
+      <p>Form validation states.</p>
+    demo: 'mt-BasicForm-validation'
 
 
