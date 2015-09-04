@@ -1,0 +1,11 @@
+// PAGE LAYOUT
+// ----------------------------------------------------------------------------
+@media only screen and (min-width: $mq-desktop) {
+  .content {
+    margin-top: 10px;
+    margin-right: auto!important;
+    margin-left: auto!important;
+    max-width: 970px;
+  }
+}
+

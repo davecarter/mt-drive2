@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+  <div class="content">
+    <div class="page">
+      <div id="banner_top" style="min-height:90px" class="publi-top">
+        <div id="PubTop1">
+          <img src="../img/prototype/banner-top.jpg" alt="">
+        </div>
+      </div>
+
+      {% include prototype/components/prot-Topbar/prot-Topbar.html %}
+
+      <div role="main" class="mt-Grid-container mt-Box">
+        {{ content }}
+      </div>
+
+      {% include prototype/components/prot-Footer/prot-Footer.html %}
+    </div>
+  </div>
+</body>
+</html>

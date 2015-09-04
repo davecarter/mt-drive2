@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+  {% include components/drv-Topbar/drv-Topbar.html component='drv-Topbar' %}
+
+  {% include components/drv-PageHero/drv-PageHero.html component='drv-PageHero' %}
+
+
+  <div class="drv-Wrapper--fullWidth">
+    {{ content }}
+  </div>
+
+  {% include components/drv-Footer/drv-Footer.html component='drv-Footer' %}
+
+  {% include scripts-footer.html %}
+</body>
+</html>

@@ -1,16 +1,13 @@
-
 # Where things are
 source:      ./src
 destination: ./dist
-layouts:     ./src/layouts
-data_source: components
+layouts:     _layouts
+data_source: _includes
 
 # Handling Reading
 exclude:      [
   'img',
-  'includes',
   'js',
-  'layouts',
   'scss'
 ]
 keep_files: [

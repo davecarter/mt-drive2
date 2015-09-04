@@ -1,0 +1,19 @@
+primary:
+  button_text: 'Primary'
+  button_classes: ''
+
+secondary:
+  button_text: 'Secondary'
+  button_classes: 'btn-secondary'
+
+tertiary:
+  button_text: 'Tertiary'
+  button_classes: 'btn-tertiary'
+
+dark_border:
+  button_text: 'Dark border'
+  button_classes: 'btn-border-dark'
+
+light_border:
+  button_text: 'Light border'
+  button_classes: 'btn-border-light'
