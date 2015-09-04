@@ -110,6 +110,7 @@ var gulp = require('gulp'),
     return gulp.src([
         assetsPath.stylesSrc + '/**/*.scss',
         assetsPath.componentsSrc + '/**/*.scss',
+        '!' + assetsPath.componentsSrc + '/mt-GlobalGrid/susy/**/*.scss',
         '!' + assetsPath.stylesSrc + '/legacy/**/*.scss',
         '!' + assetsPath.stylesSrc + '/drive/layout/_drv-grid.scss'
       ])
