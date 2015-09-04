@@ -14,19 +14,19 @@
 // @import './legacy/sass/partials/forms';
 // @import './legacy/sass/partials/tables';
 
-// Components
+// _Components
 // --------------------------------------------------------
-// @import './legacy/sass/components/boxes';
-// @import './legacy/sass/components/dropdown';
-// @import './legacy/sass/components/pagination';
-// @import './legacy/sass/components/navs';
-// @import './legacy/sass/components/alerts';
-// @import './legacy/sass/components/icons';
-// @import './legacy/sass/components/modal';
-// @import './legacy/sass/components/cards';
-// @import './legacy/sass/components/user-thumb';
-// @import './legacy/sass/components/toast';
-// @import './legacy/sass/components/tooltip';
+// @import './legacy/sass/_components/boxes';
+// @import './legacy/sass/_components/dropdown';
+// @import './legacy/sass/_components/pagination';
+// @import './legacy/sass/_components/navs';
+// @import './legacy/sass/_components/alerts';
+// @import './legacy/sass/_components/icons';
+// @import './legacy/sass/_components/modal';
+// @import './legacy/sass/_components/cards';
+// @import './legacy/sass/_components/user-thumb';
+// @import './legacy/sass/_components/toast';
+// @import './legacy/sass/_components/tooltip';
 
 // Layout
 // --------------------------------------------------------
@@ -41,14 +41,16 @@
 @import 'utils/mixins';
 @import 'utils/helpers';
 
-@import '../components/mt-GlobalTypography/mt-GlobalTypography';
-@import '../components/mt-GlobalForms/mt-GlobalForms';
-@import '../components/mt-GlobalGrid/mt-GlobalGrid';
+@import '../_includes/components/mt-GlobalLayout/mt-GlobalLayout';
+@import '../_includes/components/mt-GlobalTypography/mt-GlobalTypography';
+@import '../_includes/components/mt-GlobalForms/mt-GlobalForms';
+@import '../_includes/components/mt-GlobalGrid/mt-GlobalGrid';
 
-@import '../components/mt-Icon/mt-Icon';
-@import '../components/mt-BasicForm/mt-BasicForm';
-@import '../components/mt-Button/mt-Button';
-@import '../components/mt-Card/mt-Card';
-@import '../components/mt-Modal/mt-Modal';
-@import '../components/mt-Overlay/mt-Overlay';
+@import '../_includes/components/mt-Icon/mt-Icon';
+@import '../_includes/components/mt-BasicForm/mt-BasicForm';
+@import '../_includes/components/mt-Box/mt-Box';
+@import '../_includes/components/mt-Button/mt-Button';
+@import '../_includes/components/mt-Card/mt-Card';
+@import '../_includes/components/mt-Modal/mt-Modal';
+@import '../_includes/components/mt-Overlay/mt-Overlay';
 

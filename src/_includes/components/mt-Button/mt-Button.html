@@ -1,0 +1,8 @@
+{% if include.dataFile %}
+  {% assign dataSource = site.data.prototype.data.[include.dataFile].[include.componentName] %}
+{% else %}
+  {% assign dataSource = site.data.components.mt-Button.data.[include.componentName] %}
+{% endif %}
+
+
+<button class="btn {{ dataSource.button_classes }}">{{ dataSource.button_text }}</button>

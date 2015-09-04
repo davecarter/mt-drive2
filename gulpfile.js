@@ -5,7 +5,8 @@ var basePath = {
 };
 
 var assetsPath = {
-  componentsSrc: basePath.src + '/components',
+  componentsSrc: basePath.src + '/_includes/components',
+  prototypeSrc: basePath.src + '/_includes/prototype',
   stylesSrc: basePath.src + '/scss',
   stylesDist: basePath.dist + '/css',
   scriptsSrc: basePath.src + '/js',
@@ -110,6 +111,7 @@ var gulp = require('gulp'),
     return gulp.src([
         assetsPath.stylesSrc + '/**/*.scss',
         assetsPath.componentsSrc + '/**/*.scss',
+        assetsPath.prototypeSrc + '/**/*.scss',
         '!' + assetsPath.componentsSrc + '/mt-GlobalGrid/susy/**/*.scss',
         '!' + assetsPath.stylesSrc + '/legacy/**/*.scss',
         '!' + assetsPath.stylesSrc + '/drive/layout/_drv-grid.scss'
@@ -219,8 +221,10 @@ var gulp = require('gulp'),
   gulp.task('watch', ['browsersync'], function() {
     gulp.watch( basePath.src + '/**/*.+(html|yml)',               ['html'] );
     gulp.watch( assetsPath.componentsSrc + '/**/*.+(html|yml)',   ['html'] );
+    gulp.watch( assetsPath.prototypeSrc + '/**/*.+(html|yml)',    ['html'] );
     gulp.watch( assetsPath.stylesSrc + '/**/*.scss',              ['css'] );
     gulp.watch( assetsPath.componentsSrc + '/**/*.scss',          ['css'] );
+    gulp.watch( assetsPath.prototypeSrc + '/**/*.scss',           ['css'] );
     gulp.watch( assetsPath.componentsSrc + '/**/*.js',            ['js'] );
     gulp.watch( assetsPath.scriptsSrc + '/*.js',                  ['js'] );
     gulp.watch( assetsPath.imgSrc + '/**/*.+(png|jpg)',           ['images'] );

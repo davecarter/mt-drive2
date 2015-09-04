@@ -1,0 +1,10 @@
+btn1:
+  button_text: 'pako'
+  button_classes: btn-primary
+
+btn2:
+  button_text: 'pepe'
+
+btn3:
+  button_text: 'pedsfgsdfgsdfgpa'
+  button_classes: btn-secondary btn-s

@@ -1,0 +1,293 @@
+<header>
+  <!-- control menu slide (MOVIL) -->
+
+  <div class="content hide--in-desktop" style="display: none;">
+    <div class="topbar topbar_logo-wrap">
+      <!-- SLIDE MENU BUTTON start -->
+      <a href="#" class="nav-slide_open-btn" data-navslide="toggle">
+        <span class="icon-menu"></span>
+      </a>
+      <!-- SLIDE MENU BUTTON end -->
+
+      <!-- LOGO start -->
+      <a class="topbar_logo logo" href="/"><b>coches.net</b></a>
+      <!-- LOGO end -->
+    </div>
+
+    <div class="topbar nav-slide clearfix">
+      <div class="nav-slide_mask" data-navslide="close"></div>
+
+      <div class="nav-slide_content">
+        <div class="topbar_menus">
+          <nav class="topbar_main-nav">
+            <ul>
+              <!-- NO LOGGED USER start -->
+              <li class="hide--when-logged">
+                <a href="/signupin.aspx?p=r" class="user-thumb nav_btn clearfix">
+                  <img src="../img/prototype/ico-nouser.jpg" data-login="avatar" class="user-thumb_avatar">
+                  <span class="user-thumb_name"><b>Entrar o regístrarme</b></span>
+                </a>
+              </li>
+              <!-- NO LOGGED USER end -->
+
+              <!-- LOGGED USER start -->
+              <li class="hide--when-no-logged">
+                <a href="/GTA_new/default.aspx" class="user-thumb nav_btn clearfix">
+                  <img src="../img/prototype/ico-nouser.jpg" data-login="avatar" class="user-thumb_avatar">
+                  <span class="user-thumb_name" data-login="name"></span>
+                </a>
+              </li>
+              <!-- LOGGED USER end -->
+
+              <li>
+                <a href="/GTA_new/favoritos.aspx" class="nav_btn has--extra-padding"><span class="icon-estrella2"></span>Mis favoritos</a>
+              </li>
+              <li>
+                <a href="/GTA_new/alertas.aspx" class="nav_btn"><span class="icon-bell"></span>Mis alertas</a>
+              </li>
+              <li>
+                <a href="/GTA_new/anuncios.aspx" class="nav_btn"><span class="icon-coche"></span>Mis anuncios</a>
+              </li>
+
+              <li>
+                <a href="/" class="nav_btn has--border-top"><span class="icon-lupa"></span>Buscar</a>
+              </li>
+
+              <li>
+                <a href="/noticias/" class="nav_btn"><span class="icon-noticies"></span>Pruebas y novedades</a>
+              </li>
+
+              <li>
+                <a href="/fichas_tecnicas/" class="nav_btn"><span class="icon-servicios"></span>Fichas técnicas</a>
+              </li>
+
+              <li>
+                <a href="/Vender-mi-coche.aspx" class="nav_btn nav_btn--blue"><span class="icon-anunci"></span>Publica tu anuncio</a>
+              </li>
+
+              <li>
+                <a href="http://debates.coches.net/" class="nav_btn has--border-top"><span class="icon-talk"></span>Foros<span class="icon-link fright"></span></a>
+              </li>
+
+
+
+
+
+              <li class="hide--when-no-logged">
+                <a href="/logout.aspx" class="nav_btn has--border-top"><span class="icon-link"></span>Cerrar sesión</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fi control menu slide (MOVIL) -->
+
+  <!-- control menu (DESKTOP) -->
+  <div class="content hide--in-mobile">
+    <div class="topbar nav-slide clearfix" data-tooltip="front">
+      <div class="topbar_logo-wrap">
+        <a class="topbar_logo logo" href="/"><b>coches.net</b></a>
+      </div>
+
+      <div class="nav-slide_content">
+        <div class="topbar_menus clearfix">
+          <div class="topbar_pta">
+            <a class="btn btn-s btn-secondary" href="/Vender-mi-coche.aspx"><span class="icon-anunci"></span>Publica tu anuncio</a>
+          </div>
+
+          <div class="topbar_user drop-bubble_wrap mt-tooltip__wrap" data-dropbubble="open" data-tooltip="wrap">
+            <a href="/signupin.aspx?p=r" class="user-thumb clearfix">
+              <img src="../img/prototype/ico-nouser.jpg" data-login="avatar" class="user-thumb_avatar">
+              <span class="user-thumb_name" data-login="name">Mi cuenta</span>
+            </a>
+
+            <ul id="menu_gta" class="drop-bubble">
+              <!-- NO LOGGED USER start -->
+              <li class="hide--when-logged">
+                <a href="/signupin.aspx?p=r" class="user-thumb nav_btn clearfix">
+                  <span class="icon-user"></span>
+                  <span class="user-thumb_name"><b>Entrar o regístrarme</b></span>
+                </a>
+              </li>
+              <!-- NO LOGGED USER end -->
+
+              <!-- LOGGED USER start -->
+              <li class="hide--when-no-logged">
+                <a href="/GTA_new/Default.aspx" class="nav_btn has--extra-padding has--border-bottom js_menu_actions"><span class="icon-editar-perfil"></span>Editar mi cuenta</a>
+              </li>
+              <!-- LOGGED USER end -->
+
+              <li id="favorites">
+                <a href="/GTA_new/favoritos.aspx" class="nav_btn js_menu_actions"><span class="icon-estrella2"></span>Mis favoritos</a>
+              </li>
+              <li class="">
+                <a href="/GTA_new/alertas.aspx" class="nav_btn js_menu_actions"><span class="icon-bell"></span>Mis alertas</a>
+              </li>
+              <li>
+                <a href="/GTA_new/anuncios.aspx" class="nav_btn js_menu_actions"><span class="icon-coche"></span>Mis anuncios</a>
+              </li>
+              <li class="hide--when-logged">
+                <a href="http://ev.coches.net/" class="nav_btn js_menu_actions has--border-top"><span class="icon-share"></span>Soy profesional</a>
+              </li>
+
+              <li class="hide--when-no-logged">
+                <a href="/logout.aspx" class="nav_btn has--border-top"><span class="icon-link"></span>Cerrar sesión</a>
+              </li>
+            </ul>
+          </div>
+
+          <nav class="topbar_main-nav">
+            <ul class="clearfix">
+              <li class="drop-bubble_wrap" data-dropbubble="open">
+                <a href="#" class="nav_btn has--border-top"><span class="icon-lupa"></span>Buscar</a>
+                <div class="drop-bubble clearfix">
+                  <div class="drop-bubble_section">
+                    <div class="drop-bubble_title">Coches</div>
+                    <ul class="drop-bubble_nav">
+                      <li>
+                        <a href="/coches-de-ocasion.aspx" title="Coches de segunda mano" class="nav_btn" data-xtclib="menu_ocasion_coches">Coches de segunda mano</a>
+                      </li>
+                      <li>
+                        <a href="/ofertas_especiales/" title="Coches km 0" class="nav_btn" data-xtclib="menu_km0_buscar">Coches km 0</a>
+                      </li>
+                      <li>
+                        <a href="/nuevos/" class="nav_btn" data-xtclib="Menu_nuevos_buscar">Coches nuevos</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="drop-bubble_section">
+                    <div class="drop-bubble_title">Más vehículos</div>
+                    <ul class="drop-bubble_nav">
+                      <li>
+                        <a href="/vehiculos-industriales.aspx" class="nav_btn" data-xtclib="Menu_ocasion_industriales">Furgonetas e industriales</a>
+                      </li>
+                      <li>
+                        <a href="/coches-clasicos-competicion.aspx" class="nav_btn" data-xtclib="Menu_ocasion_clasicos">Clásicos y competición</a>
+                      </li>
+                      <li>
+                        <a href="/autocaravanas-y-remolques.aspx" class="nav_btn" data-xtclib="Menu_ocasion_caravanas">Autocaravanas y remolques</a>
+                      </li>
+                      <li>
+                        <a href="/coches-sin-carnet.aspx" class="nav_btn" data-xtclib="Menu_ocasion_sincarnet">Coches sin carnet</a>
+                      </li>
+                    </ul>
+                  </div>
+
+
+                  <div class="drop-bubble_section">
+                    <div class="drop-bubble_title">Otros</div>
+                    <ul class="nb drop-bubble_nav">
+                      <li>
+                        <a href="/accesorios-de-coches.aspx" class="nav_btn" data-xtclib="Menu_accesorios">Accesorios</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="drop-bubble_wrap" data-dropbubble="open">
+                <a href="#" class="nav_btn"><span class="icon-noticies"></span>Pruebas e información</a>
+                <div class="drop-bubble clearfix">
+                  <div class="drop-bubble_section">
+                    <div class="drop-bubble_title">Información técnica</div>
+                    <ul class="drop-bubble_nav">
+                      <li>
+                        <a href="/fichas_tecnicas/" class="nav_btn" data-xtclib="Menu_ft_nuevos">Fichas técnicas y precios</a>
+                      </li>
+                      <li>
+                        <a href="/fichas_tecnicas/buscador.aspx" class="nav_btn" data-xtclib="Menu_ft_buscar">Datos de modelos descatalogados</a>
+                      </li>
+                      <li>
+                        <a href="/fichas_tecnicas/comparar.aspx" class="nav_btn" data-xtclib="Menu_ft_comparador">Comparador de coches</a>
+                      </li>
+                      <li>
+                        <a href="/todo/" class="nav_btn" data-xtclib="menu_wdyl">Buscador por marca y modelo</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="drop-bubble_section">
+                    <div class="drop-bubble_title">Actualidad</div>
+                    <ul class="drop-bubble_nav">
+                      <li>
+                        <a href="/noticias/" title="Noticias de coches" class="nav_btn" data-xtclib="Menu_noticias_portada">Lo más nuevo</a>
+                      </li>
+                      <li>
+                        <a href="/pruebas/" title="Pruebas de coches" class="nav_btn" data-xtclib="Menu_noticias_pruebas">Pruebas y videopruebas</a>
+                      </li>
+                      <li>
+                        <a href="/novedades/" class="nav_btn" data-xtclib="Menu_noticias_novedades">Novedades</a>
+                      </li>
+                      <li>
+                        <a href="/comparativas/" title="Comparativas de coches" class="nav_btn" data-xtclib="Menu_noticias_comparativas">Comparativas</a>
+                      </li>
+                      <li>
+                        <a href="/videos/" title="Videos de coches" class="nav_btn" data-xtclib="Menu_noticias_videos">Vídeos</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="drop-bubble_section">
+                    <div class="drop-bubble_title">Opinión</div>
+                    <ul class="drop-bubble_nav">
+                      <li>
+                        <a href="//debates.coches.net" title="Foros de coches" class="nav_btn" data-xtclib="Menu_foros">Foros de opinión</a>
+                      </li>
+                      <li>
+                        <a href="/espacios/toyota/?xtatc=INT-9" title="Foros de coches" class="nav_btn" data-xtclib="Menu_foros">Espacio Toyota</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="drop-bubble_wrap" data-dropbubble="open">
+                <a href="#" class="nav_btn"><span class="icon-servicios"></span>Trámites y Servicios</a>
+
+                <div class="drop-bubble clearfix">
+                  <div class="drop-bubble_section">
+                    <ul class="drop-bubble_nav">
+                      <li>
+                        <a href="/tramites-compra-venta-coches.aspx" class="nav_btn" data-xtclib="Menu_ocasion_tramites">Trámites de compra-venta</a>
+                      </li>
+                      <li>
+                        <a href="/tasacion-de-coches.aspx" class="nav_btn" data-xtclib="Menu_ocasion_tasacion">Tasación de coches</a>
+                      </li>
+                      <li>
+                        <a href="http://www.carfax.es/" target="_blank" class="nav_btn" data-xtclib="Menu_ocasion_informe">Informe de vehículos</a>
+                      </li>
+                      <li>
+                        <a href="//seguros.coches.net" class="nav_btn" data-xtclib="Menu_ocasion_seguros">Seguros</a>
+                      </li>
+                      <li>
+                        <a href="//financiacion.coches.net" class="nav_btn" data-xtclib="Menu_ocasion_financiacion">Financiación</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="drop-bubble_section">
+                    <ul class="drop-bubble_nav">
+                      <li>
+                        <a href="/talleres/" title="Talleres de coches" class="nav_btn" data-xtclib="Menu_talleres_buscar">Buscador de talleres</a>
+                      </li>
+                      <li>
+                        <a href="/talleres/ofertas.aspx" title="Ofertas de talleres" class="nav_btn" data-xtclib="Menu_talleres_ofertas">Promociones de talleres</a>
+                      </li>
+                      <li>
+                        <a href="/servicios/costes-mantenimiento/?coche=talleres" class="nav_btn" data-xtclib="Menu_talleres_mantenimiento">Costes de mantenimiento</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fi control menu (DESKTOP) -->
+</header>

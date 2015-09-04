@@ -1,0 +1,722 @@
+// BASIC NAV
+// ----------------------------------------------------------------------------
+.nav_btn {
+  display: block;
+  background-color: $lightest-grey-color;
+  font-family: $font-stack-title;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 20px;
+  text-decoration: none;
+
+  @media only screen and (min-width: $mq-tablet) {
+    font-size: 16px;
+  }
+
+  [class^="icon-"] {
+    color: $dark-grey-color;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 32px;
+
+    @media only screen and (min-width: $mq-tablet) {
+      margin-right: 20px;
+    }
+  }
+
+  &,
+  &:visited {
+    color: $darkest-grey-color;
+  }
+
+  &:hover,
+  &:focus {
+    &,
+    [class^="icon-"] {
+      color: $link-hover-color;
+    }
+
+  }
+
+  &.is--active {
+    background: #ffffff;
+    // border-bottom: 1px solid $light-grey-color;
+    font-weight: 600;
+  }
+
+  &.has--extra-padding {
+    padding-top: 20px;
+
+    @media only screen and (min-width: $mq-tablet) {
+      padding-top: 12px;
+    }
+  }
+
+  &.has--border-top {
+    border-top: 1px solid #e0dfdd;
+  }
+
+  &.has--border-bottom {
+    border-bottom: 1px solid #e0dfdd;
+  }
+
+  &--blue {
+    @media only screen and (max-width: $mq-tablet - 1) {
+      color: $link-color;
+    }
+  }
+}
+
+
+// NAV SLIDE
+// ----------------------------------------------------------------------------
+@media only screen and (max-width: $mq-tablet - 1) {
+  .nav-slide {
+    position: absolute;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    transition: all .1s .4s linear;
+    z-index: 2001;
+
+    &_open-btn {
+      display: block;
+
+      .icon-menu {
+        color: $red-color;
+        display: block;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 600;
+      }
+
+    }
+
+    &_mask {
+      background-color: #000000;
+      cursor: pointer;
+      opacity: 0;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: -100%;
+      transition: opacity .4s cubic-bezier(.4, 0, .2, 1);
+      width: 100%;
+      z-index: -1;
+    }
+
+    &_content {
+      background-color: $lightest-grey-color;
+      background-size: cover;
+      overflow: auto;
+      padding-top: 64px;
+      padding-bottom: 16px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      transform: translateX(-100%);
+      width: 290px;
+      transition: transform .4s cubic-bezier(.4, 0, .2, 1);
+    }
+
+  }
+
+
+  .is--nav-slide-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    .nav-slide {
+      bottom: 0;
+      transition: all .1s linear;
+
+      &_mask {
+        opacity: .6;
+        left: 0;
+        transition: opacity .4s .1s cubic-bezier(.4, 0, .2, 1);
+        z-index: 0;
+      }
+
+      &_content {
+        transform: translateX(0);
+        transition: transform .4s .1s cubic-bezier(.4, 0, .2, 1);
+      }
+    }
+  }
+}
+
+
+
+// SIDE NAV
+// ----------------------------------------------------------------------------
+.side-nav {
+
+  span {
+    font-size: 15px;
+    font-weight: 700;
+    display:  block;
+    margin: 20px 0 5px;
+  }
+
+
+  > li a {
+    color: #666666;
+    display: block;
+    padding: 5px 15px 5px 25px;
+
+    &:hover {
+      box-shadow: 1px 0 0 #cccccc inset;
+    }
+
+    &.active {
+      box-shadow: 5px 0 0 $blue-color inset !important;
+      color: $blue-color !important;
+    }
+
+  }
+
+  ul a {
+    font: 14px/15px Arial, Verdana;
+    line-height:  15px;
+    padding-left:  15px;
+
+    &.active {
+      box-shadow: 1px 0 0 $blue-color inset !important;
+    }
+
+  }
+
+}
+
+
+
+// Common top header menu
+// ----------------------------------------------------------------------------
+header {
+  margin-bottom: .75rem;
+}
+
+
+.nav {
+  > ul {
+    display: none;
+    height: auto;
+  }
+
+  li {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  a {
+    color: #333333;
+    display: block;
+    font-family: $font-stack-title;
+    font-size: 15px;
+    line-height: 60px;
+
+    &:hover {
+      color: #000000;
+    }
+
+    &.active {
+      box-shadow: inset 0 -5px 0 #e7e7e7;
+      color: #000000;
+    }
+  }
+
+  span {
+    font-size: 24px;
+    color: $red-color;
+    font-weight: bold;
+    margin: 13px 0 0 5px;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: $mq-tablet) {
+  .nav {
+    > ul {
+      display: block;
+    }
+
+    li {
+      display: inline-block;
+      width: auto;
+    }
+
+    ul {
+      [class^="icon-"] {
+        display: none;
+      }
+    }
+
+    .pull {
+      display: none;
+    }
+  }
+}
+
+
+
+// TOPBAR
+// ----------------------------------------------------------------------------
+.topbar {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  // LAYOUT
+  // --------------------------------------------------------
+  .pull {
+    display: none;
+  }
+
+
+  // LOGO
+  // --------------------------------------------------------
+  &_logo-wrap {
+    background: #ffffff;
+    padding-left: 24px;
+    height: 64px;
+  }
+
+  &_logo {
+    // Image replacement
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    text-indent: 200%;
+    overflow: hidden;
+    white-space: nowrap;
+
+
+    // --
+
+    background-image: url(../img/prototype/sprite2015.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 148px auto;
+    width: 148px;
+    height: 64px;
+
+    @media screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url(/m2/images/sprite2015-x2.png);
+    }
+
+    @media only screen and (max-width: $mq-tablet) {
+      background-size: 130px auto;
+      width: 130px;
+    }
+
+    @media only screen and (min-width: $mq-tablet) and (max-width: $mq-desktop) {
+      background-position: 0 100%;
+      width: 64px;
+    }
+
+    .lt-ie8 & {
+      text-indent: -100%;
+    }
+  }
+}
+
+
+
+// TABLET STYLES
+// ----------------------------------------------------------------------------
+@media only screen and (min-width: $mq-tablet) {
+  .topbar {
+    background: #ffffff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
+
+    // LAYOUT
+    // --------------------------------------------------------
+    &_logo-wrap {
+      float: left;
+    }
+
+    &_menus {
+      padding-left: 64px;
+      padding-right: 24px;
+      width: 100%;
+    }
+
+    &_user {
+      float: right;
+      margin-right: 16px;
+    }
+
+    &_main-nav {
+      float: left;
+    }
+
+    &_pta {
+      float: right;
+    }
+
+    // USER
+    // --------------------------------------------------------
+    &_user {
+      position: relative;
+
+      > .user-thumb {
+        font-size: 14px;
+        padding: 14px 8px;
+
+        .user-thumb_name {
+          max-width: 100px;
+        }
+      }
+
+      &.drop-bubble_wrap {
+        > a:before,
+        > span:before {
+          left: 26px;
+        }
+      }
+
+      .drop-bubble {
+        margin-right: -32px;
+        position: absolute;
+        right: 100%;
+        transform: translateX(50%);
+        min-width: 230px;
+      }
+    }
+
+
+
+    // MAIN NAV
+    // --------------------------------------------------------
+    &_main-nav {
+      > ul {
+        > li {
+          float: left;
+
+          > .nav_btn {
+            cursor: default;
+            background-color: transparent;
+            padding: 24px 8px;
+            transition: all .2s ease-in-out;
+
+            [class^="icon-"] {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .nav_btn {
+        font-size: 14px;
+        line-height: 16px;
+
+        &.has--border-top {
+          border-top: 0;
+        }
+      }
+
+      .drop-bubble {
+        white-space: nowrap;
+      }
+    }
+
+
+    // PTA
+    // --------------------------------------------------------
+    &_pta {
+      padding: 16px 0;
+
+      .btn {
+        display: block;
+        line-height: 24px;
+        padding: 4px 12px;
+        height: 32px;
+
+        &:active:not(.btn-disabled):not(.btn-border-dark):not(.btn-border-light) {
+          padding: 4px 12px;
+        }
+      }
+    }
+  }
+}
+
+
+
+// DESKTOP STYLES
+// ----------------------------------------------------------------------------
+@media only screen and (min-width: $mq-desktop) {
+  .topbar {
+    // LAYOUT
+    // --------------------------------------------------------
+    &_menus {
+      padding-left: 180px;
+    }
+
+
+    // MAIN NAV
+    // --------------------------------------------------------
+    &_main-nav {
+      > ul {
+        > li {
+          float: left;
+
+          > .nav_btn {
+            padding: 24px 12px;
+          }
+        }
+      }
+
+      .nav_btn {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+
+
+// MOBILE STYLES
+// ----------------------------------------------------------------------------
+@media only screen and (max-width: $mq-tablet - 1) {
+  .topbar {
+    &_logo-wrap {
+      box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
+      padding-left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 5000;
+    }
+
+    .nav-slide_open-btn {
+      float: left;
+      padding: 20px 16px;
+    }
+
+    &.nav-slide {
+      .user-thumb {
+        color: #ffffff;
+        padding: 24px 16px;
+      }
+
+      .drop-bubble {
+        border: 0;
+        position: static;
+
+        &:before {
+          display: none;
+        }
+      }
+
+      .btn {
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        display: block;
+        font-family: $font, arial, verdana;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+        padding: 12px 20px;
+        text-align: left;
+
+        [class^="icon-"] {
+          color: $dark-grey-color;
+          font-size: 20px;
+          margin-right: 32px;
+        }
+
+        &,
+        &:visited {
+          &,
+          [class^="icon-"] {
+            color: $link-color !important;
+          }
+
+        }
+
+        &:hover,
+        &:focus {
+          &,
+          [class^="icon-"] {
+            color: $link-hover-color !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+// DROPDOWN BUBBLE
+// ----------------------------------------------------------------------------
+.drop-bubble_wrap {
+  position: relative;
+
+  @media only screen and (min-width: $mq-tablet) {
+    > a:before,
+    > span:before {
+      // @include css-arrow($link-color);
+
+      display: none;
+      top: auto;
+      bottom: 0;
+    }
+  }
+}
+
+
+.drop-bubble {
+  background-color: $lightest-grey-color;
+  border-top: 4px solid $link-color;
+  position: absolute;
+  top: 100%;
+  z-index: 10;
+
+  @media only screen and (min-width: $mq-tablet) {
+    display: none;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .3),
+    0 0 0 2px #ffffff inset;
+  }
+
+
+  &_section {
+    display: inline-block;
+    margin-right: 12px;
+    padding: 12px 4px;
+    vertical-align: top;
+    min-height: 105px;
+    min-width: 160px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .nav_btn {
+      padding: 8px 12px;
+    }
+
+  }
+
+  &_title {
+    border-bottom: 1px solid #eeeeee;
+    color: #666666;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 12px;
+    padding: 8px 12px;
+    text-transform: uppercase;
+  }
+}
+
+
+.drop-bubble--visible {
+  > a:before,
+  > span:before,
+  .drop-bubble {
+    display: block;
+  }
+}
+
+
+
+// USER THUMBNAIL
+// ----------------------------------------------------------------------------
+.user-thumb {
+  display: block;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  &,
+  &:visited {
+    color: $darkest-grey-color;
+  }
+
+  &_avatar {
+    border-radius: 50%;
+    display: block;
+    float: left;
+    overflow: hidden;
+    width: 36px;
+    height: 36px;
+    margin-right: 8px;
+  }
+
+  &_name {
+    display: block;
+    flex: 1 0 0;
+    float: left;
+    font-family: $font-stack-title;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+
+    span {
+      display: block;
+    }
+  }
+
+
+  .topbar_main-nav &,
+  .drop-bubble &,
+  #nav-gta & {
+    background-color: $darkest-grey-color;
+    background-image: url(../img/prototype/user-bg.jpg);
+    background-size: cover;
+    padding: 8px 16px;
+    position: relative;
+
+    @media only screen and (max-width: $mq-tablet) {
+      padding: 20px 16px;
+    }
+
+    &,
+    &:visited,
+    &:hover,
+    &:focus {
+      color: #ffffff;
+    }
+
+    > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    &:before {
+      background-color: rgba(255, 255, 255, 0);
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: all .2s ease-in-out;
+      z-index: 0;
+    }
+
+    &:hover,
+    &:focus {
+      &:before {
+        background-color: rgba(255, 255, 255, .15);
+      }
+    }
+  }
+
+  .drop-bubble & {
+    padding: 12px 20px;
+  }
+}
+

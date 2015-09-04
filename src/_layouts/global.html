@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+
+<body>
+  {% include components/drv-Topbar/drv-Topbar.html component='drv-Topbar'%}
+
+  {% include components/drv-PageHero/drv-PageHero.html %}
+
+
+  <div class="drv-Wrapper">
+    {{ content }}
+  </div>
+
+  <!-- {#% include ldrv-Sidebar/ldrv-Sidebar.html %#} -->
+
+  {% include components/drv-Footer/drv-Footer.html %}
+
+  {% include scripts-footer.html %}
+</body>
+</html>

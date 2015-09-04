@@ -1,0 +1,18 @@
+$bg-body: $c-neutro-lighter;
+
+// PAGE LAYOUT
+// ----------------------------------------------------------------------------
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $bg-body;
+  margin: 0;
+}
