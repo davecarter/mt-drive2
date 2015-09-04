@@ -56,12 +56,6 @@ $susy: (
   margin-left: -(gutter());
   margin-right: -(gutter());
 }
-// $mq-mobile:             320px;
-// $mq-mobile-landscape:   480px;
-// $mq-tablet:             768px;
-// $mq-desktop:            970px;
-// $mq-wide:               1320px;
-
 
 .grid-1,
 .grid-2,
@@ -153,5 +147,111 @@ $susy: (
 
   .grid-11 {
     @include span(11);
+  }
+}
+
+
+// PUSH CLASSES
+// --------------------------------------------------------
+@media screen and (min-width: $mq-tablet) {
+  .grid-push-1 {
+    @include push(1);
+  }
+
+  .grid-push-2 {
+    @include push(2);
+  }
+
+  .grid-push-3 {
+    @include push(3);
+  }
+
+  .grid-push-4 {
+    @include push(4);
+  }
+
+  .grid-push-5 {
+    @include push(5);
+  }
+
+  .grid-push-6 {
+    @include push(6);
+  }
+
+  .grid-push-7 {
+    @include push(7);
+  }
+
+  .grid-push-8 {
+    @include push(8);
+  }
+
+  .grid-push-9 {
+    @include push(9);
+  }
+
+  .grid-push-10 {
+    @include push(10);
+  }
+
+  .grid-push-11 {
+    @include push(11);
+  }
+
+  .grid-push-12 {
+    @include push(12);
+  }
+}
+
+
+// PULL CLASSES
+// --------------------------------------------------------
+@media screen and (min-width: $mq-tablet) {
+  .grid-pull-1 {
+    @include pull(1);
+  }
+
+  .grid-pull-2 {
+    @include pull(2);
+  }
+
+  .grid-pull-3 {
+    @include pull(3);
+  }
+
+  .grid-pull-4 {
+    @include pull(4);
+  }
+
+  .grid-pull-5 {
+    @include pull(5);
+  }
+
+  .grid-pull-6 {
+    @include pull(6);
+  }
+
+  .grid-pull-7 {
+    @include pull(7);
+  }
+
+  .grid-pull-8 {
+    @include pull(8);
+  }
+
+  .grid-pull-9 {
+    @include pull(9);
+  }
+
+  .grid-pull-10 {
+    @include pull(10);
+  }
+
+  .grid-pull-11 {
+    @include pull(11);
+  }
+
+  .grid-pull-12 {
+    @include pull(12);
   }
 }
