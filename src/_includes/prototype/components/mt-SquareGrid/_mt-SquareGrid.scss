@@ -1,0 +1,15 @@
+.mt-SquareGrid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &-item {
+    margin-bottom: gutter()*2;
+
+    // padding: 0;
+  }
+  .btn {
+    // width: 100%;
+    // padding: 0;
+  }
+}

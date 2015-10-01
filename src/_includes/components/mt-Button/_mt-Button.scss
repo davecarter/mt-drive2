@@ -7,6 +7,46 @@ $blue-color:         #4585f2;
 $grey-color:         #999999;
 $turquoise-color:    #007a87;
 
+
+%mt-Btn--base {
+  appearance: none;
+  background-color: $red-color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: .25rem;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .15);
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: $font-stack-title;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: rem(17px);
+  line-height: 1.25rem;
+  margin: 0;
+  outline: none;
+  position: relative;
+  text-decoration: none;
+  transition: background-color .2s ease-in-out;
+}
+
+.mt-Btn {
+  @extend %mt-Btn--base;
+  display:  inline-block;
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+  &--full {
+    @extend %mt-Btn--base;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+
+
 .btn {
   background-color: $red-color;
   border: 1px solid transparent;
@@ -143,3 +183,4 @@ $turquoise-color:    #007a87;
 input.btn.block {
   width: 100%;
 }
+

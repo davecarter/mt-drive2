@@ -57,3 +57,13 @@ $c-headings: $c-neutro-darker;
 $c-warning: $c-yellow;
 $c-error: $c-red;
 $c-success: $c-green;
+
+
+// GRID
+// ----------------------------------------------------------------------------
+$susy: (
+  container: 61em,
+  columns: 12,
+  column-width: 4em,
+  gutter-position: 'inside-static',
+);
