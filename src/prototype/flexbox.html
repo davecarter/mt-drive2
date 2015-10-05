@@ -1,0 +1,253 @@
+---
+
+layout: prototype
+title: 'Flexbox Test'
+version: 'prototype'
+ccs_extra:
+- url: 'http://www.minicarpons.com/CssHandler/2015101325467165?enccss=4774534569663936624E78506E435A3254364765392F76374B4C2F4B2B386E7A796B437839472F44493532687A336A3846765569316A78634338696377696276'
+
+---
+
+<style type="text/css">
+  .bgcolor1 {background-color:#D92121 !important;}
+  .bgcolor2 {background-color:#BEC8F6 !important;}
+  .fcolor1 {color:#110000 !important;}
+  .fcolor1 a {color:#110000 !important;}
+  .fcolor2 {color:#000000 !important;}
+  .fcolor2 a {color:#000000 !important;}
+</style>
+
+<style>
+  /* FIXES */
+  .vehicleSmall {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .vehicleSmall img {
+    width:100px;
+    height:75px;
+  }
+  .vehicleSmall div {
+    height: auto;
+  }
+
+
+  /* FLEXBOX */
+  /*
+  <div id="lastnews">
+
+  </div>
+  */
+  .mt-LastNews-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .vehicleSmall {
+  }
+
+</style>
+<style>
+  /* OVERRIDE STYLEGUIDE */
+  body {
+    line-height: normal
+  }
+</style>
+
+<div class="row">
+  <div class="grid-9 grid-push-2">
+
+
+
+
+    <!-- BEGIN -->
+      <div id="lastnews" class="floatleft">
+        <p class="title">Últimas novedades</p>
+        <div class="line bgcolor1"></div>
+
+        <div class="mt-LastNews-wrapper">
+          <div class="vehicleSmall bggray">
+
+            <a href="/bmw_serie_3_318d/1211953">
+              <div class="floatleft" style="margin:0; height:75px; width:100px; display:table; text-align:center; background-color:#CCC">
+                <div style="display:table-cell; vertical-align:middle">
+                  <img src="http://cf.ccdn.es/carfactory/2015/10/1/1211953/17308372_M.jpg" alt="BMW Serie 3 318d">
+                </div>
+              </div>
+              <div class="floatleft">
+                <div style="height:60px">
+                  <div style="height:45px; width:90px; overflow:hidden;">
+                    <b class="fblack">1.BMW Serie 3 318d</b>
+                  </div>
+                  <p class="fblack">
+                    2008 - Diesel
+                  </p>
+                </div>
+                <div>
+                  <div style="float:left; width:76px;">
+                    <b class="fred">12.500 €</b>
+                  </div>
+                  <div class="bgcolor1" style="float:left; font-family:Tahoma; width:18px; height:18px; text-align:center; overflow:hidden">
+                    <span class="fcolor1" style="font-weight: bold; font-size: 17px;line-height:15px">+</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="vehicleSmall bggray">
+
+            <a href="/nissan_qashqai2_20_dci_tekna_sport_4x4_at_18/1211841">
+              <div class="floatleft" style="margin:0; width:100px; display:table; text-align:center; background-color:#CCC">
+                <div style="display:table-cell; vertical-align:middle">
+                  <img src="http://cf.ccdn.es/carfactory/2015/10/1/1211841/17305443_M.jpg" alt="NISSAN QASHQAI2 2.0 dCi TEKNA SPORT 4x4 AT 18">
+                </div>
+              </div>
+              <div class="floatleft">
+                <div>
+                  <div style=" width:90px; overflow:hidden;">
+                    <b class="fblack">2.NISSAN QASHQAI2 2.0 dCi TEKNA SPORT...</b>
+                  </div>
+                  <p class="fblack">
+                    2011 - Eléctrico / Híbrido
+                  </p>
+                </div>
+                <div>
+                  <div style="float:left; width:76px;">
+                    <b class="fred">18.500 €</b>
+                  </div>
+                  <div class="bgcolor1" style="float:left; font-family:Tahoma; width:18px; height:18px; text-align:center; overflow:hidden">
+                    <span class="fcolor1" style="font-weight: bold; font-size: 17px;line-height:15px">+</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="vehicleSmall bggray">
+            <a href="/mazda_mazda2_active_14_crtd/1145328">
+              <div class="floatleft" style="margin:0; height:75px; width:100px; display:table; text-align:center; background-color:#CCC">
+                <div style="display:table-cell; vertical-align:middle">
+                  <img src="http://cf.ccdn.es/carfactory/2015/8/21/1145328/16125158_M.jpg" alt="MAZDA Mazda2 Active 1.4 CRTD">
+                </div>
+              </div>
+              <div class="floatleft">
+                <div style="height:60px">
+                  <div style="height:45px; width:90px; overflow:hidden;">
+                    <b class="fblack">3.MAZDA Mazda2 Active 1.4 CRTD</b>
+                  </div>
+                  <p class="fblack">
+                    2009 - Diesel
+                  </p>
+                </div>
+                <div>
+                  <div style="float:left; width:76px;">
+                    <b class="fred">6.500 €</b>
+                  </div>
+                  <div class="bgcolor1" style="float:left; font-family:Tahoma; width:18px; height:18px; text-align:center; overflow:hidden">
+                    <span class="fcolor1" style="font-weight: bold; font-size: 17px;line-height:15px">+</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="vehicleSmall bggray">
+            <a href="/nissan_micra_5p_12g_80_cv_tekna/1142091">
+              <div class="floatleft" style="margin:0; height:75px; width:100px; display:table; text-align:center; background-color:#CCC">
+                <div style="display:table-cell; vertical-align:middle">
+                  <img src="http://cf.ccdn.es/carfactory/2015/8/19/1142091/16049232_M.jpg" alt="NISSAN Micra 5p 1.2G 80 CV TEKNA">
+                </div>
+              </div>
+              <div class="floatleft">
+                <div style="height:60px">
+                  <div style="height:45px; width:90px; overflow:hidden;">
+                    <b class="fblack">4.NISSAN Micra 5p 1.2G 80 CV TEKNA</b>
+                  </div>
+                  <p class="fblack">
+                    2011 - Gasolina
+                  </p>
+                </div>
+                <div>
+                  <div style="float:left; width:76px;">
+                    <b class="fred">7.600 €</b>
+                  </div>
+                  <div class="bgcolor1" style="float:left; font-family:Tahoma; width:18px; height:18px; text-align:center; overflow:hidden">
+                    <span class="fcolor1" style="font-weight: bold; font-size: 17px;line-height:15px">+</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="vehicleSmall bggray">
+            <a href="/renault_grand_scenic_dynamique_7_plazas_20_16v_auto/1111521">
+              <div class="floatleft" style="margin:0; height:75px; width:100px; display:table; text-align:center; background-color:#CCC">
+                <div style="display:table-cell; vertical-align:middle">
+                  <img src="http://cf.ccdn.es/carfactory/2015/7/30/1111521/15464961_M.jpg" alt="RENAULT Grand Scenic Dynamique 7 plazas 2.0 16V Auto">
+                </div>
+              </div>
+              <div class="floatleft">
+                <div style="height:60px">
+                  <div style="height:45px; width:90px; overflow:hidden;">
+                    <b class="fblack">5.RENAULT Grand Scenic Dynamique 7 pl...</b>
+                  </div>
+                  <p class="fblack">
+                    2008 - Gasolina
+                  </p>
+                </div>
+                <div>
+                  <div style="float:left; width:76px;">
+                    <b class="fred">6.700 €</b>
+                  </div>
+                  <div class="bgcolor1" style="float:left; font-family:Tahoma; width:18px; height:18px; text-align:center; overflow:hidden">
+                    <span class="fcolor1" style="font-weight: bold; font-size: 17px;line-height:15px">+</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="vehicleSmall bggray">
+
+            <a href="/fiat_doblo_combi_active_19_multijet/1110469">
+              <div class="floatleft" style="margin:0; height:75px; width:100px; display:table; text-align:center; background-color:#CCC">
+                <div style="display:table-cell; vertical-align:middle">
+                  <img src="http://cf.ccdn.es/carfactory/2015/7/29/1110469/15445880_M.jpg" alt="FIAT Doblo Combi Active 1.9 Multijet">
+                </div>
+              </div>
+              <div class="floatleft">
+                <div style="height:60px">
+                  <div style="height:45px; width:90px; overflow:hidden;">
+                    <b class="fblack">6.FIAT Doblo Combi Active 1.9 Multije...</b>
+                  </div>
+                  <p class="fblack">
+                    2010 - Diesel
+                  </p>
+                </div>
+                <div>
+                  <div style="float:left; width:76px;">
+                    <b class="fred">8.900 €</b>
+                  </div>
+                  <div class="bgcolor1" style="float:left; font-family:Tahoma; width:18px; height:18px; text-align:center; overflow:hidden">
+                    <span class="fcolor1" style="font-weight: bold; font-size: 17px;line-height:15px">+</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    <!-- END -->
+
+
+
+
+  </div>
+</div>
